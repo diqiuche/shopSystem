@@ -16,6 +16,11 @@ public class BaseServlet extends HttpServlet {
 		doPost(request, response);
 	}
 	
+	/**
+	 * 处理用户公共请求
+	 * 
+	 * @author 李岚祺
+	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
 		request.setCharacterEncoding("UTF-8");
 		String mothodName = request.getParameter("method");

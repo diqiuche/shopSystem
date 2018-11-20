@@ -1,11 +1,17 @@
 package com.xt.util;
 import java.sql.Connection;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
 import com.alibaba.druid.pool.DruidDataSource;
 
+/**
+ * 数据库连接工具类
+ * 
+ * @author 李岚祺
+ */
 public class DBUtil {
 	
 	static DruidDataSource druidDataSource;
