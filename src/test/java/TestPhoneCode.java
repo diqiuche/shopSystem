@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 import com.xt.util.SMSUtils;
+
 /**
  * 手机验证码测试类
  * 
