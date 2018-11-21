@@ -43,10 +43,10 @@ public class UserInfoDaoImpl implements IUserInfoDao{
 	 * @author 李岚祺
 	 */
 	@Override
-	public boolean register(String userName, String password, String phone, String code) {
+	public boolean registerByPhone(String password, String phone, String code) {
 		try {
 			if(SMSUtils.verifyCode(phone, code)) {
-				String sql = "insert into user_info where id = ? and password = ?";
+				String sql = "insert into user_info(phone, password) values('"+phone+"', '"+password+"')";
 				int result;
 				try {
 					result = qr.update(sql);
@@ -62,6 +62,28 @@ public class UserInfoDaoImpl implements IUserInfoDao{
 				return false;
 			}
 		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+	/**
+	 * 实现依据密码和邮箱注册抽象方法
+	 * 
+	 * @author 李岚祺
+	 */
+	@Override
+	public boolean registerByEmail(String password, String email) {
+		String sql = "insert into user_info(email, password) values('"+email+"', '"+password+"')";
+		int result;
+		try {
+			result = qr.update(sql);
+			if (result > 0) {
+				return true;
+			} else {
+				return false;
+			}
+		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 		return false;

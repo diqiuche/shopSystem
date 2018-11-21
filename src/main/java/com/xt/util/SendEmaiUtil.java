@@ -16,7 +16,7 @@ import javax.mail.internet.MimeMessage.RecipientType;
  */
 public class SendEmaiUtil {
 
-	public void sendEmail(String toAddress) throws Exception{
+	public static void sendEmail(String toAddress) throws Exception{
 		Properties properties = new Properties();
 		properties.put("mail.transport.protocol", "smtp");// 连接协议        
 	    properties.put("mail.smtp.host", "smtp.qq.com");// 主机名        
@@ -41,7 +41,7 @@ public class SendEmaiUtil {
 		message.setSubject("账号激活");        
 
 		//设置邮件内容        
-		message.setContent("<a href=http://localhost/ShopSystem/>尊敬的 用户,您好!!欢迎您使用我们的电子商务网站!!" +  
+		message.setContent("<a href=http://localhost/shopSystem/>尊敬的用户,您好!!欢迎您使用我们的电子商务网站!!" +  
               "  请点击激活您的账户</a>","text/html;charset=UTF-8");       
 
 		 //得到邮件传输对象        

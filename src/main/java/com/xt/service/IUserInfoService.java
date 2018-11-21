@@ -19,9 +19,16 @@ public interface IUserInfoService {
 	List<User> login(String userName,String password);
 	
 	/**
-	 * 依据用户名和密码和手机号注册抽象方法
+	 * 依据密码和手机号注册抽象方法
 	 * 
 	 * @author 李岚祺
 	 */
-	boolean register(String userName,String password, String phone, String code);
+	boolean registerByPhone(String password, String phone, String code);
+	
+	/**
+	 * 依据密码和邮箱注册抽象方法
+	 * 
+	 * @author 李岚祺
+	 */
+	boolean registerByEmail(String password, String email);
 }

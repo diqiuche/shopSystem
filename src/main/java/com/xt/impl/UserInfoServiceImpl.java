@@ -26,13 +26,23 @@ public class UserInfoServiceImpl implements IUserInfoService{
 	}
 
 	/**
-	 * 实现依据用户名和密码和手机号注册抽象方法
+	 * 实现依据密码和手机号注册抽象方法
 	 * 
 	 * @author 李岚祺
 	 */
 	@Override
-	public boolean register(String userName, String password, String phone, String code) {
-		return UserInfoDaoImpl.register(userName, password, phone, code);
+	public boolean registerByPhone(String password, String phone, String code) {
+		return UserInfoDaoImpl.registerByPhone(password, phone, code);
+	}
+
+	/**
+	 * 实现依据密码和邮箱注册抽象方法
+	 * 
+	 * @author 李岚祺
+	 */
+	@Override
+	public boolean registerByEmail(String password, String email) {
+		return UserInfoDaoImpl.registerByEmail(password, email);
 	}
 	
 }

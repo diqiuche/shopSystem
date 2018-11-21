@@ -29,12 +29,14 @@ public class LoginServlet extends BaseServlet{
 	 * @author 李岚祺
 	 */
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		
 		String userName = request.getParameter("userName");
 		String password = request.getParameter("password");
+		//暂且假设不为空
 		List<User> list =  uis.login(userName, password);
 		if (list != null || "".equals(list)) {
 			User user = (User) list;
-			if (user.getId().equals(userName) && user.getPassword().equals(password)) {
+			if (user.getPassword().equals(password)) {
 				request.getSession().setAttribute("list", list);
 				try {
 					request.getRequestDispatcher("").forward(request, response);
