@@ -2,6 +2,7 @@ package com.xt.impl;
 
 import java.io.IOException;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.util.List;
 
 import org.apache.commons.dbutils.QueryRunner;
@@ -89,4 +90,15 @@ public class UserInfoDaoImpl implements IUserInfoDao{
 		return false;
 	}
 
+	@Override
+	public void updateUserInformation(String id, String tempName, String realName, int sex, Timestamp date, String email,
+			String phone) {
+		String sql = "update user_info set name='"+realName+"', sex="+sex+", date='"+date+"', email='"+email+"', phone='"+phone+"', tempname='"+tempName+"'  where id = '"+id+"'";
+		System.out.println(sql);
+		try {
+			qr.update(sql);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
 }

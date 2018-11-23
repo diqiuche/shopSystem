@@ -42,9 +42,9 @@ public class LoginServlet extends BaseServlet{
 				System.out.println(list);
 				User user = (User) list.get(0);
 				if (user.getPassword().equals(password)) {
-					request.getSession().setAttribute("list", list);
-					request.getSession().setAttribute("user", user);
 					try {
+						//暂且保存用户的id号码
+						request.getSession().setAttribute("userName", userName);
 						request.getRequestDispatcher("home3.jsp").forward(request, response);
 					} catch (ServletException e) {
 						e.printStackTrace();

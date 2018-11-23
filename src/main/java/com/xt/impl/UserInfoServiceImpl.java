@@ -1,5 +1,6 @@
 package com.xt.impl;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import com.xt.common.User;
@@ -43,6 +44,12 @@ public class UserInfoServiceImpl implements IUserInfoService{
 	@Override
 	public boolean registerByEmail(String password, String email) {
 		return UserInfoDaoImpl.registerByEmail(password, email);
+	}
+
+	@Override
+	public void updateUserInformation(String id, String tempName, String realName, int sex, Timestamp date, String email,
+			String phone) {
+		UserInfoDaoImpl.updateUserInformation(id, tempName, realName, sex, date, email, phone);
 	}
 	
 }

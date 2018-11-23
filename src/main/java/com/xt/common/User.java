@@ -1,5 +1,7 @@
 package com.xt.common;
 
+import java.util.Date;
+
 /**
  * 用户类
  * 
@@ -8,16 +10,18 @@ package com.xt.common;
 public class User {
 
 	private int id;
-	private String name;
 	private int sex;
+	private String name;
 	private String phone;
 	private String email;
 	private String password;
+	private String tempname;
+	private Date date;
 	
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", name=" + name + ", sex=" + sex + ", phone=" + phone + ", email=" + email
-				+ ", password=" + password + "]";
+		return "User [id=" + id + ", sex=" + sex + ", name=" + name + ", phone=" + phone + ", email=" + email
+				+ ", password=" + password + ", tempname=" + tempname + ", date=" + date + "]";
 	}
 
 	public int getId() {
@@ -28,20 +32,20 @@ public class User {
 		this.id = id;
 	}
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
 	public int getSex() {
 		return sex;
 	}
 
 	public void setSex(int sex) {
 		this.sex = sex;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getPhone() {
@@ -67,6 +71,25 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
+
+	public String getTempname() {
+		return tempname;
+	}
+
+	public void setTempname(String tempname) {
+		this.tempname = tempname;
+	}
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+	
+	
+	
 	
 	
 	

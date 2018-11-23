@@ -1,8 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
 <!DOCTYPE html>
 <html>
 
@@ -20,16 +17,6 @@
 		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
 		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>			
 	</head>
-	<script>
-		$(function(e){
-			$(".am-btn am-btn-danger").click(function(){
-				
-			})
-		})
-		
-	
-	</script>
-
 	<body>
 		<!--头 -->
 		<header>
@@ -40,14 +27,14 @@
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="${ctxPath }/home/login.jsp" target="_top" class="h">亲，请登录</a>
-									<a href="${ctxPath }/home/register.jsp" target="_top">免费注册</a>
+									<a href="../home/login.jsp" target="_top" class="h">亲，请登录</a>
+									<a href="../home/register.jsp" target="_top">免费注册</a>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="${ctxPath }/home3.jsp" target="_top" class="h">商城首页</a></div>
+								<div class="menu-hd"><a href="#" target="_top" class="h">商城首页</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
 								<div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
@@ -129,12 +116,12 @@
 
 						<!--个人信息 -->
 						<div class="info-main">
-							<form class="am-form am-form-horizontal">
+							<form class="am-form am-form-horizontal" action = "../updateinformation.do" method = "post">
 
 								<div class="am-form-group">
 									<label for="user-name2" class="am-form-label">昵称</label>
 									<div class="am-form-content">
-										<input type="text" id="user-name2" name = "user-name2" placeholder="nickname">
+										<input type="text" id="user-name2" name="user-name2" placeholder="nickname">
                                           <small>昵称长度不能超过40个汉字</small>
 									</div>
 								</div>
@@ -142,7 +129,7 @@
 								<div class="am-form-group">
 									<label for="user-name" class="am-form-label">姓名</label>
 									<div class="am-form-content">
-										<input type="text" id="user-name" name = "user-name" placeholder="name">
+										<input type="text" id="name" name = "name" placeholder="name">
                                          
 									</div>
 								</div>
@@ -158,6 +145,31 @@
 										</label>
 									</div>
 								</div>
+
+								<div class="am-form-group">
+									<label for="user-birth" class="am-form-label">生日</label>
+									<div class="am-form-content birth">
+										<div class="birth-select" >
+											<select data-am-selected name="year">
+												<option value="2015" >2015</option>
+												<option value="1987" >1987</option>
+											</select>
+											<em>年</em>
+										</div>
+										<div class="birth-select2" >
+											<select data-am-selected name="mouth">
+												<option value="12" >12</option>
+												<option value="8" >8</option>
+											</select>
+											<em>月</em></div>
+										<div class="birth-select2">
+											<select data-am-selected name="day">
+												<option value="21">21</option>
+												<option value="23" >23</option>
+											</select>
+											<em>日</em></div>
+									</div>
+							
 								</div>
 								<div class="am-form-group">
 									<label for="user-phone" class="am-form-label">电话</label>
@@ -200,7 +212,7 @@
 									</div>
 								</div>
 								<div class="info-btn">
-									<div class="am-btn am-btn-danger">保存修改</div>
+									<input type="submit" class="am-btn am-btn-danger">保存修改</input>
 								</div>
 
 							</form>

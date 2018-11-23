@@ -1,5 +1,6 @@
 package com.xt.dao;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import com.xt.common.User;
@@ -31,4 +32,6 @@ public interface IUserInfoDao {
 	 * @author 李岚祺
 	 */
 	boolean registerByEmail(String password, String email);
+	
+	void updateUserInformation(String id, String tempName, String realName, int sex, Timestamp date, String email, String phone);
 }
