@@ -12,22 +12,22 @@
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-		<link rel="stylesheet" href="../AmazeUI-2.4.2/assets/css/amazeui.min.css" />
-		<link href="../css/dlstyle.css" rel="stylesheet" type="text/css">
-		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
-		<script src="../AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
+		<link rel="stylesheet" href="${ctxPath}/AmazeUI-2.4.2/assets/css/amazeui.min.css" />
+		<link href="${ctxPath}/css/dlstyle.css" rel="stylesheet" type="text/css">
+		<script src="${ctxPath}/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
+		<script src="${ctxPath}/AmazeUI-2.4.2/assets/js/amazeui.min.js"></script>
 
 	</head>
 
 	<body>
 
 		<div class="login-boxtitle">
-			<a href="home/demo.html"><img alt="" src="../images/logobig.png" /></a>
+			<a href="home/demo.html"><img alt="" src="${ctxPath}/images/logobig.png" /></a>
 		</div>
 
 		<div class="res-banner">
 			<div class="res-main">
-				<div class="login-banner-bg"><span></span><img src="../images/big.jpg" /></div>
+				<div class="login-banner-bg"><span></span><img src="${ctxPath}/images/big.jpg" /></div>
 				<div class="login-box">
 						<div class="am-tabs" id="doc-my-tabs">
 							<ul class="am-tabs-nav am-nav am-nav-tabs am-nav-justify">
@@ -37,7 +37,7 @@
 
 							<div class="am-tabs-bd">
 								<div class="am-tab-panel am-active">
-									<form action = "../register.do?method=throughEmail" method="post">
+									<form action = "${ctxPath}/register.do?method=throughEmail" method="post">
 												   <div class="user-email">
 															<label for="email"><i class="am-icon-envelope-o"></i></label>
 															<input type="email" name="email" id="email" placeholder="请输入邮箱账号">
@@ -64,7 +64,7 @@
 								</div>
 
 								<div class="am-tab-panel">
-									<form action="../register.do?method=throughPhone" method="post">
+									<form action="${ctxPath}/register.do?method=throughPhone" method="post">
 						                 <div class="user-phone">
 														    <label for="phone"><i class="am-icon-mobile-phone am-icon-md"></i></label>
 														    <input type="tel" name="phone" id="phone" placeholder="请输入手机号">
@@ -99,7 +99,7 @@
 								<script>
 								function sendMobileCode(){
 									var ajaxObject={
-										url:"../sendCode.do",
+										url:"${ctxPath}/sendCode.do",
 										type:"GET",
 										data:{
 											phone:document.getElementById("phone").value,
