@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -6,7 +7,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>¹ºÎï³µÒ³Ãæ</title>
+		<title>è´­ç‰©è½¦é¡µé¢</title>
 
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css" />
 		<link href="${pageContext.request.contextPath }/css/demo.css" rel="stylesheet" type="text/css" />
@@ -14,37 +15,130 @@
 		<link href="${pageContext.request.contextPath }/css/optstyle.css" rel="stylesheet" type="text/css" />
 		<link href="${pageContext.request.contextPath }/css/footer.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="${pageContext.request.contextPath }/js/jquery.js"></script>
+	
+		<script>
+			$(function(){
+				
+				
+			});
+			function addNumber(t){
+				var $parent = $(t).parent().parent().parent().parent().parent();
+				var price = Number($parent.find(".price-now").text());
+				var num = Number($parent.find(".text_box").val());
+				$parent.find(".text_box").val(++num);
+				
+				$parent.find(".all_price").text(price * num);
+				//alert("å•ä»·ï¼š"+price+",,æ•°é‡ï¼š"+num);
+				
+				caculatorAll();
+			}
+			function reduceNumber(t){
+				var $parent = $(t).parent().parent().parent().parent().parent();
+				var price = Number($parent.find(".price-now").text());
+				var num = Number($parent.find(".text_box").val());
+				$parent.find(".text_box").val(--num);
+				
+				$parent.find(".all_price").text(price * num);
+				//alert("å•ä»·ï¼š"+price+",,æ•°é‡ï¼š"+num);
+				
+				caculatorAll();
+			}
+			
+			function changeNumber(t){
+				var $parent = $(t).parent().parent().parent().parent().parent();
+				var price = Number($parent.find(".price-now").text());
+				var num = Number($parent.find(".text_box").val());
+				//$parent.find(".text_box").val(--num);
+				
+				$parent.find(".all_price").text(price * num);
+				//alert("å•ä»·ï¼š"+price+",,æ•°é‡ï¼š"+num);
+				
+				caculatorAll();
+			}
+			
+			function doChange(t){
+				//alert(t.checked);
+				var $parent = $(t).parent().parent().parent();
+				var price = Number($parent.find(".price-now").text());
+				var num = Number($parent.find(".text_box").val());
+				
+				$parent.find(".all_price").text(price * num);
+				//alert("å•ä»·ï¼š"+price+",,æ•°é‡ï¼š"+num);
+				caculatorAll();
+			}
+		
+		
+			function caculatorAll(){
+				var allNum = 0;
+				var allPrice = 0;
+				var checkBoxArr = $(".check");
+				for(i=0;i<checkBoxArr.size()-1;i++){
+					//alert(checkBoxArr[i].checked);
+					if(checkBoxArr[i].checked){
+						var $parent = $(checkBoxArr[i]).parent().parent().parent();
+						var price = Number($parent.find(".price-now").text());//å•ä»·
+						var num = Number($parent.find(".text_box").val());
+						allNum += num;
+						allPrice += price*num;
+						//alert("å•ä»·ï¼š"+price+",,æ•°é‡ï¼š"+num);
+						
+					}
+				}
+				
+				$("#J_SelectedItemsCount").text(allNum);
+				$("#J_Total").text(allPrice);
+				
+			}
+			
+			function selectAll(t){
+			
+				var checkBoxArr = $(".check");
+				if(t.checked){
+					for(i=0;i<checkBoxArr.size()-1;i++){
+						//alert(checkBoxArr[i].checked);
+						checkBoxArr[i].checked=true;
+					}
+				}else{
+					for(i=0;i<checkBoxArr.size()-1;i++){
+						//alert(checkBoxArr[i].checked);
+						checkBoxArr[i].checked=false;
+					}
+				}
+				caculatorAll();
+				
+			}
+		</script>
 
 	</head>
 
 	<body>
 
-		<!--¶¥²¿µ¼º½Ìõ -->
+		<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
 		<div class="am-container header">
 			<ul class="message-l">
 				<div class="topMessage">
 					<div class="menu-hd">
-						<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
-						<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
+						<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
+						<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
 					</div>
 				</div>
 			</ul>
 			<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸé¦–é¡µ</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖĞĞÄ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ğ</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
 						</ul>
 			</div>
 
-			<!--Ğü¸¡ËÑË÷¿ò-->
+			<!--æ‚¬æµ®æœç´¢æ¡†-->
 
 			<div class="nav white">
 				<div class="logo"><img src="images/logo.png" /></div>
@@ -55,15 +149,15 @@
 				<div class="search-bar pr">
 					<a name="index_none_header_sysc" href="#"></a>
 					<form>
-						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
-						<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
+						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
+						<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
 					</form>
 				</div>
 			</div>
 
 			<div class="clear"></div>
 
-			<!--¹ºÎï³µ -->
+			<!--è´­ç‰©è½¦ -->
 			<div class="concent">
 				<div id="cartTable">
 					<div class="cart-table-th">
@@ -74,19 +168,19 @@
 								</div>
 							</div>
 							<div class="th th-item">
-								<div class="td-inner">ÉÌÆ·ĞÅÏ¢</div>
+								<div class="td-inner">å•†å“ä¿¡æ¯</div>
 							</div>
 							<div class="th th-price">
-								<div class="td-inner">µ¥¼Û</div>
+								<div class="td-inner">å•ä»·</div>
 							</div>
 							<div class="th th-amount">
-								<div class="td-inner">ÊıÁ¿</div>
+								<div class="td-inner">æ•°é‡</div>
 							</div>
 							<div class="th th-sum">
-								<div class="td-inner">½ğ¶î</div>
+								<div class="td-inner">é‡‘é¢</div>
 							</div>
 							<div class="th th-op">
-								<div class="td-inner">²Ù×÷</div>
+								<div class="td-inner">æ“ä½œ</div>
 							</div>
 						</div>
 					</div>
@@ -96,38 +190,41 @@
 						<div class="bundle  bundle-last ">
 							<div class="bundle-hd">
 								<div class="bd-promos">
-									<div class="bd-has-promo">ÒÑÏíÓÅ»İ:<span class="bd-has-promo-content">Ê¡£¤19.50</span>&nbsp;&nbsp;</div>
+									<div class="bd-has-promo">å·²äº«ä¼˜æƒ :<span class="bd-has-promo-content">çœï¿¥19.50</span>&nbsp;&nbsp;</div>
 									<div class="act-promo">
-										<a href="#" target="_blank">µÚ¶şÖ§°ë¼Û£¬µÚÈıÖ§Ãâ·Ñ<span class="gt">&gt;&gt;</span></a>
+										<a href="#" target="_blank">ç¬¬äºŒæ”¯åŠä»·ï¼Œç¬¬ä¸‰æ”¯å…è´¹<span class="gt">&gt;&gt;</span></a>
 									</div>
-									<span class="list-change theme-login">±à¼­</span>
+									<span class="list-change theme-login">ç¼–è¾‘</span>
 								</div>
 							</div>
 							<div class="clear"></div>
 							<div class="bundle-main">
+							<c:forEach items="${requestScope.shopCardList}" var="shopCard">
+							
+							
 								<ul class="item-content clearfix">
 									<li class="td td-chk">
 										<div class="cart-checkbox ">
-											<input class="check" id="J_CheckBox_170037950254" name="items[]" value="170037950254" type="checkbox">
+											<input class="check" id="J_CheckBox_170037950254" onchange="doChange(this);"  name="items[]" value="170037950254" type="checkbox">
 											<label for="J_CheckBox_170037950254"></label>
 										</div>
 									</li>
 									<li class="td td-item">
 										<div class="item-pic">
-											<a href="#" target="_blank" data-title="ÃÀ¿µ·Û÷ì×íÃÀ¶«·½´½¸à¿ÚºìÕıÆ· ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«»¤´½²Ê×±" class="J_MakePoint" data-point="tbcart.8.12">
+											<a href="#" target="_blank" data-title="ç¾åº·ç²‰é»›é†‰ç¾ä¸œæ–¹å”‡è†å£çº¢æ­£å“ æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æ‰è‰²æŠ¤å”‡å½©å¦†" class="J_MakePoint" data-point="tbcart.8.12">
 												<img src="images/kouhong.jpg_80x80.jpg" class="itempic J_ItemImg"></a>
 										</div>
 										<div class="item-info">
 											<div class="item-basic-info">
-												<a href="#" target="_blank" title="ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«" class="item-title J_MakePoint" data-point="tbcart.8.11">ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</a>
+												<a href="#" target="_blank" title="ç¾åº·ç²‰é»›é†‰ç¾å”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æ‰è‰²" class="item-title J_MakePoint" data-point="tbcart.8.11">ç¾åº·ç²‰é»›é†‰ç¾å”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æ‰è‰²</a>
 											</div>
 										</div>
 									</li>
 									<li class="td td-info">
 										<div class="item-props item-props-can">
-											<span class="sku-line">ÑÕÉ«£º12#´¨ÄÏÂêè§</span>
-											<span class="sku-line">°ü×°£ºÂã×°</span>
-											<span tabindex="0" class="btn-edit-sku theme-login">ĞŞ¸Ä</span>
+											<span class="sku-line">é¢œè‰²ï¼š12#å·å—ç›ç‘™</span>
+											<span class="sku-line">åŒ…è£…ï¼šè£¸è£…</span>
+											<span tabindex="0" class="btn-edit-sku theme-login">ä¿®æ”¹</span>
 											<i class="theme-login am-icon-sort-desc"></i>
 										</div>
 									</li>
@@ -138,7 +235,7 @@
 													<em class="price-original">78.00</em>
 												</div>
 												<div class="price-line">
-													<em class="J_Price price-now" tabindex="0">39.00</em>
+													<em class="J_Price price-now" tabindex="0">${shopCard.shopcard_price}</em>
 												</div>
 											</div>
 										</div>
@@ -147,54 +244,54 @@
 										<div class="amount-wrapper ">
 											<div class="item-amount ">
 												<div class="sl">
-													<input class="min am-btn" name="" type="button" value="-" />
-													<input class="text_box" name="" type="text" value="3" style="width:30px;" />
-													<input class="add am-btn" name="" type="button" value="+" />
+													<input class="am-btn" name="" onclick="reduceNumber(this)" type="button" value="-" />
+													<input class="text_box" name="" onkeyup="changeNumber(this)" type="text" value="${shopCard.shopcard_num }" style="width:30px;" />
+													<input class="am-btn" name="" onclick="addNumber(this)" type="button" value="+" />
 												</div>
 											</div>
 										</div>
 									</li>
 									<li class="td td-sum">
 										<div class="td-inner">
-											<em tabindex="0" class="J_ItemSum number">117.00</em>
+											<em tabindex="0" class="J_ItemSum number all_price">${shopCard.shopcard_price * shopCard.shopcard_num }</em>
 										</div>
 									</li>
 									<li class="td td-op">
 										<div class="td-inner">
-											<a title="ÒÆÈëÊÕ²Ø¼Ğ" class="btn-fav" href="#">
-                  ÒÆÈëÊÕ²Ø¼Ğ</a>
+											<a title="ç§»å…¥æ”¶è—å¤¹" class="btn-fav" href="#">
+                  ç§»å…¥æ”¶è—å¤¹</a>
 											<a href="javascript:;" data-point-url="#" class="delete">
-                  É¾³ı</a>
+                  åˆ é™¤</a>
 										</div>
 									</li>
 								</ul>
-								
+							</c:forEach>	
 								
 								
 								
 								<ul class="item-content clearfix">
 									<li class="td td-chk">
 										<div class="cart-checkbox ">
-											<input class="check" id="J_CheckBox_170037950254" name="items[]" value="170037950254" type="checkbox">
+											<input class="check" id="J_CheckBox_170037950254" onchange="doChange(this);"  name="items[]" value="170037950254" type="checkbox">
 											<label for="J_CheckBox_170037950254"></label>
 										</div>
 									</li>
 									<li class="td td-item">
 										<div class="item-pic">
-											<a href="#" target="_blank" data-title="ÃÀ¿µ·Û÷ì×íÃÀ¶«·½´½¸à¿ÚºìÕıÆ· ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«»¤´½²Ê×±" class="J_MakePoint" data-point="tbcart.8.12">
+											<a href="#" target="_blank" data-title="ç¾åº·ç²‰é»›é†‰ç¾ä¸œæ–¹å”‡è†å£çº¢æ­£å“ æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æ‰è‰²æŠ¤å”‡å½©å¦†" class="J_MakePoint" data-point="tbcart.8.12">
 												<img src="images/kouhong.jpg_80x80.jpg" class="itempic J_ItemImg"></a>
 										</div>
 										<div class="item-info">
 											<div class="item-basic-info">
-												<a href="#" target="_blank" title="ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«" class="item-title J_MakePoint" data-point="tbcart.8.11">ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</a>
+												<a href="#" target="_blank" title="ç¾åº·ç²‰é»›é†‰ç¾å”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æ‰è‰²" class="item-title J_MakePoint" data-point="tbcart.8.11">ç¾åº·ç²‰é»›é†‰ç¾å”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æ‰è‰²</a>
 											</div>
 										</div>
 									</li>
 									<li class="td td-info">
 										<div class="item-props item-props-can">
-											<span class="sku-line">ÑÕÉ«£º12#´¨ÄÏÂêè§</span>
-											<span class="sku-line">°ü×°£ºÂã×°</span>
-											<span tabindex="0" class="btn-edit-sku theme-login">ĞŞ¸Ä</span>
+											<span class="sku-line">é¢œè‰²ï¼š12#å·å—ç›ç‘™</span>
+											<span class="sku-line">åŒ…è£…ï¼šè£¸è£…</span>
+											<span tabindex="0" class="btn-edit-sku theme-login">ä¿®æ”¹</span>
 											<i class="theme-login am-icon-sort-desc"></i>
 										</div>
 									</li>
@@ -214,24 +311,24 @@
 										<div class="amount-wrapper ">
 											<div class="item-amount ">
 												<div class="sl">
-													<input class="min am-btn" name="" type="button" value="-" />
-													<input class="text_box" name="" type="text" value="3" style="width:30px;" />
-													<input class="add am-btn" name="" type="button" value="+" />
+													<input class="am-btn" name="" onclick="reduceNumber(this)" type="button" value="-" />
+													<input class="text_box" name="" onkeyup="changeNumber(this)" type="text" value="3" style="width:30px;" />
+													<input class="am-btn" name="" onclick="addNumber(this)" type="button" value="+" />
 												</div>
 											</div>
 										</div>
 									</li>
 									<li class="td td-sum">
 										<div class="td-inner">
-											<em tabindex="0" class="J_ItemSum number">117.00</em>
+											<em tabindex="0" class="J_ItemSum all_price">117.00</em>
 										</div>
 									</li>
 									<li class="td td-op">
 										<div class="td-inner">
-											<a title="ÒÆÈëÊÕ²Ø¼Ğ" class="btn-fav" href="#">
-                  ÒÆÈëÊÕ²Ø¼Ğ</a>
+											<a title="ç§»å…¥æ”¶è—å¤¹" class="btn-fav" href="#">
+                  ç§»å…¥æ”¶è—å¤¹</a>
 											<a href="javascript:;" data-point-url="#" class="delete">
-                  É¾³ı</a>
+                  åˆ é™¤</a>
 										</div>
 									</li>
 								</ul>
@@ -248,11 +345,11 @@
 						<div class="bundle  bundle-last ">
 							<div class="bundle-hd">
 								<div class="bd-promos">
-									<div class="bd-has-promo">ÒÑÏíÓÅ»İ:<span class="bd-has-promo-content">Ê¡£¤19.50</span>&nbsp;&nbsp;</div>
+									<div class="bd-has-promo">å·²äº«ä¼˜æƒ :<span class="bd-has-promo-content">çœï¿¥19.50</span>&nbsp;&nbsp;</div>
 									<div class="act-promo">
-										<a href="#" target="_blank">µÚ¶şÖ§°ë¼Û£¬µÚÈıÖ§Ãâ·Ñ<span class="gt">&gt;&gt;</span></a>
+										<a href="#" target="_blank">ç¬¬äºŒæ”¯åŠä»·ï¼Œç¬¬ä¸‰æ”¯å…è´¹<span class="gt">&gt;&gt;</span></a>
 									</div>
-									<span class="list-change theme-login">±à¼­</span>
+									<span class="list-change theme-login">ç¼–è¾‘</span>
 								</div>
 							</div>
 							<div class="clear"></div>
@@ -260,26 +357,26 @@
 								<ul class="item-content clearfix">
 									<li class="td td-chk">
 										<div class="cart-checkbox ">
-											<input class="check" id="J_CheckBox_170769542747" name="items[]" value="170769542747" type="checkbox">
+											<input class="check" id="J_CheckBox_170769542747" onchange="doChange(this);"  name="items[]" value="170769542747" type="checkbox">
 											<label for="J_CheckBox_170769542747"></label>
 										</div>
 									</li>
 									<li class="td td-item">
 										<div class="item-pic">
-											<a href="#" target="_blank" data-title="ÃÀ¿µ·Û÷ì×íÃÀ¶«·½´½¸à¿ÚºìÕıÆ· ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«»¤´½²Ê×±" class="J_MakePoint" data-point="tbcart.8.12">
+											<a href="#" target="_blank" data-title="ç¾åº·ç²‰é»›é†‰ç¾ä¸œæ–¹å”‡è†å£çº¢æ­£å“ æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æ‰è‰²æŠ¤å”‡å½©å¦†" class="J_MakePoint" data-point="tbcart.8.12">
 												<img src="images/kouhong.jpg_80x80.jpg" class="itempic J_ItemImg"></a>
 										</div>
 										<div class="item-info">
 											<div class="item-basic-info">
-												<a href="#" target="_blank" title="ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«" class="item-title J_MakePoint" data-point="tbcart.8.11">ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</a>
+												<a href="#" target="_blank" title="ç¾åº·ç²‰é»›é†‰ç¾å”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æ‰è‰²" class="item-title J_MakePoint" data-point="tbcart.8.11">ç¾åº·ç²‰é»›é†‰ç¾å”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æ‰è‰²</a>
 											</div>
 										</div>
 									</li>
 									<li class="td td-info">
 										<div class="item-props item-props-can">
-											<span class="sku-line">ÑÕÉ«£º10#ÃÛéÙÉ«</span>
-											<span class="sku-line">°ü×°£ºÁ½Ö§ÊÖ´ü×°£¨ËÍ²Ê´ø£©</span>
-											<span tabindex="0" class="btn-edit-sku theme-login">ĞŞ¸Ä</span>
+											<span class="sku-line">é¢œè‰²ï¼š10#èœœæ©˜è‰²</span>
+											<span class="sku-line">åŒ…è£…ï¼šä¸¤æ”¯æ‰‹è¢‹è£…ï¼ˆé€å½©å¸¦ï¼‰</span>
+											<span tabindex="0" class="btn-edit-sku theme-login">ä¿®æ”¹</span>
 											<i class="theme-login am-icon-sort-desc"></i>
 										</div>
 									</li>
@@ -299,24 +396,24 @@
 										<div class="amount-wrapper ">
 											<div class="item-amount ">
 												<div class="sl">
-													<input class="min am-btn" name="" type="button" value="-" />
-													<input class="text_box" name="" type="text" value="3" style="width:30px;" />
-													<input class="add am-btn" name="" type="button" value="+" />
+													<input class="am-btn" name="" onclick="reduceNumber(this)" type="button" value="-" />
+													<input class="text_box" name="" onkeyup="changeNumber(this)" type="text" value="3" style="width:30px;" />
+													<input class="am-btn" name="" onclick="addNumber(this)" type="button" value="+" />
 												</div>
 											</div>
 										</div>
 									</li>
 									<li class="td td-sum">
 										<div class="td-inner">
-											<em tabindex="0" class="J_ItemSum number">117.00</em>
+											<em tabindex="0" class="J_ItemSum number all_price">117.00</em>
 										</div>
 									</li>
 									<li class="td td-op">
 										<div class="td-inner">
-											<a title="ÒÆÈëÊÕ²Ø¼Ğ" class="btn-fav" href="#">
-                  ÒÆÈëÊÕ²Ø¼Ğ</a>
+											<a title="ç§»å…¥æ”¶è—å¤¹" class="btn-fav" href="#">
+                  ç§»å…¥æ”¶è—å¤¹</a>
 											<a href="javascript:;" data-point-url="#" class="delete">
-                  É¾³ı</a>
+                  åˆ é™¤</a>
 										</div>
 									</li>
 								</ul>
@@ -329,31 +426,31 @@
 				<div class="float-bar-wrapper">
 					<div id="J_SelectAll2" class="select-all J_SelectAll">
 						<div class="cart-checkbox">
-							<input class="check-all check" id="J_SelectAllCbx2" name="select-all" value="true" type="checkbox">
+							<input class="check-all check" id="J_SelectAllCbx2" onchange="selectAll(this)" name="select-all" value="true" type="checkbox">
 							<label for="J_SelectAllCbx2"></label>
 						</div>
-						<span>È«Ñ¡</span>
+						<span>å…¨é€‰</span>
 					</div>
 					<div class="operations">
-						<a href="#" hidefocus="true" class="deleteAll">É¾³ı</a>
-						<a href="#" hidefocus="true" class="J_BatchFav">ÒÆÈëÊÕ²Ø¼Ğ</a>
+						<a href="#" hidefocus="true" class="deleteAll">åˆ é™¤</a>
+						<a href="#" hidefocus="true" class="J_BatchFav">ç§»å…¥æ”¶è—å¤¹</a>
 					</div>
 					<div class="float-bar-right">
 						<div class="amount-sum">
-							<span class="txt">ÒÑÑ¡ÉÌÆ·</span>
-							<em id="J_SelectedItemsCount">0</em><span class="txt">¼ş</span>
+							<span class="txt">å·²é€‰å•†å“</span>
+							<em id="J_SelectedItemsCount">0</em><span class="txt">ä»¶</span>
 							<div class="arrow-box">
 								<span class="selected-items-arrow"></span>
 								<span class="arrow"></span>
 							</div>
 						</div>
 						<div class="price-sum">
-							<span class="txt">ºÏ¼Æ:</span>
-							<strong class="price">0„6<em id="J_Total">0.00</em></strong>
+							<span class="txt">åˆè®¡:</span>
+							<strong class="price">Â¥<em id="J_Total" >0.00</em></strong>
 						</div>
 						<div class="btn-area">
-							<a href="pay.jsp" id="J_Go" class="submit-btn submit-btn-disabled" aria-label="Çë×¢ÒâÈç¹ûÃ»ÓĞÑ¡Ôñ±¦±´£¬½«ÎŞ·¨½áËã">
-								<span>½á&nbsp;Ëã</span></a>
+							<a href="pay.jsp" id="J_Go" class="submit-btn submit-btn-disabled" aria-label="è¯·æ³¨æ„å¦‚æœæ²¡æœ‰é€‰æ‹©å®è´ï¼Œå°†æ— æ³•ç»“ç®—">
+								<span>ç»“&nbsp;ç®—</span></a>
 						</div>
 					</div>
 
@@ -361,30 +458,30 @@
 
 				<div id="footer">
 			<div id="links">
-				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
-				<a href="">ÁªÏµÎÒÃÇ</a>|
-				<a href="">ÈË²ÅÕĞÆ¸</a>|
-				<a href="">ÉÌ¼ÒÈë×¤</a>|
-				<a href="">¹ã¸æ·şÎñ</a>|
-				<a href="">ÓÑÇéÁ´½Ó</a>|
-				<a href="">ÏúÊÛÁªÃË</a>|
+				<a href=""> å…³äºæˆ‘ä»¬</a>|
+				<a href="">è”ç³»æˆ‘ä»¬</a>|
+				<a href="">äººæ‰æ‹›è˜</a>|
+				<a href="">å•†å®¶å…¥é©»</a>|
+				<a href="">å¹¿å‘ŠæœåŠ¡</a>|
+				<a href="">å‹æƒ…é“¾æ¥</a>|
+				<a href="">é”€å”®è”ç›Ÿ</a>|
 				<a href="">English Site</a>
 			</div>
 			<div style="color: #999;">
-				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓĞ
+				CopyrightÂ©2004-2018&nbsp;&nbsp;&nbsp;ç‰ˆæƒæ‰€æœ‰
 			</div>
 		</div>
 
 			</div>
 
-			<!--²Ù×÷Ò³Ãæ-->
+			<!--æ“ä½œé¡µé¢-->
 
 			<div class="theme-popover-mask"></div>
 
 			<div class="theme-popover">
 				<div class="theme-span"></div>
 				<div class="theme-poptit h-title">
-					<a href="javascript:;" title="¹Ø±Õ" class="close">¡Á</a>
+					<a href="javascript:;" title="å…³é—­" class="close">Ã—</a>
 				</div>
 				<div class="theme-popbod dform">
 					<form class="theme-signin" name="loginform" action="" method="post">
@@ -392,33 +489,33 @@
 						<div class="theme-signin-left">
 
 							<li class="theme-options">
-								<div class="cart-title">ÑÕÉ«£º</div>
+								<div class="cart-title">é¢œè‰²ï¼š</div>
 								<ul>
-									<li class="sku-line selected">12#´¨ÄÏÂêè§<i></i></li>
-									<li class="sku-line">10#ÃÛéÙÉ«+17#Ó£»¨·Û<i></i></li>
+									<li class="sku-line selected">12#å·å—ç›ç‘™<i></i></li>
+									<li class="sku-line">10#èœœæ©˜è‰²+17#æ¨±èŠ±ç²‰<i></i></li>
 								</ul>
 							</li>
 							<li class="theme-options">
-								<div class="cart-title">°ü×°£º</div>
+								<div class="cart-title">åŒ…è£…ï¼š</div>
 								<ul>
-									<li class="sku-line selected">°ü×°£ºÂã×°<i></i></li>
-									<li class="sku-line">Á½Ö§ÊÖ´ü×°£¨ËÍ²Ê´ø£©<i></i></li>
+									<li class="sku-line selected">åŒ…è£…ï¼šè£¸è£…<i></i></li>
+									<li class="sku-line">ä¸¤æ”¯æ‰‹è¢‹è£…ï¼ˆé€å½©å¸¦ï¼‰<i></i></li>
 								</ul>
 							</li>
 							<div class="theme-options">
-								<div class="cart-title number">ÊıÁ¿</div>
+								<div class="cart-title number">æ•°é‡</div>
 								<dd>
 									<input class="min am-btn am-btn-default" name="" type="button" value="-" />
-									<input class="text_box" name="" type="text" value="1" style="width:30px;" />
+									<input class="text_box" name="" onkeyup="changeNumber(this)" type="text" value="1" style="width:30px;" />
 									<input class="add am-btn am-btn-default" name="" type="button" value="+" />
-									<span  class="tb-hidden">¿â´æ<span class="stock">1000</span>¼ş</span>
+									<span  class="tb-hidden">åº“å­˜<span class="stock">1000</span>ä»¶</span>
 								</dd>
 
 							</div>
 							<div class="clear"></div>
 							<div class="btn-op">
-								<div class="btn am-btn am-btn-warning">È·ÈÏ</div>
-								<div class="btn close am-btn am-btn-warning">È¡Ïû</div>
+								<div class="btn am-btn am-btn-warning">ç¡®è®¤</div>
+								<div class="btn close am-btn am-btn-warning">å–æ¶ˆ</div>
 							</div>
 
 						</div>
@@ -427,20 +524,20 @@
 								<img src="images/kouhong.jpg_80x80.jpg" />
 							</div>
 							<div class="text-info">
-								<span class="J_Price price-now">0„639.00</span>
-								<span id="Stock" class="tb-hidden">¿â´æ<span class="stock">1000</span>¼ş</span>
+								<span class="J_Price price-now">Â¥39.00</span>
+								<span id="Stock" class="tb-hidden">åº“å­˜<span class="stock">1000</span>ä»¶</span>
 							</div>
 						</div>
 
 					</form>
 				</div>
 			</div>
-		<!--Òıµ¼ -->
+		<!--å¼•å¯¼ -->
 		<div class="navCir">
-			<li><a href="home2.jsp"><i class="am-icon-home "></i>Ê×Ò³</a></li>
-			<li><a href="sort.jsp"><i class="am-icon-list"></i>·ÖÀà</a></li>
-			<li class="active"><a href="shopcart.jsp"><i class="am-icon-shopping-basket"></i>¹ºÎï³µ</a></li>	
-			<li><a href="../person/index.jsp"><i class="am-icon-user"></i>ÎÒµÄ</a></li>					
+			<li><a href="home2.jsp"><i class="am-icon-home "></i>é¦–é¡µ</a></li>
+			<li><a href="sort.jsp"><i class="am-icon-list"></i>åˆ†ç±»</a></li>
+			<li class="active"><a href="shopcart.jsp"><i class="am-icon-shopping-basket"></i>è´­ç‰©è½¦</a></li>	
+			<li><a href="../person/index.jsp"><i class="am-icon-user"></i>æˆ‘çš„</a></li>					
 		</div>
 	</body>
 
