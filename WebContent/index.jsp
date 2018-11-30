@@ -76,6 +76,7 @@
 					<li class="qc"><a href="#">限时抢</a></li>
 					<li class="qc"><a href="#">团购</a></li>
 					<li class="qc last"><a href="#">大包装</a></li>
+					<li class="qc last"><a href="studentInfoManage.jsp">用户评价</a></li>
 				</ul>
 				<div class="nav-extra">
 					<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>我的福利
@@ -207,7 +208,7 @@
 										<div class="price"><span class="sym">¥</span>23.<span class="sym">80</span></div>
 
 									</div>
-									<a href="javascript:void(0);" class="btnPay">再次购买</a>
+									<a href="youzi.jsp" class="btnPay">再次购买</a>
 								</div>
 
 								<div class="orderContentBox">
@@ -232,7 +233,7 @@
 										<div class="price"><span class="sym">¥</span>246.<span class="sym">50</span></div>
 
 									</div>
-									<a href="javascript:void(0);" class="btnPay">再次购买</a>
+									<a href="heart.jsp" class="btnPay">再次购买</a>
 								</div>
 							</div>
 							<!--九宫格-->
