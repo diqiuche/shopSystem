@@ -180,31 +180,28 @@
 														</a>
 													</div>
 												</li>											
-												<center>商品评价区</center>
-													<FORM action="addMessage.jsp" >
-													 <TABLE  border=1 align="center">
-													 <TR><TD>姓名：</TD><TD><input type="text" name="name" size=25>
-														</TD></TR>
-													 <TR><TD>E-mail：</TD>
-														<TD><input type="text" name="email" size=25></TD></TR>
-													 <TR><TD>购买物品：</TD>
-														<TD><input type="text" name="title" size=25></TD></TR>
-													   <TR><TD>评价：</TD>
-														<TD><textarea name="content" rows=7 cols=25></textarea>
-														</TD></TR>
-													   <TR><TD colspan=3>
-													<TABLE align="center" width="100%" cellspacing="0" cellpadding="0" >
-													   <TR>
-														 <TD align="center"><input type="submit" value="提交留言"></TD>
-													   <TD align="center">
-														<a href="viewMessages.jsp"><font size=2>查看留言</font></a></TD>
-													   <TD align="center"><input type="reset" value="重新填写"></TD>
-													   </TR></TABLE></TD>  </TR></TABLE></FORM></HTML>
 												
-													
-													
+												<li class="td td-comment">
+													<div class="item-title">
+														<div class="item-opinion">好评</div>
+														<div class="item-name">
+															<a href="#">
+																<p class="item-basic-info">美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
+															</a>
+														</div>
+													</div>
+													<div class="item-comment">
+														宝贝非常漂亮，超级喜欢！！！ 口红颜色很正呐，还有第两支半价，买三支免单一支的活动，下次还要来买。就是物流太慢了，还要我自己去取快递，店家不考虑换个物流么？
+													<div class="filePic"><img src="images/image.jpg" alt=""></div>	
+													</div>
 
-													
+													<div class="item-info">
+														<div>
+															<p class="info-little"><span>颜色：12#玛瑙</span> <span>包装：裸装</span> </p>
+															<p class="info-time">2015-12-24</p>
+
+														</div>
+													</div>
 												</li>
 
 											</ul>
