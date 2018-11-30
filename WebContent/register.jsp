@@ -37,15 +37,15 @@
 
 							<div class="am-tabs-bd">
 								<div class="am-tab-panel am-active">
-									<form method="post">
+									<form action = "/register.do?method=throughEmail" method="post" >
 										
 							   <div class="user-email">
 										<label for="email"><i class="am-icon-envelope-o"></i></label>
-										<input type="email" name="" id="email" placeholder="ÇëÊäÈëÓÊÏäÕËºÅ">
+										<input type="email" name="email" id="email" placeholder="ÇëÊäÈëÓÊÏäÕËºÅ">
                  </div>										
                  <div class="user-pass">
 								    <label for="password"><i class="am-icon-lock"></i></label>
-								    <input type="password" name="" id="password" placeholder="ÉèÖÃÃÜÂë">
+								    <input type="password" name="password" id="password" placeholder="ÉèÖÃÃÜÂë">
                  </div>										
                  <div class="user-pass">
 								    <label for="passwordRepeat"><i class="am-icon-lock"></i></label>
@@ -98,10 +98,25 @@
 									<hr>
 								</div>
 
+								
 								<script>
+								function sendMobileCode(){
+									var ajaxObject={
+										url:"${ctxPath}/sendCode.do",
+										type:"GET",
+										data:{
+											phone:document.getElementById("phone").value,
+										},
+										dataType:"text",
+										success:function(data){						
+										}
+									}
+									$.ajax(ajaxObject);
+								}
 									$(function() {
 									    $('#doc-my-tabs').tabs();
 									  })
+							
 								</script>
 
 							</div>
