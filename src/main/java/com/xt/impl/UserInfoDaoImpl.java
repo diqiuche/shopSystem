@@ -28,7 +28,7 @@ public class UserInfoDaoImpl implements IUserInfoDao{
 	 * @author 李岚祺
 	 */
 	@Override
-	public List<User> login(String userName, String password) {
+	public List<User> loginById(String userName, String password) {
 		String sql = "select * from user_info where id = '"+userName+"' and password = '"+password+"'";
 		try {
 			return qr.query(sql, new BeanListHandler<User>(User.class));
@@ -37,6 +37,28 @@ public class UserInfoDaoImpl implements IUserInfoDao{
 		}
 		return null;
 	}
+	
+	@Override
+	public List<User> loginByEmail(String userName, String password) {
+		String sql = "select * from user_info where email = '"+userName+"' and password = '"+password+"'";
+		try {
+			return qr.query(sql, new BeanListHandler<User>(User.class));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;
+	}
+
+	@Override
+	public List<User> loginByMobile(String userName, String password) {
+		String sql = "select * from user_info where phone = '"+userName+"' and password = '"+password+"'";
+		try {
+			return qr.query(sql, new BeanListHandler<User>(User.class));
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return null;	}
+	
 
 	/**
 	 * 实现依据用户名和密码和手机号注册抽象方法
@@ -101,4 +123,17 @@ public class UserInfoDaoImpl implements IUserInfoDao{
 			e.printStackTrace();
 		}
 	}
+
+	@Override
+	public void updataAddressInformation(String id, String name, String phone, String address, String detailAddress) {
+		String sql = "insert into user_info_address values('"+id+"', '"+name+"', '"+phone+"', '"+address+"', '"+detailAddress+"')";
+		System.out.println(sql);
+		try {
+			qr.update(sql);
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	
 }
