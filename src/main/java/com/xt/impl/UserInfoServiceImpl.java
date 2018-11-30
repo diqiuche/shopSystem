@@ -22,18 +22,8 @@ public class UserInfoServiceImpl implements IUserInfoService{
 	 * @author 李岚祺
 	 */
 	@Override
-	public List<User> loginById(String userName, String password) {
-		return UserInfoDaoImpl.loginById(userName, password);
-	}
-	
-	@Override
-	public List<User> loginByEmail(String userName, String password) {
-		return UserInfoDaoImpl.loginByEmail(userName, password);
-	}
-
-	@Override
-	public List<User> loginByMobile(String userName, String password) {
-		return UserInfoDaoImpl.loginByMobile(userName, password);
+	public List<User> login(String userName, String password) {
+		return UserInfoDaoImpl.login(userName, password);
 	}
 
 	/**
@@ -61,11 +51,5 @@ public class UserInfoServiceImpl implements IUserInfoService{
 			String phone) {
 		UserInfoDaoImpl.updateUserInformation(id, tempName, realName, sex, date, email, phone);
 	}
-
-	@Override
-	public void updataAddressInformation(String id, String name, String phone, String address, String detailAddress) {
-		UserInfoDaoImpl.updataAddressInformation(id, name, phone, address, detailAddress);
-	}
-
 	
 }
