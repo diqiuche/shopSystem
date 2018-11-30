@@ -10,7 +10,7 @@ public class  MessageBean {
 	 String userName="root"; //定义数据库用户名  
 	 String userPasswd="root"; //定义数据库存取密码  
 	 String dbName="message"; //定义数据库名  
-	 String conURL="jdbc:mysql://localhost:3306/db_studentinfo?useSSL=false";
+	 String conURL="jdbc:mysql://localhost:3306/mygoods";
 	 try{Class.forName(JDriver).newInstance(); //加载JDBC驱动程序
    con=DriverManager.getConnection(conURL,userName,userPasswd); 
 	//连接数据库
