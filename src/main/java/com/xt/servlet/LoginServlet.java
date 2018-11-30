@@ -1,7 +1,6 @@
 package com.xt.servlet;
 
 import java.io.IOException;
-import java.util.Enumeration;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -9,11 +8,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.junit.Test;
-
 import com.xt.common.BaseServlet;
 import com.xt.common.User;
 import com.xt.impl.UserInfoServiceImpl;
+import com.xt.util.ChechEmailAndMobile;
 
 @WebServlet(name = "LoginServlet", urlPatterns = {"/login.do"})
 public class LoginServlet extends BaseServlet{
@@ -37,14 +35,20 @@ public class LoginServlet extends BaseServlet{
 		if ("".equals(userName) || "".equals(password) || userName == null || password == null) {
 			msg = "用户名或密码不能为空";
 		} else {
-			List<User> list =  uis.login(userName, password);
+			List<User> list;
+			if (ChechEmailAndMobile.clickMail(userName)) {
+				list =  uis.loginByEmail(userName, password);
+			} else if (ChechEmailAndMobile.clickMobile(userName)) {
+				list =  uis.loginByMobile(userName, password);
+			} else {
+				list =  uis.loginById(userName, password);
+			}
 			if (!list.isEmpty()) {
 				System.out.println(list);
 				User user = (User) list.get(0);
 				if (user.getPassword().equals(password)) {
 					try {
-						//暂且保存用户的id号码
-						request.getSession().setAttribute("userName", userName);
+						request.getSession().setAttribute("userName", user.getId());
 						request.getRequestDispatcher("home3.jsp").forward(request, response);
 					} catch (ServletException e) {
 						e.printStackTrace();
@@ -53,6 +57,7 @@ public class LoginServlet extends BaseServlet{
 			} else {
 				msg = "用户名不存在或密码不正确";
 			}
+			
 		} 
 		if (!"".equals(msg)) {
 			request.removeAttribute("msg");
