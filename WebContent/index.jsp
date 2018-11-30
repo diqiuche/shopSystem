@@ -208,7 +208,7 @@
 										<div class="price"><span class="sym">¥</span>23.<span class="sym">80</span></div>
 
 									</div>
-									<a href="javascript:void(0);" class="btnPay">再次购买</a>
+									<a href="youzi.jsp" class="btnPay">再次购买</a>
 								</div>
 
 								<div class="orderContentBox">
@@ -233,7 +233,7 @@
 										<div class="price"><span class="sym">¥</span>246.<span class="sym">50</span></div>
 
 									</div>
-									<a href="javascript:void(0);" class="btnPay">再次购买</a>
+									<a href="heart.jsp" class="btnPay">再次购买</a>
 								</div>
 							</div>
 							<!--九宫格-->
