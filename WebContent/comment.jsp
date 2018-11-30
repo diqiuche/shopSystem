@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 
@@ -122,36 +123,41 @@
 														<td class="td-inner">商品</td>
 													</div>													
 												</div>
-												<li class="td td-item">
-													<div class="item-pic">
-														<a href="#" class="J_MakePoint">
-															<img src="images/kouhong.jpg_80x80.jpg" class="itempic">
-														</a>
-													</div>
-												</li>
-
-												<li class="td td-comment">
-													<div class="item-title">
-														<div class="item-opinion">好评</div>
-														<div class="item-name">
-															<a href="#">
-																<p class="item-basic-info">美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
+												
+											<c:forEach items="${requestScope.commentList}" var="comment">
+													
+														
+													
+													<li class="td td-item">
+														<div class="item-pic">
+															<a href="#" class="J_MakePoint">
+																<img src="images/kouhong.jpg_80x80.jpg" class="itempic">
 															</a>
 														</div>
-													</div>
-													<div class="item-comment">
-														宝贝非常漂亮，超级喜欢！！！ 口红颜色很正呐，还有第两支半价，买三支免单一支的活动，下次还要来买。就是物流太慢了，还要我自己去取快递，店家不考虑换个物流么？
-													</div>
+													</li>
 
-													<div class="item-info">
-														<div>
-															<p class="info-little"><span>颜色：12#玛瑙</span> <span>包装：裸装</span> </p>
-															<p class="info-time">2015-12-24</p>
-
+													<li class="td td-comment">
+														<div class="item-title">
+															<div class="item-opinion">好评</div>
+															<div class="item-name">
+																<a href="#">
+																	<p class="item-basic-info">${comment.name }</p>
+																</a>
+															</div>
 														</div>
-													</div>
-												</li>
-
+														<div class="item-comment">
+															${comment.title }
+														</div>
+	
+														<div class="item-info">
+															<div>
+																<p class="info-little"><span>颜色：12#玛瑙</span> <span>包装：裸装</span> </p>
+																<p class="info-time">2015-12-24</p>
+	
+															</div>
+														</div>
+													</li>
+												</c:forEach>
 											</ul>
 
 										</div>
