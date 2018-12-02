@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 
@@ -6,60 +7,84 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>µØÖ·¹ÜÀí</title>
+		<title>åœ°å€ç®¡ç†</title>
 
-		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
-		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css">
-		<link href="${pageContext.request.contextPath }/css/footer.css" rel="stylesheet" type="text/css">
-		<link href="${pageContext.request.contextPath }/css/personal.css" rel="stylesheet" type="text/css">
-		<link href="${pageContext.request.contextPath }/css/addstyle.css" rel="stylesheet" type="text/css">
-		<script src="${pageContext.request.contextPath }/js/jquery.min.js" type="text/javascript"></script>
-		<script src="${pageContext.request.contextPath }/js/amazeui.js"></script>
-		
+		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
+		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+
+		<link href="../css/personal.css" rel="stylesheet" type="text/css">
+		<link href="../css/addstyle.css" rel="stylesheet" type="text/css">
+		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js" type="text/javascript"></script>
+		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>
+
 	</head>
+	<script>
+		$(function(e){
+			$("#store").click(function(){
+				var nameValue = $("input[name='name']").val();
+				var phoneValue = $("input[name='phone']").val();
+				var addressValue = $(".am-form-content").find("option:selected").text();
+				var detailAddressValue = $("textarea[name='detailaddress']").val();
+				alert(nameValue+phoneValue+addressValue+detailAddressValue);
+				$.ajax({
+					type:"post",
+					url:"${ctxPath}/address.do",
+					data:{name:nameValue,phone:phoneValue,address:addressValue,detailaddress:detailAddressValue},
+					dataType:"json",
+					success:function(resdata){	
+						$("ul").append("<li class='user-addresslist'><span class='new-option-r'><i class='am-icon-check-circle'></i>è®¾ä¸ºé»˜è®¤</span><p class='new-tit new-p-re'><span class='new-txt'>"+resdata.name+"</span><span class='new-txt-rd2'>"+resdata.phone+"</span></p><div class='new-mu_l2a new-p-re'><p class='new-mu_l2cw'><span class='title'>åœ°å€ï¼š</span><span class='province'>"+resdata.province+"</span>çœ<span class='city'>"+resdata.city+"</span>å¸‚<span class='dist'>æ´ªå±±</span>åŒº<span class='street'>"+resdata.detailAddress+"</span></p></div><div class='new-addr-btn'><a href='#'><i class='am-icon-edit'></i>ç¼–è¾‘</a><span class='new-addr-bar'>|</span><a href='javascript:void(0);' onclick='delClick("+resdata.id+");'><i class='am-icon-trash'></i>åˆ é™¤</a></div></li>");
+					}
+				})
+			})
+		})
+		
+		function delClick(msg){
+			alert(msg);
+		}
+	</script>
 
 	<body>
-		<!--Í· -->
+		<!--å¤´ -->
 		<header>
 			<article>
 				<div class="mt-logo">
-					<!--¶¥²¿µ¼º½Ìõ -->
+					<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
 					<div class="am-container header">
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
-									<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
+									<a href="#" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
+									<a href="#" target="_top">å…è´¹æ³¨å†Œ</a>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
+								<div class="menu-hd"><a href="#" target="_top" class="h">å•†åŸé¦–é¡µ</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖĞĞÄ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ğ</span></a></div>
+								<div class="menu-hd"><a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
 						</ul>
 						</div>
 
-						<!--Ğü¸¡ËÑË÷¿ò-->
+						<!--æ‚¬æµ®æœç´¢æ¡†-->
 
 						<div class="nav white">
 							<div class="logoBig">
-								<li><img src="images/logobig.png" /></li>
+								<li><img src="../images/logobig.png" /></li>
 							</div>
 
 							<div class="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
-									<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
 								</form>
 							</div>
 						</div>
@@ -71,17 +96,17 @@
 		</header>
 
 		<div class="nav-table">
-			<div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
+			<div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
 			<div class="nav-cont">
 				<ul>
-					<li class="index"><a href="#">Ê×Ò³</a></li>
-					<li class="qc"><a href="#">ÉÁ¹º</a></li>
-					<li class="qc"><a href="#">ÏŞÊ±ÇÀ</a></li>
-					<li class="qc"><a href="#">ÍÅ¹º</a></li>
-					<li class="qc last"><a href="#">´ó°ü×°</a></li>
+					<li class="index"><a href="#">é¦–é¡µ</a></li>
+					<li class="qc"><a href="#">é—ªè´­</a></li>
+					<li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
+					<li class="qc"><a href="#">å›¢è´­</a></li>
+					<li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
 				</ul>
 				<div class="nav-extra">
-					<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
+					<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
 					<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 				</div>
 			</div>
@@ -93,85 +118,44 @@
 				<div class="main-wrap">
 
 					<div class="user-address">
-						<!--±êÌâ -->
+						<!--æ ‡é¢˜ -->
 						<div class="am-cf am-padding">
-							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">µØÖ·¹ÜÀí</strong> / <small>Address&nbsp;list</small></div>
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">åœ°å€ç®¡ç†</strong> / <small>Address&nbsp;list</small></div>
 						</div>
 						<hr/>
 						<ul class="am-avg-sm-1 am-avg-md-3 am-thumbnails">
 
 							<li class="user-addresslist defaultAddr">
-								<span class="new-option-r"><i class="am-icon-check-circle"></i>Ä¬ÈÏµØÖ·</span>
+								<span class="new-option-r"><i class="am-icon-check-circle"></i>é»˜è®¤åœ°å€</span>
 								<p class="new-tit new-p-re">
-									<span class="new-txt">Ğ¡¶£µ±</span>
+									<span class="new-txt">å°å®å½“</span>
 									<span class="new-txt-rd2">159****1622</span>
 								</p>
 								<div class="new-mu_l2a new-p-re">
 									<p class="new-mu_l2cw">
-										<span class="title">µØÖ·£º</span>
-										<span class="province">ºş±±</span>Ê¡
-										<span class="city">Îäºº</span>ÊĞ
-										<span class="dist">ºéÉ½</span>Çø
-										<span class="street">ĞÛ³ş´óµÀ666ºÅ(ÖĞÄÏ²Æ¾­Õş·¨´óÑ§)</span></p>
+										<span class="title">åœ°å€ï¼š</span>
+										<span class="province">æ¹–åŒ—</span>çœ
+										<span class="city">æ­¦æ±‰</span>å¸‚
+										<span class="dist">æ´ªå±±</span>åŒº
+										<span class="street">é›„æ¥šå¤§é“666å·(ä¸­å—è´¢ç»æ”¿æ³•å¤§å­¦)</span></p>
 								</div>
 								<div class="new-addr-btn">
-									<a href="#"><i class="am-icon-edit"></i>±à¼­</a>
+									<a href="#"><i class="am-icon-edit"></i>ç¼–è¾‘</a>
 									<span class="new-addr-bar">|</span>
-									<a href="javascript:void(0);" onclick="delClick(this);"><i class="am-icon-trash"></i>É¾³ı</a>
-								</div>
-							</li>
-
-							<li class="user-addresslist">
-								<span class="new-option-r"><i class="am-icon-check-circle"></i>ÉèÎªÄ¬ÈÏ</span>
-								<p class="new-tit new-p-re">
-									<span class="new-txt">Ğ¡¶£µ±</span>
-									<span class="new-txt-rd2">159****1622</span>
-								</p>
-								<div class="new-mu_l2a new-p-re">
-									<p class="new-mu_l2cw">
-										<span class="title">µØÖ·£º</span>
-										<span class="province">ºş±±</span>Ê¡
-										<span class="city">Îäºº</span>ÊĞ
-										<span class="dist">ºéÉ½</span>Çø
-										<span class="street">ĞÛ³ş´óµÀ666ºÅ(ÖĞÄÏ²Æ¾­Õş·¨´óÑ§)</span></p>
-								</div>
-								<div class="new-addr-btn">
-									<a href="#"><i class="am-icon-edit"></i>±à¼­</a>
-									<span class="new-addr-bar">|</span>
-									<a href="javascript:void(0);" onclick="delClick(this);"><i class="am-icon-trash"></i>É¾³ı</a>
-								</div>
-							</li>
-							<li class="user-addresslist">
-								<span class="new-option-r"><i class="am-icon-check-circle"></i>ÉèÎªÄ¬ÈÏ</span>
-								<p class="new-tit new-p-re">
-									<span class="new-txt">Ğ¡¶£µ±</span>
-									<span class="new-txt-rd2">159****1622</span>
-								</p>
-								<div class="new-mu_l2a new-p-re">
-									<p class="new-mu_l2cw">
-										<span class="title">µØÖ·£º</span>
-										<span class="province">ºş±±</span>Ê¡
-										<span class="city">Îäºº</span>ÊĞ
-										<span class="dist">ºéÉ½</span>Çø
-										<span class="street">ĞÛ³ş´óµÀ666ºÅ(ÖĞÄÏ²Æ¾­Õş·¨´óÑ§)</span></p>
-								</div>
-								<div class="new-addr-btn">
-									<a href="#"><i class="am-icon-edit"></i>±à¼­</a>
-									<span class="new-addr-bar">|</span>
-									<a href="javascript:void(0);" onclick="delClick(this);"><i class="am-icon-trash"></i>É¾³ı</a>
+									<a href="javascript:void(0);" onclick="delClick(this);"><i class="am-icon-trash"></i>åˆ é™¤</a>
 								</div>
 							</li>
 						</ul>
 						<div class="clear"></div>
-						<a class="new-abtn-type" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0}">Ìí¼ÓĞÂµØÖ·</a>
-						<!--Àı×Ó-->
+						<a class="new-abtn-type" data-am-modal="{target: '#doc-modal-1', closeViaDimmer: 0}">æ·»åŠ æ–°åœ°å€</a>
+						<!--ä¾‹å­-->
 						<div class="am-modal am-modal-no-btn" id="doc-modal-1">
 
 							<div class="add-dress">
 
-								<!--±êÌâ -->
+								<!--æ ‡é¢˜ -->
 								<div class="am-cf am-padding">
-									<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">ĞÂÔöµØÖ·</strong> / <small>Add&nbsp;address</small></div>
+									<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">æ–°å¢åœ°å€</strong> / <small>Add&nbsp;address</small></div>
 								</div>
 								<hr/>
 
@@ -179,48 +163,48 @@
 									<form class="am-form am-form-horizontal">
 
 										<div class="am-form-group">
-											<label for="user-name" class="am-form-label">ÊÕ»õÈË</label>
+											<label for="user-name" class="am-form-label">æ”¶è´§äºº</label>
 											<div class="am-form-content">
-												<input type="text" id="user-name" placeholder="ÊÕ»õÈË">
+												<input type="text" id="user-name" name="name" placeholder="æ”¶è´§äºº">
 											</div>
 										</div>
 
 										<div class="am-form-group">
-											<label for="user-phone" class="am-form-label">ÊÖ»úºÅÂë</label>
+											<label for="user-phone" class="am-form-label">æ‰‹æœºå·ç </label>
 											<div class="am-form-content">
-												<input id="user-phone" placeholder="ÊÖ»úºÅ±ØÌî" type="email">
+												<input id="user-phone" placeholder="æ‰‹æœºå·å¿…å¡«" name="phone" type="email">
 											</div>
 										</div>
 										<div class="am-form-group">
-											<label for="user-address" class="am-form-label">ËùÔÚµØ</label>
+											<label for="user-address" class="am-form-label">æ‰€åœ¨åœ°</label>
 											<div class="am-form-content address">
-												<select data-am-selected>
-													<option value="a">Õã½­Ê¡</option>
-													<option value="b" selected>ºş±±Ê¡</option>
+												<select data-am-selected >
+													<option value="a">æµ™æ±Ÿçœ</option>
+													<option value="b" selected>æ¹–åŒ—çœ</option>
 												</select>
-												<select data-am-selected>
-													<option value="a">ÎÂÖİÊĞ</option>
-													<option value="b" selected>ÎäººÊĞ</option>
+												<select data-am-selected >
+													<option value="a">æ¸©å·å¸‚</option>
+													<option value="b" selected>æ­¦æ±‰å¸‚</option>
 												</select>
-												<select data-am-selected>
-													<option value="a">Èğ°²Çø</option>
-													<option value="b" selected>ºéÉ½Çø</option>
+												<select data-am-selected >
+													<option value="a">ç‘å®‰åŒº</option>
+													<option value="b" selected>æ´ªå±±åŒº</option>
 												</select>
 											</div>
 										</div>
 
 										<div class="am-form-group">
-											<label for="user-intro" class="am-form-label">ÏêÏ¸µØÖ·</label>
+											<label for="user-intro" class="am-form-label">è¯¦ç»†åœ°å€</label>
 											<div class="am-form-content">
-												<textarea class="" rows="3" id="user-intro" placeholder="ÊäÈëÏêÏ¸µØÖ·"></textarea>
-												<small>100×ÖÒÔÄÚĞ´³öÄãµÄÏêÏ¸µØÖ·...</small>
+												<textarea name="detailaddress" class="" rows="3" id="user-intro" placeholder="è¾“å…¥è¯¦ç»†åœ°å€"></textarea>
+												<small>100å­—ä»¥å†…å†™å‡ºä½ çš„è¯¦ç»†åœ°å€...</small>
 											</div>
 										</div>
 
 										<div class="am-form-group">
 											<div class="am-u-sm-9 am-u-sm-push-3">
-												<a class="am-btn am-btn-danger">±£´æ</a>
-												<a href="javascript: void(0)" class="am-close am-btn am-btn-danger" data-am-modal-close>È¡Ïû</a>
+												<a class="am-btn am-btn-danger" id="store">ä¿å­˜</a>
+												<a href="javascript: void(0)" class="am-close am-btn am-btn-danger" data-am-modal-close>å–æ¶ˆ</a>
 											</div>
 										</div>
 									</form>
@@ -249,72 +233,79 @@
 					<div class="clear"></div>
 
 				</div>
-				<!--µ×²¿-->
-				<div id="footer">
-			<div id="links">
-				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
-				<a href="">ÁªÏµÎÒÃÇ</a>|
-				<a href="">ÈË²ÅÕĞÆ¸</a>|
-				<a href="">ÉÌ¼ÒÈë×¤</a>|
-				<a href="">¹ã¸æ·şÎñ</a>|
-				<a href="">ÓÑÇéÁ´½Ó</a>|
-				<a href="">ÏúÊÛÁªÃË</a>|
-				<a href="">English Site</a>
-			</div>
-			<div style="color: #999;">
-				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓĞ
-			</div>
-		</div>
+				<!--åº•éƒ¨-->
+				<div class="footer">
+					<div class="footer-hd">
+						<p>
+							<a href="#">æ’æœ›ç§‘æŠ€</a>
+							<b>|</b>
+							<a href="#">å•†åŸé¦–é¡µ</a>
+							<b>|</b>
+							<a href="#">æ”¯ä»˜å®</a>
+							<b>|</b>
+							<a href="#">ç‰©æµ</a>
+						</p>
+					</div>
+					<div class="footer-bd">
+						<p>
+							<a href="#">å…³äºæ’æœ›</a>
+							<a href="#">åˆä½œä¼™ä¼´</a>
+							<a href="#">è”ç³»æˆ‘ä»¬</a>
+							<a href="#">ç½‘ç«™åœ°å›¾</a>
+							<em>Â© 2015-2025 Hengwang.com ç‰ˆæƒæ‰€æœ‰. æ›´å¤šæ¨¡æ¿ <a href="http://www.cssmoban.com/" target="_blank" title="æ¨¡æ¿ä¹‹å®¶">æ¨¡æ¿ä¹‹å®¶</a> - Collect from <a href="http://www.cssmoban.com/" title="ç½‘é¡µæ¨¡æ¿" target="_blank">ç½‘é¡µæ¨¡æ¿</a></em>
+						</p>
+					</div>
+				</div>
 			</div>
 
 			<aside class="menu">
 				<ul>
 					<li class="person active">
-						<a href="index.jsp"><i class="am-icon-user"></i>¸öÈËÖĞĞÄ</a>
+						<a href="index.html"><i class="am-icon-user"></i>ä¸ªäººä¸­å¿ƒ</a>
 					</li>
 					<li class="person">
-						<p><i class="am-icon-newspaper-o"></i>¸öÈË×ÊÁÏ</p>
+						<p><i class="am-icon-newspaper-o"></i>ä¸ªäººèµ„æ–™</p>
 						<ul>
-							<li> <a href="information.jsp">¸öÈËĞÅÏ¢</a></li>
-							<li> <a href="safety.jsp">°²È«ÉèÖÃ</a></li>
-							<li> <a href="address.jsp">µØÖ·¹ÜÀí</a></li>
-							<li> <a href="cardlist.jsp">¿ì½İÖ§¸¶</a></li>
+							<li> <a href="information.html">ä¸ªäººä¿¡æ¯</a></li>
+							<li> <a href="safety.html">å®‰å…¨è®¾ç½®</a></li>
+							<li> <a href="address.html">åœ°å€ç®¡ç†</a></li>
+							<li> <a href="cardlist.html">å¿«æ·æ”¯ä»˜</a></li>
 						</ul>
 					</li>
 					<li class="person">
-						<p><i class="am-icon-balance-scale"></i>ÎÒµÄ½»Ò×</p>
+						<p><i class="am-icon-balance-scale"></i>æˆ‘çš„äº¤æ˜“</p>
 						<ul>
-							<li><a href="order.jsp">¶©µ¥¹ÜÀí</a></li>
-							<li> <a href="change.jsp">ÍË¿îÊÛºó</a></li>
-							<li> <a href="comment.jsp">ÆÀ¼ÛÉÌÆ·</a></li>
+							<li><a href="order.html">è®¢å•ç®¡ç†</a></li>
+							<li> <a href="change.html">é€€æ¬¾å”®å</a></li>
+							<li> <a href="comment.html">è¯„ä»·å•†å“</a></li>
 						</ul>
 					</li>
 					<li class="person">
-						<p><i class="am-icon-dollar"></i>ÎÒµÄ×Ê²ú</p>
+						<p><i class="am-icon-dollar"></i>æˆ‘çš„èµ„äº§</p>
 						<ul>
-							<li> <a href="points.jsp">ÎÒµÄ»ı·Ö</a></li>
-							<li> <a href="coupon.jsp">ÓÅ»İÈ¯ </a></li>
-							<li> <a href="bonus.jsp">ºì°ü</a></li>
-							<li> <a href="walletlist.jsp">ÕË»§Óà¶î</a></li>
-							<li> <a href="bill.jsp">ÕËµ¥Ã÷Ï¸</a></li>
-						</ul>
-					</li>
-
-					<li class="person">
-						<p><i class="am-icon-tags"></i>ÎÒµÄÊÕ²Ø</p>
-						<ul>
-							<li> <a href="collection.jsp">ÊÕ²Ø</a></li>
-							<li> <a href="foot.jsp">×ã¼£</a></li>														
+							<li> <a href="points.html">æˆ‘çš„ç§¯åˆ†</a></li>
+							<li> <a href="coupon.html">ä¼˜æƒ åˆ¸ </a></li>
+							<li> <a href="bonus.html">çº¢åŒ…</a></li>
+							<li> <a href="walletlist.html">è´¦æˆ·ä½™é¢</a></li>
+							<li> <a href="bill.html">è´¦å•æ˜ç»†</a></li>
 						</ul>
 					</li>
 
 					<li class="person">
-						<p><i class="am-icon-qq"></i>ÔÚÏß¿Í·ş</p>
+						<p><i class="am-icon-tags"></i>æˆ‘çš„æ”¶è—</p>
 						<ul>
-							<li> <a href="consultation.jsp">ÉÌÆ·×ÉÑ¯</a></li>
-							<li> <a href="suggest.jsp">Òâ¼û·´À¡</a></li>							
+							<li> <a href="collection.html">æ”¶è—</a></li>
+							<li> <a href="foot.html">è¶³è¿¹</a></li>														
+						</ul>
+					</li>
+
+					<li class="person">
+						<p><i class="am-icon-qq"></i>åœ¨çº¿å®¢æœ</p>
+						<ul>
+							<li> <a href="consultation.html">å•†å“å’¨è¯¢</a></li>
+							<li> <a href="suggest.html">æ„è§åé¦ˆ</a></li>							
 							
-							<li> <a href="news.jsp">ÎÒµÄÏûÏ¢</a></li>
+							<li> <a href="news.html">æˆ‘çš„æ¶ˆæ¯</a></li>
 						</ul>
 					</li>
 				</ul>
