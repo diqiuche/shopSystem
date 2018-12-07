@@ -2,14 +2,12 @@ package com.xt.servlet;
 
 import java.io.IOException;
 
-import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.xt.common.BaseServlet;
 import com.xt.impl.UserInfoServiceImpl;
-import com.xt.util.SMSUtils;
 import com.xt.util.SendEmaiUtil;
 
 @WebServlet(name = "RegisterServlet", urlPatterns = {"/register.do"})

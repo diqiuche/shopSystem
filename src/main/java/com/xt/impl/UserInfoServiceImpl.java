@@ -63,8 +63,8 @@ public class UserInfoServiceImpl implements IUserInfoService{
 	}
 
 	@Override
-	public void updataAddressInformation(String id, String name, String phone, String address, String detailAddress) {
-		UserInfoDaoImpl.updataAddressInformation(id, name, phone, address, detailAddress);
+	public void updataAddressInformation(String id, String name, String phone, String address, String detailAddress,int user_info_id) {
+		UserInfoDaoImpl.updataAddressInformation(id, name, phone, address, detailAddress,user_info_id);
 	}
 
 	

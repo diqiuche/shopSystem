@@ -17,7 +17,7 @@ import com.xt.dao.ShopCardDao;
 /**
  * Servlet implementation class ShopCardServlet
  */
-@WebServlet("/ShopCardServlet")
+
 public class ShopCardServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -32,8 +32,8 @@ public class ShopCardServlet extends HttpServlet {
 			System.out.println(path);
 			if("/load.shopCard".equals(path)) {
 				HttpSession session = request.getSession();
-				//int userId = (int)session.getAttribute("userName");
-				int userId = 1;
+				int userId = (int)session.getAttribute("userName");
+				//int userId = 1;
 				ShopCardDao shopCardDao = new ShopCardDao();
 				List<ShopCard>  shopCardList = shopCardDao.findAllShopCardByUserId(userId);
 				

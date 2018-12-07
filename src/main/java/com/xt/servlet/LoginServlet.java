@@ -13,7 +13,6 @@ import com.xt.common.User;
 import com.xt.impl.UserInfoServiceImpl;
 import com.xt.util.ChechEmailAndMobile;
 
-@WebServlet(name = "LoginServlet", urlPatterns = {"/login.do"})
 public class LoginServlet extends BaseServlet{
 	
 	static UserInfoServiceImpl uis = new UserInfoServiceImpl();
@@ -49,7 +48,7 @@ public class LoginServlet extends BaseServlet{
 				if (user.getPassword().equals(password)) {
 					try {
 						request.getSession().setAttribute("userName", user.getId());
-						request.getRequestDispatcher("home3.jsp").forward(request, response);
+						request.getRequestDispatcher("home2.jsp").forward(request, response);
 					} catch (ServletException e) {
 						e.printStackTrace();
 					}

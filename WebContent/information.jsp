@@ -9,13 +9,13 @@
 
 		<title>个人资料</title>
 
-		<link href="../AmazeUI-2.4.2/assets/css/admin.css" rel="stylesheet" type="text/css">
-		<link href="../AmazeUI-2.4.2/assets/css/amazeui.css" rel="stylesheet" type="text/css">
+		<link href="css/admin.css" rel="stylesheet" type="text/css">
+		<link href="css/amazeui.css" rel="stylesheet" type="text/css">
 
-		<link href="../css/personal.css" rel="stylesheet" type="text/css">
-		<link href="../css/infstyle.css" rel="stylesheet" type="text/css">
-		<script src="../AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
-		<script src="../AmazeUI-2.4.2/assets/js/amazeui.js"></script>			
+		<link href="css/personal.css" rel="stylesheet" type="text/css">
+		<link href="css/infstyle.css" rel="stylesheet" type="text/css">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/amazeui.js"></script>			
 	</head>
 	<body>
 		<!--头 -->
@@ -23,35 +23,13 @@
 			<article>
 				<div class="mt-logo">
 					<!--顶部导航条 -->
-					<div class="am-container header">
-						<ul class="message-l">
-							<div class="topMessage">
-								<div class="menu-hd">
-									<a href="../home/login.jsp" target="_top" class="h">亲，请登录</a>
-									<a href="../home/register.jsp" target="_top">免费注册</a>
-								</div>
-							</div>
-						</ul>
-						<ul class="message-r">
-							<div class="topMessage home">
-								<div class="menu-hd"><a href="#" target="_top" class="h">商城首页</a></div>
-							</div>
-							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="#" target="_top"><i class="am-icon-user am-icon-fw"></i>个人中心</a></div>
-							</div>
-							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="#" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>购物车</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
-							</div>
-							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="#" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>收藏夹</span></a></div>
-						</ul>
-						</div>
+						<%@ include file="nav.jsp" %>
 
 						<!--悬浮搜索框-->
 
 						<div class="nav white">
 							<div class="logoBig">
-								<li><img src="../images/logobig.png" /></li>
+								<li><img src="images/logobig.png" /></li>
 							</div>
 
 							<div class="search-bar pr">
@@ -101,7 +79,7 @@
 
 							<div class="filePic">
 								<input type="file" class="inputPic" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*">
-								<img class="am-circle am-img-thumbnail" src="../images/getAvatar.do.jpg" alt="" />
+								<img class="am-circle am-img-thumbnail" src="images/getAvatar.do.jpg" alt="" />
 							</div>
 
 							<p class="am-form-help">头像</p>
@@ -116,7 +94,7 @@
 
 						<!--个人信息 -->
 						<div class="info-main">
-							<form class="am-form am-form-horizontal" action = "../updateinformation.do" method = "post">
+							<form class="am-form am-form-horizontal" action = "updateinformation.do" method = "post">
 
 								<div class="am-form-group">
 									<label for="user-name2" class="am-form-label">昵称</label>
@@ -245,60 +223,7 @@
 					</div>
 				</div>
 			</div>
-
-			<aside class="menu">
-				<ul>
-					<li class="person active">
-						<a href="index.html"><i class="am-icon-user"></i>个人中心</a>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-newspaper-o"></i>个人资料</p>
-						<ul>
-							<li> <a href="information.html">个人信息</a></li>
-							<li> <a href="safety.html">安全设置</a></li>
-							<li> <a href="address.jsp">地址管理</a></li>
-							<li> <a href="cardlist.html">快捷支付</a></li>
-						</ul>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-balance-scale"></i>我的交易</p>
-						<ul>
-							<li><a href="order.html">订单管理</a></li>
-							<li> <a href="change.html">退款售后</a></li>
-							<li> <a href="comment.html">评价商品</a></li>
-						</ul>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-dollar"></i>我的资产</p>
-						<ul>
-							<li> <a href="points.html">我的积分</a></li>
-							<li> <a href="coupon.html">优惠券 </a></li>
-							<li> <a href="bonus.html">红包</a></li>
-							<li> <a href="walletlist.html">账户余额</a></li>
-							<li> <a href="bill.html">账单明细</a></li>
-						</ul>
-					</li>
-
-					<li class="person">
-						<p><i class="am-icon-tags"></i>我的收藏</p>
-						<ul>
-							<li> <a href="collection.html">收藏</a></li>
-							<li> <a href="foot.html">足迹</a></li>														
-						</ul>
-					</li>
-
-					<li class="person">
-						<p><i class="am-icon-qq"></i>在线客服</p>
-						<ul>
-							<li> <a href="consultation.html">商品咨询</a></li>
-							<li> <a href="suggest.html">意见反馈</a></li>							
-							
-							<li> <a href="news.html">我的消息</a></li>
-						</ul>
-					</li>
-				</ul>
-
-			</aside>
+			<%@ include file="menu.jsp" %>
 		</div>
 
 	</body>

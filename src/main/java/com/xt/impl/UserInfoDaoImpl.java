@@ -125,8 +125,8 @@ public class UserInfoDaoImpl implements IUserInfoDao{
 	}
 
 	@Override
-	public void updataAddressInformation(String id, String name, String phone, String address, String detailAddress) {
-		String sql = "insert into user_info_address values('"+id+"', '"+name+"', '"+phone+"', '"+address+"', '"+detailAddress+"')";
+	public void updataAddressInformation(String id, String name, String phone, String address, String detailAddress,int user_info_id) {
+		String sql = "insert into user_info_address values('"+id+"', '"+name+"', '"+phone+"', '"+address+"', '"+detailAddress+"', "+user_info_id+")";
 		System.out.println(sql);
 		try {
 			qr.update(sql);

@@ -12,19 +12,19 @@
 		<meta name="renderer" content="webkit">
 		<meta http-equiv="Cache-Control" content="no-siteapp" />
 
-		<link rel="stylesheet" href="${ctxPath}/AmazeUI-2.4.2/assets/css/amazeui.css" />
-		<link href="${ctxPath}/css/dlstyle.css" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" href="${pageContext.request.contextPath }/css/amazeui.css" />
+		<link href="${pageContext.request.contextPath }/css/dlstyle.css" rel="stylesheet" type="text/css">
 	</head>
 
 	<body>
 
 		<div class="login-boxtitle">
-			<a href="home.html"><img alt="logo" src="${ctxPath}/images/logobig.png" /></a>
+			<a href="home.html"><img alt="logo" src="images/logobig.png" /></a>
 		</div>
 
 		<div class="login-banner">
 			<div class="login-main">
-				<div class="login-banner-bg"><span></span><img src="${ctxPath}/images/big.jpg" /></div>
+				<div class="login-banner-bg"><span></span><img src="images/big.jpg" /></div>
 				<div class="login-box">
 
 							<h3 class="title">登录商城</h3>
@@ -32,7 +32,7 @@
 							<div class="clear"></div>
 						
 						<div class="login-form">
-						  <form action = "${ctxPath}/login.do" method = "post">
+						  <form action = "login" method = "post">
 							   <div class="user-name">
 								    <label for="user"><i class="am-icon-user"></i></label>
 								    <input type="text" name="userName" id="user" placeholder="邮箱/手机/用户名">

@@ -18,7 +18,7 @@ public class DBUtil {
 	private static final String MYSQL_URL = "jdbc:mysql://localhost:3306/mygoods";
 	private static final String MYSQL_DRIVER = "com.mysql.jdbc.Driver";
 	private static final String MYSQL_USERNAME = "root";
-	private static final String MYSQL_PASSWORD = "root";
+	private static final String MYSQL_PASSWORD = "yuankui1209";
 	
 	static {
 		druidDataSource = new DruidDataSource();

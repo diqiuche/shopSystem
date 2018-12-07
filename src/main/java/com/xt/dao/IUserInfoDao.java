@@ -39,5 +39,5 @@ public interface IUserInfoDao {
 	
 	void updateUserInformation(String id, String tempName, String realName, int sex, Timestamp date, String email, String phone);
 	
-	void updataAddressInformation(String id, String name, String phone, String address, String detailAddress);
+	void updataAddressInformation(String id, String name, String phone, String address, String detailAddress,int user_info_id);
 }
