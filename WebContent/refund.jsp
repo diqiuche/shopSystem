@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>ÍË»»»õ</title>
+		<title>é€€æ¢è´§</title>
 
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css">
@@ -20,36 +21,36 @@
 	</head>
 
 	<body>
-		<!--Í· -->
+		<!--å¤´ -->
 		<header>
 			<article>
 				<div class="mt-logo">
-					<!--¶¥²¿µ¼º½Ìõ -->
+					<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
 					<div class="am-container header">
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
-									<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
+									<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
+									<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
 						</ul>
 						</div>
 
-						<!--Ðü¸¡ËÑË÷¿ò-->
+						<!--æ‚¬æµ®æœç´¢æ¡†-->
 
 						<div class="nav white">
 							<div class="logoBig">
@@ -59,8 +60,8 @@
 							<div class="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
-									<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
 								</form>
 							</div>
 						</div>
@@ -71,17 +72,17 @@
 			</article>
 		</header>
             <div class="nav-table">
-					   <div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
+					   <div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">Ê×Ò³</a></li>
-                                <li class="qc"><a href="#">ÉÁ¹º</a></li>
-                                <li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
-                                <li class="qc"><a href="#">ÍÅ¹º</a></li>
-                                <li class="qc last"><a href="#">´ó°ü×°</a></li>
+								<li class="index"><a href="#">é¦–é¡µ</a></li>
+                                <li class="qc"><a href="#">é—ªè´­</a></li>
+                                <li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
+                                <li class="qc"><a href="#">å›¢è´­</a></li>
+                                <li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
 							</ul>
 						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
 						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 						    </div>
 						</div>
@@ -90,29 +91,29 @@
 		<div class="center">
 			<div class="col-main">
 				<div class="main-wrap">
-					<!--±êÌâ -->
+					<!--æ ‡é¢˜ -->
 					<div class="am-cf am-padding">
-						<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">ÍË»»»õÉêÇë</strong> / <small>Apply&nbsp;for&nbsp;returns</small></div>
+						<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">é€€æ¢è´§ç”³è¯·</strong> / <small>Apply&nbsp;for&nbsp;returns</small></div>
 					</div>
 					<hr/>
 					<div class="comment-list">
-					<!--½ø¶ÈÌõ-->
+					<!--è¿›åº¦æ¡-->
 					<div class="m-progress">
 						<div class="m-progress-list">
 							<span class="step-1 step">
                                 <em class="u-progress-stage-bg"></em>
                                 <i class="u-stage-icon-inner">1<em class="bg"></em></i>
-                                <p class="stage-name">Âò¼ÒÉêÇëÍË¿î</p>
+                                <p class="stage-name">ä¹°å®¶ç”³è¯·é€€æ¬¾</p>
                             </span>
 							<span class="step-2 step">
                                 <em class="u-progress-stage-bg"></em>
                                 <i class="u-stage-icon-inner">2<em class="bg"></em></i>
-                                <p class="stage-name">ÉÌ¼Ò´¦ÀíÍË¿îÉêÇë</p>
+                                <p class="stage-name">å•†å®¶å¤„ç†é€€æ¬¾ç”³è¯·</p>
                             </span>
 							<span class="step-3 step">
                                 <em class="u-progress-stage-bg"></em>
                                 <i class="u-stage-icon-inner">3<em class="bg"></em></i>
-                                <p class="stage-name">¿îÏî³É¹¦ÍË»Ø</p>
+                                <p class="stage-name">æ¬¾é¡¹æˆåŠŸé€€å›ž</p>
                             </span>                            
 							<span class="u-progress-placeholder"></span>
 						</div>
@@ -133,33 +134,33 @@
 
 								<div class="item-name">
 									<a href="#">
-										<p class="item-basic-info">ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+										<p class="item-basic-info">ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
 									</a>
 								</div>
 								<div class="info-little">
-									<span>ÑÕÉ«£ºÂåÑôÄµµ¤</span>
-									<span>°ü×°£ºÂã×°</span>
+									<span>é¢œè‰²ï¼šæ´›é˜³ç‰¡ä¸¹</span>
+									<span>åŒ…è£…ï¼šè£¸è£…</span>
 								</div>
 							</div>
 							<div class="item-info">
 								<div class="item-ordernumber">
-									<span class="info-title">¶©µ¥±àºÅ£º</span><a>1474784641639947</a>
+									<span class="info-title">è®¢å•ç¼–å·ï¼š</span><a>1474784641639947</a>
 								</div>
 								<div class="item-price">
-									<span class="info-title">¼Û&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¸ñ£º</span><span class="price">19.88Ôª</span>
-									<span class="number">¡Á1</span><span class="item-title">(ÊýÁ¿)</span>
+									<span class="info-title">ä»·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;æ ¼ï¼š</span><span class="price">19.88å…ƒ</span>
+									<span class="number">Ã—1</span><span class="item-title">(æ•°é‡)</span>
 								</div>
 								<div class="item-amount">
-									<span class="info-title">Ð¡&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¼Æ£º</span><span class="amount">19.88Ôª</span>
+									<span class="info-title">å°&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;è®¡ï¼š</span><span class="amount">19.88å…ƒ</span>
 								</div>
 								<div class="item-pay-logis">
-									<span class="info-title">ÔË&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·Ñ£º</span><span class="price">10.00Ôª</span>
+									<span class="info-title">è¿&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;è´¹ï¼š</span><span class="price">10.00å…ƒ</span>
 								</div>
 								<div class="item-amountall">
-									<span class="info-title">×Ü&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;¼Æ£º</span><span class="amountall">29.88Ôª</span>
+									<span class="info-title">æ€»&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;è®¡ï¼š</span><span class="amountall">29.88å…ƒ</span>
 								</div>
 								<div class="item-time">
-									<span class="info-title">³É½»Ê±¼ä£º</span><span class="time">2015-12-12&nbsp;17:07</span>
+									<span class="info-title">æˆäº¤æ—¶é—´ï¼š</span><span class="time">2015-12-12&nbsp;17:07</span>
 								</div>
 
 							</div>
@@ -169,128 +170,63 @@
 						<div class="refund-main">
 							<div class="item-comment">
 								<div class="am-form-group">
-									<label for="refund-type" class="am-form-label">ÍË¿îÀàÐÍ</label>
+									<label for="refund-type" class="am-form-label">é€€æ¬¾ç±»åž‹</label>
 									<div class="am-form-content">
 										<select data-am-selected="">
-											<option value="a" selected>½öÍË¿î</option>
-											<option value="b">ÍË¿î/ÍË»õ</option>
+											<option value="a" selected>ä»…é€€æ¬¾</option>
+											<option value="b">é€€æ¬¾/é€€è´§</option>
 										</select>
 									</div>
 								</div>
 								
 								<div class="am-form-group">
-									<label for="refund-reason" class="am-form-label">ÍË¿îÔ­Òò</label>
+									<label for="refund-reason" class="am-form-label">é€€æ¬¾åŽŸå› </label>
 									<div class="am-form-content">
 										<select data-am-selected="">
-											<option value="a" selected>ÇëÑ¡ÔñÍË¿îÔ­Òò</option>
-											<option value="b">²»ÏëÒªÁË</option>
-											<option value="c">Âò´íÁË</option>
-											<option value="d">Ã»ÊÕµ½»õ</option>											
-											<option value="e">ÓëËµÃ÷²»·û</option>
+											<option value="a" selected>è¯·é€‰æ‹©é€€æ¬¾åŽŸå› </option>
+											<option value="b">ä¸æƒ³è¦äº†</option>
+											<option value="c">ä¹°é”™äº†</option>
+											<option value="d">æ²¡æ”¶åˆ°è´§</option>											
+											<option value="e">ä¸Žè¯´æ˜Žä¸ç¬¦</option>
 										</select>
 									</div>
 								</div>
 
 								<div class="am-form-group">
-									<label for="refund-money" class="am-form-label">ÍË¿î½ð¶î<span>£¨²»¿ÉÐÞ¸Ä£©</span></label>
+									<label for="refund-money" class="am-form-label">é€€æ¬¾é‡‘é¢<span>ï¼ˆä¸å¯ä¿®æ”¹ï¼‰</span></label>
 									<div class="am-form-content">
 										<input type="text" id="refund-money" readonly="readonly" placeholder="19.88">
 									</div>
 								</div>
 								<div class="am-form-group">
-									<label for="refund-info" class="am-form-label">ÍË¿îËµÃ÷<span>£¨¿É²»Ìî£©</span></label>
+									<label for="refund-info" class="am-form-label">é€€æ¬¾è¯´æ˜Ž<span>ï¼ˆå¯ä¸å¡«ï¼‰</span></label>
 									<div class="am-form-content">
-										<textarea placeholder="ÇëÊäÈëÍË¿îËµÃ÷"></textarea>
+										<textarea placeholder="è¯·è¾“å…¥é€€æ¬¾è¯´æ˜Ž"></textarea>
 									</div>
 								</div>
 
 							</div>
 							<div class="refund-tip">
 								<div class="filePic">
-									<input type="file" class="inputPic" value="Ñ¡ÔñÆ¾Ö¤Í¼Æ¬" name="file" max="5" maxsize="5120" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*">
+									<input type="file" class="inputPic" value="é€‰æ‹©å‡­è¯å›¾ç‰‡" name="file" max="5" maxsize="5120" allowexts="gif,jpeg,jpg,png,bmp" accept="image/*">
 									<img src="images/image.jpg" alt="">
 								</div>
-								<span class="desc">ÉÏ´«Æ¾Ö¤&nbsp;×î¶àÈýÕÅ</span>
+								<span class="desc">ä¸Šä¼ å‡­è¯&nbsp;æœ€å¤šä¸‰å¼ </span>
 							</div>
 							<div class="info-btn">
-								<div class="am-btn am-btn-danger">Ìá½»ÉêÇë</div>
+								<div class="am-btn am-btn-danger">æäº¤ç”³è¯·</div>
 							</div>
 						</div>
 					</div>
 					<div class="clear"></div>
 				</div>
 
-				<!--µ×²¿-->
-				<div id="footer">
-			<div id="links">
-				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
-				<a href="">ÁªÏµÎÒÃÇ</a>|
-				<a href="">ÈË²ÅÕÐÆ¸</a>|
-				<a href="">ÉÌ¼ÒÈë×¤</a>|
-				<a href="">¹ã¸æ·þÎñ</a>|
-				<a href="">ÓÑÇéÁ´½Ó</a>|
-				<a href="">ÏúÊÛÁªÃË</a>|
-				<a href="">English Site</a>
-			</div>
-			<div style="color: #999;">
-				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
-			</div>
-		</div>
+				<!--åº•éƒ¨-->
+				<%@ include file="footer.jsp" %>
+
 			</div>
 
-			<aside class="menu">
-				<ul>
-					<li class="person active">
-						<a href="index.jsp"><i class="am-icon-user"></i>¸öÈËÖÐÐÄ</a>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-newspaper-o"></i>¸öÈË×ÊÁÏ</p>
-						<ul>
-							<li> <a href="information.jsp">¸öÈËÐÅÏ¢</a></li>
-							<li> <a href="safety.jsp">°²È«ÉèÖÃ</a></li>
-							<li> <a href="address.jsp">µØÖ·¹ÜÀí</a></li>
-							<li> <a href="cardlist.jsp">¿ì½ÝÖ§¸¶</a></li>
-						</ul>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-balance-scale"></i>ÎÒµÄ½»Ò×</p>
-						<ul>
-							<li><a href="order.jsp">¶©µ¥¹ÜÀí</a></li>
-							<li> <a href="change.jsp">ÍË¿îÊÛºó</a></li>
-							<li> <a href="comment.jsp">ÆÀ¼ÛÉÌÆ·</a></li>
-						</ul>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-dollar"></i>ÎÒµÄ×Ê²ú</p>
-						<ul>
-							<li> <a href="points.jsp">ÎÒµÄ»ý·Ö</a></li>
-							<li> <a href="coupon.jsp">ÓÅ»ÝÈ¯ </a></li>
-							<li> <a href="bonus.jsp">ºì°ü</a></li>
-							<li> <a href="walletlist.jsp">ÕË»§Óà¶î</a></li>
-							<li> <a href="bill.jsp">ÕËµ¥Ã÷Ï¸</a></li>
-						</ul>
-					</li>
-
-					<li class="person">
-						<p><i class="am-icon-tags"></i>ÎÒµÄÊÕ²Ø</p>
-						<ul>
-							<li> <a href="collection.jsp">ÊÕ²Ø</a></li>
-							<li> <a href="foot.jsp">×ã¼£</a></li>	
-						</ul>
-					</li>
-
-					<li class="person">
-						<p><i class="am-icon-qq"></i>ÔÚÏß¿Í·þ</p>
-						<ul>
-							<li> <a href="consultation.jsp">ÉÌÆ·×ÉÑ¯</a></li>
-							<li> <a href="suggest.jsp">Òâ¼û·´À¡</a></li>							
-							
-							<li> <a href="news.jsp">ÎÒµÄÏûÏ¢</a></li>
-						</ul>
-					</li>
-				</ul>
-
-			</aside>
+			<%@ include file="menu.jsp" %>
 		</div>
 
 	</body>

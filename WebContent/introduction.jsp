@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>ÉÌÆ·Ò³Ãæ</title>
+		<title>å•†å“é¡µé¢</title>
 
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css" />
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css" />
@@ -27,32 +28,32 @@
 	<body>
 
 
-		<!--¶¥²¿µ¼º½Ìõ -->
+		<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
 		<div class="am-container header">
 			<ul class="message-l">
 				<div class="topMessage">
 					<div class="menu-hd">
-						<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
-						<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
+						<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
+						<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
 					</div>
 				</div>
 			</ul>
 			<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
 						</ul>
 			</div>
 
-			<!--Ðü¸¡ËÑË÷¿ò-->
+			<!--æ‚¬æµ®æœç´¢æ¡†-->
 
 			<div class="nav white">
 				<div class="logo"><img src="images/logo.png" /></div>
@@ -62,8 +63,8 @@
 				<div class="search-bar pr">
 					<a name="index_none_header_sysc" href="#"></a>
 					<form>
-						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
-						<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
+						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
+						<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
 					</form>
 				</div>
 			</div>
@@ -72,27 +73,27 @@
             <b class="line"></b>
 			<div class="listMain">
 
-				<!--·ÖÀà-->
+				<!--åˆ†ç±»-->
 			<div class="nav-table">
-					   <div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
+					   <div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">Ê×Ò³</a></li>
-                                <li class="qc"><a href="#">ÉÁ¹º</a></li>
-                                <li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
-                                <li class="qc"><a href="#">ÍÅ¹º</a></li>
-                                <li class="qc last"><a href="#">´ó°ü×°</a></li>
+								<li class="index"><a href="#">é¦–é¡µ</a></li>
+                                <li class="qc"><a href="#">é—ªè´­</a></li>
+                                <li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
+                                <li class="qc"><a href="#">å›¢è´­</a></li>
+                                <li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
 							</ul>
 						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
 						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 						    </div>
 						</div>
 			</div>
 				<ol class="am-breadcrumb am-breadcrumb-slash">
-					<li><a href="#">Ê×Ò³</a></li>
-					<li><a href="#">·ÖÀà</a></li>
-					<li class="am-active">ÄÚÈÝ</li>
+					<li><a href="#">é¦–é¡µ</a></li>
+					<li><a href="#">åˆ†ç±»</a></li>
+					<li class="am-active">å†…å®¹</li>
 				</ol>
 				<script type="text/javascript">
 					$(function() {});
@@ -123,7 +124,7 @@
 					</section>
 				</div>
 
-				<!--·Å´ó¾µ-->
+				<!--æ”¾å¤§é•œ-->
 
 				<div class="item-inform">
 					<div class="clearfixLeft" id="clearcontent">
@@ -141,7 +142,7 @@
 							</script>
 
 							<div class="tb-booth tb-pic tb-s310">
-								<a href="images/01.jpg"><img src="images/01_mid.jpg" alt="Ï¸½ÚÕ¹Ê¾·Å´ó¾µÌØÐ§" rel="images/01.jpg" class="jqzoom" /></a>
+								<a href="images/01.jpg"><img src="images/01_mid.jpg" alt="ç»†èŠ‚å±•ç¤ºæ”¾å¤§é•œç‰¹æ•ˆ" rel="images/01.jpg" class="jqzoom" /></a>
 							</div>
 							<ul class="tb-thumb" id="thumblist">
 								<li class="tb-selected">
@@ -167,78 +168,78 @@
 
 					<div class="clearfixRight">
 
-						<!--¹æ¸ñÊôÐÔ-->
-						<!--Ãû³Æ-->
+						<!--è§„æ ¼å±žæ€§-->
+						<!--åç§°-->
 						<div class="tb-detail-hd">
 							<h1>	
-				 Á¼Æ·ÆÌ×Ó ÊÖ°þËÉ×Ó218g ¼á¹û³´»õ °ÍÎ÷ËÉ×Ó
+				 è‰¯å“é“ºå­ æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§ å·´è¥¿æ¾å­
 	          </h1>
 						</div>
 						<div class="tb-detail-list">
-							<!--¼Û¸ñ-->
+							<!--ä»·æ ¼-->
 							<div class="tb-detail-price">
 								<li class="price iteminfo_price">
-									<dt>´ÙÏú¼Û</dt>
-									<dd><em>0„6</em><b class="sys_item_price">56.90</b>  </dd>                                 
+									<dt>ä¿ƒé”€ä»·</dt>
+									<dd><em>Â¥</em><b class="sys_item_price">56.90</b>  </dd>                                 
 								</li>
 								<li class="price iteminfo_mktprice">
-									<dt>Ô­¼Û</dt>
-									<dd><em>0„6</em><b class="sys_item_mktprice">98.00</b></dd>									
+									<dt>åŽŸä»·</dt>
+									<dd><em>Â¥</em><b class="sys_item_mktprice">98.00</b></dd>									
 								</li>
 								<div class="clear"></div>
 							</div>
 
-							<!--µØÖ·-->
+							<!--åœ°å€-->
 							<dl class="iteminfo_parameter freight">
-								<dt>ÅäËÍÖÁ</dt>
+								<dt>é…é€è‡³</dt>
 								<div class="iteminfo_freprice">
 									<div class="am-form-content address">
 										<select data-am-selected>
-											<option value="a">Õã½­Ê¡</option>
-											<option value="b">ºþ±±Ê¡</option>
+											<option value="a">æµ™æ±Ÿçœ</option>
+											<option value="b">æ¹–åŒ—çœ</option>
 										</select>
 										<select data-am-selected>
-											<option value="a">ÎÂÖÝÊÐ</option>
-											<option value="b">ÎäººÊÐ</option>
+											<option value="a">æ¸©å·žå¸‚</option>
+											<option value="b">æ­¦æ±‰å¸‚</option>
 										</select>
 										<select data-am-selected>
-											<option value="a">Èð°²Çø</option>
-											<option value="b">ºéÉ½Çø</option>
+											<option value="a">ç‘žå®‰åŒº</option>
+											<option value="b">æ´ªå±±åŒº</option>
 										</select>
 									</div>
 									<div class="pay-logis">
-										¿ìµÝ<b class="sys_item_freprice">10</b>Ôª
+										å¿«é€’<b class="sys_item_freprice">10</b>å…ƒ
 									</div>
 								</div>
 							</dl>
 							<div class="clear"></div>
 
-							<!--ÏúÁ¿-->
+							<!--é”€é‡-->
 							<ul class="tm-ind-panel">
 								<li class="tm-ind-item tm-ind-sellCount canClick">
-									<div class="tm-indcon"><span class="tm-label">ÔÂÏúÁ¿</span><span class="tm-count">1015</span></div>
+									<div class="tm-indcon"><span class="tm-label">æœˆé”€é‡</span><span class="tm-count">1015</span></div>
 								</li>
 								<li class="tm-ind-item tm-ind-sumCount canClick">
-									<div class="tm-indcon"><span class="tm-label">ÀÛ¼ÆÏúÁ¿</span><span class="tm-count">6015</span></div>
+									<div class="tm-indcon"><span class="tm-label">ç´¯è®¡é”€é‡</span><span class="tm-count">6015</span></div>
 								</li>
 								<li class="tm-ind-item tm-ind-reviewCount canClick tm-line3">
-									<div class="tm-indcon"><span class="tm-label">ÀÛ¼ÆÆÀ¼Û</span><span class="tm-count">640</span></div>
+									<div class="tm-indcon"><span class="tm-label">ç´¯è®¡è¯„ä»·</span><span class="tm-count">640</span></div>
 								</li>
 							</ul>
 							<div class="clear"></div>
 
-							<!--¸÷ÖÖ¹æ¸ñ-->
+							<!--å„ç§è§„æ ¼-->
 							<dl class="iteminfo_parameter sys_item_specpara">
-								<dt class="theme-login"><div class="cart-title">¿ÉÑ¡¹æ¸ñ<span class="am-icon-angle-right"></span></div></dt>
+								<dt class="theme-login"><div class="cart-title">å¯é€‰è§„æ ¼<span class="am-icon-angle-right"></span></div></dt>
 								<dd>
-									<!--²Ù×÷Ò³Ãæ-->
+									<!--æ“ä½œé¡µé¢-->
 
 									<div class="theme-popover-mask"></div>
 
 									<div class="theme-popover">
 										<div class="theme-span"></div>
 										<div class="theme-poptit">
-											<a href="javascript:;" title="¹Ø±Õ" class="close">¡Á</a>
+											<a href="javascript:;" title="å…³é—­" class="close">Ã—</a>
 										</div>
 										<div class="theme-popbod dform">
 											<form class="theme-signin" name="loginform" action="" method="post">
@@ -246,37 +247,37 @@
 												<div class="theme-signin-left">
 
 													<div class="theme-options">
-														<div class="cart-title">¿ÚÎ¶</div>
+														<div class="cart-title">å£å‘³</div>
 														<ul>
-															<li class="sku-line selected">Ô­Î¶<i></i></li>
-															<li class="sku-line">ÄÌÓÍ<i></i></li>
-															<li class="sku-line">Ì¿ÉÕ<i></i></li>
-															<li class="sku-line">ÏÌÏã<i></i></li>
+															<li class="sku-line selected">åŽŸå‘³<i></i></li>
+															<li class="sku-line">å¥¶æ²¹<i></i></li>
+															<li class="sku-line">ç‚­çƒ§<i></i></li>
+															<li class="sku-line">å’¸é¦™<i></i></li>
 														</ul>
 													</div>
 													<div class="theme-options">
-														<div class="cart-title">°ü×°</div>
+														<div class="cart-title">åŒ…è£…</div>
 														<ul>
-															<li class="sku-line selected">ÊÖ´üµ¥ÈË·Ý<i></i></li>
-															<li class="sku-line">ÀñºÐË«ÈË·Ý<i></i></li>
-															<li class="sku-line">È«¼Ò¸£Àñ°ü<i></i></li>
+															<li class="sku-line selected">æ‰‹è¢‹å•äººä»½<i></i></li>
+															<li class="sku-line">ç¤¼ç›’åŒäººä»½<i></i></li>
+															<li class="sku-line">å…¨å®¶ç¦ç¤¼åŒ…<i></i></li>
 														</ul>
 													</div>
 													<div class="theme-options">
-														<div class="cart-title number">ÊýÁ¿</div>
+														<div class="cart-title number">æ•°é‡</div>
 														<dd>
 															<input id="min" class="am-btn am-btn-default" name="" type="button" value="-" />
 															<input id="text_box" name="" type="text" value="1" style="width:30px;" />
 															<input id="add" class="am-btn am-btn-default" name="" type="button" value="+" />
-															<span id="Stock" class="tb-hidden">¿â´æ<span class="stock">1000</span>¼þ</span>
+															<span id="Stock" class="tb-hidden">åº“å­˜<span class="stock">1000</span>ä»¶</span>
 														</dd>
 
 													</div>
 													<div class="clear"></div>
 
 													<div class="btn-op">
-														<div class="btn am-btn am-btn-warning">È·ÈÏ</div>
-														<div class="btn close am-btn am-btn-warning">È¡Ïû</div>
+														<div class="btn am-btn am-btn-warning">ç¡®è®¤</div>
+														<div class="btn close am-btn am-btn-warning">å–æ¶ˆ</div>
 													</div>
 												</div>
 												<div class="theme-signin-right">
@@ -284,8 +285,8 @@
 														<img src="images/songzi.jpg" />
 													</div>
 													<div class="text-info">
-														<span class="J_Price price-now">0„639.00</span>
-														<span id="Stock" class="tb-hidden">¿â´æ<span class="stock">1000</span>¼þ</span>
+														<span class="J_Price price-now">Â¥39.00</span>
+														<span id="Stock" class="tb-hidden">åº“å­˜<span class="stock">1000</span>ä»¶</span>
 													</div>
 												</div>
 
@@ -296,22 +297,22 @@
 								</dd>
 							</dl>
 							<div class="clear"></div>
-							<!--»î¶¯	-->
+							<!--æ´»åŠ¨	-->
 							<div class="shopPromotion gold">
 								<div class="hot">
-									<dt class="tb-metatit">µêÆÌÓÅ»Ý</dt>
+									<dt class="tb-metatit">åº—é“ºä¼˜æƒ </dt>
 									<div class="gold-list">
-										<p>¹ºÎïÂú2¼þ´ò8ÕÛ£¬Âú3¼þ7ÕÛ<span>µã»÷ÁìÈ¯<i class="am-icon-sort-down"></i></span></p>
+										<p>è´­ç‰©æ»¡2ä»¶æ‰“8æŠ˜ï¼Œæ»¡3ä»¶7æŠ˜<span>ç‚¹å‡»é¢†åˆ¸<i class="am-icon-sort-down"></i></span></p>
 									</div>
 								</div>
 								<div class="clear"></div>
 								<div class="coupon">
-									<dt class="tb-metatit">ÓÅ»ÝÈ¯</dt>
+									<dt class="tb-metatit">ä¼˜æƒ åˆ¸</dt>
 									<div class="gold-list">
 										<ul>
-											<li>125¼õ5</li>
-											<li>198¼õ10</li>
-											<li>298¼õ20</li>
+											<li>125å‡5</li>
+											<li>198å‡10</li>
+											<li>298å‡20</li>
 										</ul>
 									</div>
 								</div>
@@ -320,18 +321,18 @@
 
 						<div class="pay">
 							<div class="pay-opt">
-							<a href="home.jsp"><span class="am-icon-home am-icon-fw">Ê×Ò³</span></a>
-							<a><span class="am-icon-heart am-icon-fw">ÊÕ²Ø</span></a>
+							<a href="home.jsp"><span class="am-icon-home am-icon-fw">é¦–é¡µ</span></a>
+							<a><span class="am-icon-heart am-icon-fw">æ”¶è—</span></a>
 							
 							</div>
 							<li>
 								<div class="clearfix tb-btn tb-btn-buy theme-login">
-									<a id="LikBuy" title="µã´Ë°´Å¥µ½ÏÂÒ»²½È·ÈÏ¹ºÂòÐÅÏ¢" href="#">Á¢¼´¹ºÂò</a>
+									<a id="LikBuy" title="ç‚¹æ­¤æŒ‰é’®åˆ°ä¸‹ä¸€æ­¥ç¡®è®¤è´­ä¹°ä¿¡æ¯" href="#">ç«‹å³è´­ä¹°</a>
 								</div>
 							</li>
 							<li>
 								<div class="clearfix tb-btn tb-btn-basket theme-login">
-									<a id="LikBasket" title="¼ÓÈë¹ºÎï³µ" href="#"><i></i>¼ÓÈë¹ºÎï³µ</a>
+									<a id="LikBasket" title="åŠ å…¥è´­ç‰©è½¦" href="#"><i></i>åŠ å…¥è´­ç‰©è½¦</a>
 								</div>
 							</li>
 						</div>
@@ -342,28 +343,28 @@
 
 				</div>
 
-				<!--ÓÅ»ÝÌ××°-->
+				<!--ä¼˜æƒ å¥—è£…-->
 				<div class="match">
-					<div class="match-title">ÓÅ»ÝÌ××°</div>
+					<div class="match-title">ä¼˜æƒ å¥—è£…</div>
 					<div class="match-comment">
 						<ul class="like_list">
 							<li>
 								<div class="s_picBox">
 									<a class="s_pic" href="#"><img src="images/cp.jpg"></a>
-								</div> <a class="txt" target="_blank" href="#">ÈøÀ­Ã× 1+1Ð¡¼¦ÍÈ</a>
-								<div class="info-box"> <span class="info-box-price">0„6 29.90</span> <span class="info-original-price">£¤ 199.00</span> </div>
+								</div> <a class="txt" target="_blank" href="#">è¨æ‹‰ç±³ 1+1å°é¸¡è…¿</a>
+								<div class="info-box"> <span class="info-box-price">Â¥ 29.90</span> <span class="info-original-price">ï¿¥ 199.00</span> </div>
 							</li>
 							<li class="plus_icon"><i>+</i></li>
 							<li>
 								<div class="s_picBox">
 									<a class="s_pic" href="#"><img src="images/cp2.jpg"></a>
-								</div> <a class="txt" target="_blank" href="#">ZEK Ô­Î¶º£Ì¦</a>
-								<div class="info-box"> <span class="info-box-price">0„6 8.90</span> <span class="info-original-price">£¤ 299.00</span> </div>
+								</div> <a class="txt" target="_blank" href="#">ZEK åŽŸå‘³æµ·è‹”</a>
+								<div class="info-box"> <span class="info-box-price">Â¥ 8.90</span> <span class="info-original-price">ï¿¥ 299.00</span> </div>
 							</li>
 							<li class="plus_icon"><i>=</i></li>
 							<li class="total_price">
-								<p class="combo_price"><span class="c-title">Ì×²Í¼Û:</span><span>£¤35.00</span> </p>
-								<p class="save_all">¹²Ê¡:<span>£¤463.00</span></p> <a href="#" class="buy_now">Á¢¼´¹ºÂò</a> </li>
+								<p class="combo_price"><span class="c-title">å¥—é¤ä»·:</span><span>ï¿¥35.00</span> </p>
+								<p class="save_all">å…±çœ:<span>ï¿¥463.00</span></p> <a href="#" class="buy_now">ç«‹å³è´­ä¹°</a> </li>
 							<li class="plus_icon"><i class="am-icon-angle-right"></i></li>
 						</ul>
 					</div>
@@ -378,7 +379,7 @@
 					    <div class="mc"> 
 						     <ul>					    
 						     	<div class="mt">            
-						            <h2>¿´ÁËÓÖ¿´</h2>        
+						            <h2>çœ‹äº†åˆçœ‹</h2>        
 					            </div>
 						     	
 							      <li class="first">
@@ -386,50 +387,50 @@
 							      		<a  href="#"> <img class="" src="images/browse1.jpg"> </a>               
 							      	</div>
 							      	<div class="p-name"><a href="#">
-							      		¡¾ÈýÖ»ËÉÊó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ¶«±±ºìËÉ×ÓÔ­Î¶
+							      		ã€ä¸‰åªæ¾é¼ _å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§ä¸œåŒ—çº¢æ¾å­åŽŸå‘³
 							      	</a>
 							      	</div>
-							      	<div class="p-price"><strong>£¤35.90</strong></div>
+							      	<div class="p-price"><strong>ï¿¥35.90</strong></div>
 							      </li>
 							      <li>
 							      	<div class="p-img">                    
 							      		<a  href="#"> <img class="" src="images/browse1.jpg"> </a>               
 							      	</div>
 							      	<div class="p-name"><a href="#">
-							      		¡¾ÈýÖ»ËÉÊó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ¶«±±ºìËÉ×ÓÔ­Î¶
+							      		ã€ä¸‰åªæ¾é¼ _å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§ä¸œåŒ—çº¢æ¾å­åŽŸå‘³
 							      	</a>
 							      	</div>
-							      	<div class="p-price"><strong>£¤35.90</strong></div>
+							      	<div class="p-price"><strong>ï¿¥35.90</strong></div>
 							      </li>
 							      <li>
 							      	<div class="p-img">                    
 							      		<a  href="#"> <img class="" src="images/browse1.jpg"> </a>               
 							      	</div>
 							      	<div class="p-name"><a href="#">
-							      		¡¾ÈýÖ»ËÉÊó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ¶«±±ºìËÉ×ÓÔ­Î¶
+							      		ã€ä¸‰åªæ¾é¼ _å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§ä¸œåŒ—çº¢æ¾å­åŽŸå‘³
 							      	</a>
 							      	</div>
-							      	<div class="p-price"><strong>£¤35.90</strong></div>
+							      	<div class="p-price"><strong>ï¿¥35.90</strong></div>
 							      </li>							      
 							      <li>
 							      	<div class="p-img">                    
 							      		<a  href="#"> <img class="" src="images/browse1.jpg"> </a>               
 							      	</div>
 							      	<div class="p-name"><a href="#">
-							      		¡¾ÈýÖ»ËÉÊó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ¶«±±ºìËÉ×ÓÔ­Î¶
+							      		ã€ä¸‰åªæ¾é¼ _å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§ä¸œåŒ—çº¢æ¾å­åŽŸå‘³
 							      	</a>
 							      	</div>
-							      	<div class="p-price"><strong>£¤35.90</strong></div>
+							      	<div class="p-price"><strong>ï¿¥35.90</strong></div>
 							      </li>							      
 							      <li>
 							      	<div class="p-img">                    
 							      		<a  href="#"> <img class="" src="images/browse1.jpg"> </a>               
 							      	</div>
 							      	<div class="p-name"><a href="#">
-							      		¡¾ÈýÖ»ËÉÊó_¿ª¿ÚËÉ×Ó218g¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ¶«±±ºìËÉ×ÓÔ­Î¶
+							      		ã€ä¸‰åªæ¾é¼ _å¼€å£æ¾å­218gã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§ä¸œåŒ—çº¢æ¾å­åŽŸå‘³
 							      	</a>
 							      	</div>
-							      	<div class="p-price"><strong>£¤35.90</strong></div>
+							      	<div class="p-price"><strong>ï¿¥35.90</strong></div>
 							      </li>							      
 					      
 						     </ul>					
@@ -441,21 +442,21 @@
 								<li class="am-active">
 									<a href="#">
 
-										<span class="index-needs-dt-txt">±¦±´ÏêÇé</span></a>
+										<span class="index-needs-dt-txt">å®è´è¯¦æƒ…</span></a>
 
 								</li>
 
 								<li>
 									<a href="#">
 
-										<span class="index-needs-dt-txt">È«²¿ÆÀ¼Û</span></a>
+										<span class="index-needs-dt-txt">å…¨éƒ¨è¯„ä»·</span></a>
 
 								</li>
 
 								<li>
 									<a href="#">
 
-										<span class="index-needs-dt-txt">²ÂÄãÏ²»¶</span></a>
+										<span class="index-needs-dt-txt">çŒœä½ å–œæ¬¢</span></a>
 								</li>
 							</ul>
 
@@ -465,26 +466,26 @@
 									<div class="J_Brand">
 
 										<div class="attr-list-hd tm-clear">
-											<h4>²úÆ·²ÎÊý£º</h4></div>
+											<h4>äº§å“å‚æ•°ï¼š</h4></div>
 										<div class="clear"></div>
 										<ul id="J_AttrUL">
-											<li title="">²úÆ·ÀàÐÍ:&nbsp;ºæ³´Àà</li>
-											<li title="">Ô­ÁÏ²úµØ:&nbsp;°Í»ùË¹Ì¹</li>
-											<li title="">²úµØ:&nbsp;ºþ±±Ê¡ÎäººÊÐ</li>
-											<li title="">ÅäÁÏ±í:&nbsp;½ø¿ÚËÉ×Ó¡¢Ê³ÓÃÑÎ</li>
-											<li title="">²úÆ·¹æ¸ñ:&nbsp;210g</li>
-											<li title="">±£ÖÊÆÚ:&nbsp;180Ìì</li>
-											<li title="">²úÆ·±ê×¼ºÅ:&nbsp;GB/T 22165</li>
-											<li title="">Éú²úÐí¿ÉÖ¤±àºÅ£º&nbsp;QS4201 1801 0226</li>
-											<li title="">´¢´æ·½·¨£º&nbsp;Çë·ÅÖÃÓÚ³£ÎÂ¡¢ÒõÁ¹¡¢Í¨·ç¡¢¸ÉÔï´¦±£´æ </li>
-											<li title="">Ê³ÓÃ·½·¨£º&nbsp;¿ª´üÈ¥¿Ç¼´Ê³</li>
+											<li title="">äº§å“ç±»åž‹:&nbsp;çƒ˜ç‚’ç±»</li>
+											<li title="">åŽŸæ–™äº§åœ°:&nbsp;å·´åŸºæ–¯å¦</li>
+											<li title="">äº§åœ°:&nbsp;æ¹–åŒ—çœæ­¦æ±‰å¸‚</li>
+											<li title="">é…æ–™è¡¨:&nbsp;è¿›å£æ¾å­ã€é£Ÿç”¨ç›</li>
+											<li title="">äº§å“è§„æ ¼:&nbsp;210g</li>
+											<li title="">ä¿è´¨æœŸ:&nbsp;180å¤©</li>
+											<li title="">äº§å“æ ‡å‡†å·:&nbsp;GB/T 22165</li>
+											<li title="">ç”Ÿäº§è®¸å¯è¯ç¼–å·ï¼š&nbsp;QS4201 1801 0226</li>
+											<li title="">å‚¨å­˜æ–¹æ³•ï¼š&nbsp;è¯·æ”¾ç½®äºŽå¸¸æ¸©ã€é˜´å‡‰ã€é€šé£Žã€å¹²ç‡¥å¤„ä¿å­˜ </li>
+											<li title="">é£Ÿç”¨æ–¹æ³•ï¼š&nbsp;å¼€è¢‹åŽ»å£³å³é£Ÿ</li>
 										</ul>
 										<div class="clear"></div>
 									</div>
 
 									<div class="details">
 										<div class="attr-list-hd after-market-hd">
-											<h4>ÉÌÆ·Ï¸½Ú</h4>
+											<h4>å•†å“ç»†èŠ‚</h4>
 										</div>
 										<div class="twlistNews">
 											<img src="images/tw1.jpg" />
@@ -504,20 +505,20 @@
 									
                                     <div class="actor-new">
                                     	<div class="rate">                
-                                    		<strong>100<span>%</span></strong><br> <span>ºÃÆÀ¶È</span>            
+                                    		<strong>100<span>%</span></strong><br> <span>å¥½è¯„åº¦</span>            
                                     	</div>
                                         <dl>                    
-                                            <dt>Âò¼ÒÓ¡Ïó</dt>                    
+                                            <dt>ä¹°å®¶å°è±¡</dt>                    
                                             <dd class="p-bfc">
-                                            			<q class="comm-tags"><span>Î¶µÀ²»´í</span><em>(2177)</em></q>
-                                            			<q class="comm-tags"><span>¿ÅÁ£±¥Âú</span><em>(1860)</em></q>
-                                            			<q class="comm-tags"><span>¿Ú¸ÐºÃ</span><em>(1823)</em></q>
-                                            			<q class="comm-tags"><span>ÉÌÆ·²»´í</span><em>(1689)</em></q>
-                                            			<q class="comm-tags"><span>Ïã´à¿É¿Ú</span><em>(1488)</em></q>
-                                            			<q class="comm-tags"><span>¸ö¸ö¿ª¿Ú</span><em>(1392)</em></q>
-                                            			<q class="comm-tags"><span>¼Û¸ñ±ãÒË</span><em>(1119)</em></q>
-                                            			<q class="comm-tags"><span>ÌØ¼ÛÂòµÄ</span><em>(865)</em></q>
-                                            			<q class="comm-tags"><span>Æ¤ºÜ±¡</span><em>(831)</em></q> 
+                                            			<q class="comm-tags"><span>å‘³é“ä¸é”™</span><em>(2177)</em></q>
+                                            			<q class="comm-tags"><span>é¢—ç²’é¥±æ»¡</span><em>(1860)</em></q>
+                                            			<q class="comm-tags"><span>å£æ„Ÿå¥½</span><em>(1823)</em></q>
+                                            			<q class="comm-tags"><span>å•†å“ä¸é”™</span><em>(1689)</em></q>
+                                            			<q class="comm-tags"><span>é¦™è„†å¯å£</span><em>(1488)</em></q>
+                                            			<q class="comm-tags"><span>ä¸ªä¸ªå¼€å£</span><em>(1392)</em></q>
+                                            			<q class="comm-tags"><span>ä»·æ ¼ä¾¿å®œ</span><em>(1119)</em></q>
+                                            			<q class="comm-tags"><span>ç‰¹ä»·ä¹°çš„</span><em>(865)</em></q>
+                                            			<q class="comm-tags"><span>çš®å¾ˆè–„</span><em>(831)</em></q> 
                                             </dd>                                           
                                          </dl> 
                                     </div>	
@@ -526,28 +527,28 @@
 										<ul class=" tb-taglist am-avg-sm-4">
 											<li class="tb-taglist-li tb-taglist-li-current">
 												<div class="comment-info">
-													<span>È«²¿ÆÀ¼Û</span>
+													<span>å…¨éƒ¨è¯„ä»·</span>
 													<span class="tb-tbcr-num">(32)</span>
 												</div>
 											</li>
 
 											<li class="tb-taglist-li tb-taglist-li-1">
 												<div class="comment-info">
-													<span>ºÃÆÀ</span>
+													<span>å¥½è¯„</span>
 													<span class="tb-tbcr-num">(32)</span>
 												</div>
 											</li>
 
 											<li class="tb-taglist-li tb-taglist-li-0">
 												<div class="comment-info">
-													<span>ÖÐÆÀ</span>
+													<span>ä¸­è¯„</span>
 													<span class="tb-tbcr-num">(32)</span>
 												</div>
 											</li>
 
 											<li class="tb-taglist-li tb-taglist-li--1">
 												<div class="comment-info">
-													<span>²îÆÀ</span>
+													<span>å·®è¯„</span>
 													<span class="tb-tbcr-num">(32)</span>
 												</div>
 											</li>
@@ -557,409 +558,409 @@
 
 									<ul class="am-comments-list am-comments-list-flip">
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê11ÔÂ02ÈÕ 17:46</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">b***1 (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´11æœˆ02æ—¥ 17:46</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255776406962">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															ÃþÆðÀ´Ë¿»¬ÈáÈí£¬²»ºñ£¬Ã»É«²î£¬ÑÕÉ«ºÃ¿´£¡ÂòÕâ¸öÒÂ·þ»¹½Óµ½Õ©Æ­µç»°£¬ÎÒºÜºÃÆæËûÃÇÊÇÔõÃ´ÖªµÀÎÒÂòÁËÕâ¼þÒÂ·þ£¬²¢ÇÒ»¹ÖªµÀÎÒµÄµç»°µÄ£¡
+															æ‘¸èµ·æ¥ä¸æ»‘æŸ”è½¯ï¼Œä¸åŽšï¼Œæ²¡è‰²å·®ï¼Œé¢œè‰²å¥½çœ‹ï¼ä¹°è¿™ä¸ªè¡£æœè¿˜æŽ¥åˆ°è¯ˆéª—ç”µè¯ï¼Œæˆ‘å¾ˆå¥½å¥‡ä»–ä»¬æ˜¯æ€Žä¹ˆçŸ¥é“æˆ‘ä¹°äº†è¿™ä»¶è¡£æœï¼Œå¹¶ä¸”è¿˜çŸ¥é“æˆ‘çš„ç”µè¯çš„ï¼
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÄûÃÊ»Æ&nbsp;&nbsp;³ßÂë£ºS
+															é¢œè‰²åˆ†ç±»ï¼šæŸ æª¬é»„&nbsp;&nbsp;å°ºç ï¼šS
 														</div>
 													</div>
 
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">l***4 (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê10ÔÂ28ÈÕ 11:33</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">l***4 (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´10æœˆ28æ—¥ 11:33</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255095758792">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															Ã»ÓÐÉ«²î£¬ºÜÅ¯ºÍ¡­¡­ÃÀÃÀµÄ
+															æ²¡æœ‰è‰²å·®ï¼Œå¾ˆæš–å’Œâ€¦â€¦ç¾Žç¾Žçš„
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÀ¶µ÷»Ò&nbsp;&nbsp;³ßÂë£º2XL
+															é¢œè‰²åˆ†ç±»ï¼šè“è°ƒç°&nbsp;&nbsp;å°ºç ï¼š2XL
 														</div>
 													</div>
 
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê11ÔÂ02ÈÕ 17:46</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">b***1 (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´11æœˆ02æ—¥ 17:46</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255776406962">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															ÃþÆðÀ´Ë¿»¬ÈáÈí£¬²»ºñ£¬Ã»É«²î£¬ÑÕÉ«ºÃ¿´£¡ÂòÕâ¸öÒÂ·þ»¹½Óµ½Õ©Æ­µç»°£¬ÎÒºÜºÃÆæËûÃÇÊÇÔõÃ´ÖªµÀÎÒÂòÁËÕâ¼þÒÂ·þ£¬²¢ÇÒ»¹ÖªµÀÎÒµÄµç»°µÄ£¡
+															æ‘¸èµ·æ¥ä¸æ»‘æŸ”è½¯ï¼Œä¸åŽšï¼Œæ²¡è‰²å·®ï¼Œé¢œè‰²å¥½çœ‹ï¼ä¹°è¿™ä¸ªè¡£æœè¿˜æŽ¥åˆ°è¯ˆéª—ç”µè¯ï¼Œæˆ‘å¾ˆå¥½å¥‡ä»–ä»¬æ˜¯æ€Žä¹ˆçŸ¥é“æˆ‘ä¹°äº†è¿™ä»¶è¡£æœï¼Œå¹¶ä¸”è¿˜çŸ¥é“æˆ‘çš„ç”µè¯çš„ï¼
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÄûÃÊ»Æ&nbsp;&nbsp;³ßÂë£ºS
+															é¢œè‰²åˆ†ç±»ï¼šæŸ æª¬é»„&nbsp;&nbsp;å°ºç ï¼šS
 														</div>
 													</div>
 
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">h***n (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê11ÔÂ25ÈÕ 12:48</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">h***n (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´11æœˆ25æ—¥ 12:48</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="258040417670">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															Ê½Ñù²»´í£¬³õ¶¬´©
+															å¼æ ·ä¸é”™ï¼Œåˆå†¬ç©¿
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÄûÃÊ»Æ&nbsp;&nbsp;³ßÂë£ºL
+															é¢œè‰²åˆ†ç±»ï¼šæŸ æª¬é»„&nbsp;&nbsp;å°ºç ï¼šL
 														</div>
 													</div>
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê11ÔÂ02ÈÕ 17:46</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">b***1 (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´11æœˆ02æ—¥ 17:46</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255776406962">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															ÃþÆðÀ´Ë¿»¬ÈáÈí£¬²»ºñ£¬Ã»É«²î£¬ÑÕÉ«ºÃ¿´£¡ÂòÕâ¸öÒÂ·þ»¹½Óµ½Õ©Æ­µç»°£¬ÎÒºÜºÃÆæËûÃÇÊÇÔõÃ´ÖªµÀÎÒÂòÁËÕâ¼þÒÂ·þ£¬²¢ÇÒ»¹ÖªµÀÎÒµÄµç»°µÄ£¡
+															æ‘¸èµ·æ¥ä¸æ»‘æŸ”è½¯ï¼Œä¸åŽšï¼Œæ²¡è‰²å·®ï¼Œé¢œè‰²å¥½çœ‹ï¼ä¹°è¿™ä¸ªè¡£æœè¿˜æŽ¥åˆ°è¯ˆéª—ç”µè¯ï¼Œæˆ‘å¾ˆå¥½å¥‡ä»–ä»¬æ˜¯æ€Žä¹ˆçŸ¥é“æˆ‘ä¹°äº†è¿™ä»¶è¡£æœï¼Œå¹¶ä¸”è¿˜çŸ¥é“æˆ‘çš„ç”µè¯çš„ï¼
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÄûÃÊ»Æ&nbsp;&nbsp;³ßÂë£ºS
+															é¢œè‰²åˆ†ç±»ï¼šæŸ æª¬é»„&nbsp;&nbsp;å°ºç ï¼šS
 														</div>
 													</div>
 
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">l***4 (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê10ÔÂ28ÈÕ 11:33</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">l***4 (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´10æœˆ28æ—¥ 11:33</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255095758792">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															Ã»ÓÐÉ«²î£¬ºÜÅ¯ºÍ¡­¡­ÃÀÃÀµÄ
+															æ²¡æœ‰è‰²å·®ï¼Œå¾ˆæš–å’Œâ€¦â€¦ç¾Žç¾Žçš„
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÀ¶µ÷»Ò&nbsp;&nbsp;³ßÂë£º2XL
+															é¢œè‰²åˆ†ç±»ï¼šè“è°ƒç°&nbsp;&nbsp;å°ºç ï¼š2XL
 														</div>
 													</div>
 
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê11ÔÂ02ÈÕ 17:46</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">b***1 (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´11æœˆ02æ—¥ 17:46</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255776406962">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															ÃþÆðÀ´Ë¿»¬ÈáÈí£¬²»ºñ£¬Ã»É«²î£¬ÑÕÉ«ºÃ¿´£¡ÂòÕâ¸öÒÂ·þ»¹½Óµ½Õ©Æ­µç»°£¬ÎÒºÜºÃÆæËûÃÇÊÇÔõÃ´ÖªµÀÎÒÂòÁËÕâ¼þÒÂ·þ£¬²¢ÇÒ»¹ÖªµÀÎÒµÄµç»°µÄ£¡
+															æ‘¸èµ·æ¥ä¸æ»‘æŸ”è½¯ï¼Œä¸åŽšï¼Œæ²¡è‰²å·®ï¼Œé¢œè‰²å¥½çœ‹ï¼ä¹°è¿™ä¸ªè¡£æœè¿˜æŽ¥åˆ°è¯ˆéª—ç”µè¯ï¼Œæˆ‘å¾ˆå¥½å¥‡ä»–ä»¬æ˜¯æ€Žä¹ˆçŸ¥é“æˆ‘ä¹°äº†è¿™ä»¶è¡£æœï¼Œå¹¶ä¸”è¿˜çŸ¥é“æˆ‘çš„ç”µè¯çš„ï¼
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÄûÃÊ»Æ&nbsp;&nbsp;³ßÂë£ºS
+															é¢œè‰²åˆ†ç±»ï¼šæŸ æª¬é»„&nbsp;&nbsp;å°ºç ï¼šS
 														</div>
 													</div>
 
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">h***n (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê11ÔÂ25ÈÕ 12:48</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">h***n (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´11æœˆ25æ—¥ 12:48</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="258040417670">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															Ê½Ñù²»´í£¬³õ¶¬´©
+															å¼æ ·ä¸é”™ï¼Œåˆå†¬ç©¿
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÄûÃÊ»Æ&nbsp;&nbsp;³ßÂë£ºL
+															é¢œè‰²åˆ†ç±»ï¼šæŸ æª¬é»„&nbsp;&nbsp;å°ºç ï¼šL
 														</div>
 													</div>
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê11ÔÂ02ÈÕ 17:46</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">b***1 (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´11æœˆ02æ—¥ 17:46</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255776406962">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															ÃþÆðÀ´Ë¿»¬ÈáÈí£¬²»ºñ£¬Ã»É«²î£¬ÑÕÉ«ºÃ¿´£¡ÂòÕâ¸öÒÂ·þ»¹½Óµ½Õ©Æ­µç»°£¬ÎÒºÜºÃÆæËûÃÇÊÇÔõÃ´ÖªµÀÎÒÂòÁËÕâ¼þÒÂ·þ£¬²¢ÇÒ»¹ÖªµÀÎÒµÄµç»°µÄ£¡
+															æ‘¸èµ·æ¥ä¸æ»‘æŸ”è½¯ï¼Œä¸åŽšï¼Œæ²¡è‰²å·®ï¼Œé¢œè‰²å¥½çœ‹ï¼ä¹°è¿™ä¸ªè¡£æœè¿˜æŽ¥åˆ°è¯ˆéª—ç”µè¯ï¼Œæˆ‘å¾ˆå¥½å¥‡ä»–ä»¬æ˜¯æ€Žä¹ˆçŸ¥é“æˆ‘ä¹°äº†è¿™ä»¶è¡£æœï¼Œå¹¶ä¸”è¿˜çŸ¥é“æˆ‘çš„ç”µè¯çš„ï¼
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÄûÃÊ»Æ&nbsp;&nbsp;³ßÂë£ºS
+															é¢œè‰²åˆ†ç±»ï¼šæŸ æª¬é»„&nbsp;&nbsp;å°ºç ï¼šS
 														</div>
 													</div>
 
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">l***4 (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê10ÔÂ28ÈÕ 11:33</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">l***4 (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´10æœˆ28æ—¥ 11:33</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255095758792">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															Ã»ÓÐÉ«²î£¬ºÜÅ¯ºÍ¡­¡­ÃÀÃÀµÄ
+															æ²¡æœ‰è‰²å·®ï¼Œå¾ˆæš–å’Œâ€¦â€¦ç¾Žç¾Žçš„
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÀ¶µ÷»Ò&nbsp;&nbsp;³ßÂë£º2XL
+															é¢œè‰²åˆ†ç±»ï¼šè“è°ƒç°&nbsp;&nbsp;å°ºç ï¼š2XL
 														</div>
 													</div>
 
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">b***1 (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê11ÔÂ02ÈÕ 17:46</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">b***1 (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´11æœˆ02æ—¥ 17:46</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="255776406962">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															ÃþÆðÀ´Ë¿»¬ÈáÈí£¬²»ºñ£¬Ã»É«²î£¬ÑÕÉ«ºÃ¿´£¡ÂòÕâ¸öÒÂ·þ»¹½Óµ½Õ©Æ­µç»°£¬ÎÒºÜºÃÆæËûÃÇÊÇÔõÃ´ÖªµÀÎÒÂòÁËÕâ¼þÒÂ·þ£¬²¢ÇÒ»¹ÖªµÀÎÒµÄµç»°µÄ£¡
+															æ‘¸èµ·æ¥ä¸æ»‘æŸ”è½¯ï¼Œä¸åŽšï¼Œæ²¡è‰²å·®ï¼Œé¢œè‰²å¥½çœ‹ï¼ä¹°è¿™ä¸ªè¡£æœè¿˜æŽ¥åˆ°è¯ˆéª—ç”µè¯ï¼Œæˆ‘å¾ˆå¥½å¥‡ä»–ä»¬æ˜¯æ€Žä¹ˆçŸ¥é“æˆ‘ä¹°äº†è¿™ä»¶è¡£æœï¼Œå¹¶ä¸”è¿˜çŸ¥é“æˆ‘çš„ç”µè¯çš„ï¼
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÄûÃÊ»Æ&nbsp;&nbsp;³ßÂë£ºS
+															é¢œè‰²åˆ†ç±»ï¼šæŸ æª¬é»„&nbsp;&nbsp;å°ºç ï¼šS
 														</div>
 													</div>
 
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 										<li class="am-comment">
-											<!-- ÆÀÂÛÈÝÆ÷ -->
+											<!-- è¯„è®ºå®¹å™¨ -->
 											<a href="">
 												<img class="am-comment-avatar" src="images/hwbn40x40.jpg" />
-												<!-- ÆÀÂÛÕßÍ·Ïñ -->
+												<!-- è¯„è®ºè€…å¤´åƒ -->
 											</a>
 
 											<div class="am-comment-main">
-												<!-- ÆÀÂÛÄÚÈÝÈÝÆ÷ -->
+												<!-- è¯„è®ºå†…å®¹å®¹å™¨ -->
 												<header class="am-comment-hd">
-													<!--<h3 class="am-comment-title">ÆÀÂÛ±êÌâ</h3>-->
+													<!--<h3 class="am-comment-title">è¯„è®ºæ ‡é¢˜</h3>-->
 													<div class="am-comment-meta">
-														<!-- ÆÀÂÛÔªÊý¾Ý -->
-														<a href="#link-to-user" class="am-comment-author">h***n (ÄäÃû)</a>
-														<!-- ÆÀÂÛÕß -->
-														ÆÀÂÛÓÚ
-														<time datetime="">2015Äê11ÔÂ25ÈÕ 12:48</time>
+														<!-- è¯„è®ºå…ƒæ•°æ® -->
+														<a href="#link-to-user" class="am-comment-author">h***n (åŒ¿å)</a>
+														<!-- è¯„è®ºè€… -->
+														è¯„è®ºäºŽ
+														<time datetime="">2015å¹´11æœˆ25æ—¥ 12:48</time>
 													</div>
 												</header>
 
 												<div class="am-comment-bd">
 													<div class="tb-rev-item " data-id="258040417670">
 														<div class="J_TbcRate_ReviewContent tb-tbcr-content ">
-															Ê½Ñù²»´í£¬³õ¶¬´©
+															å¼æ ·ä¸é”™ï¼Œåˆå†¬ç©¿
 														</div>
 														<div class="tb-r-act-bar">
-															ÑÕÉ«·ÖÀà£ºÄûÃÊ»Æ&nbsp;&nbsp;³ßÂë£ºL
+															é¢œè‰²åˆ†ç±»ï¼šæŸ æª¬é»„&nbsp;&nbsp;å°ºç ï¼šL
 														</div>
 													</div>
 												</div>
-												<!-- ÆÀÂÛÄÚÈÝ -->
+												<!-- è¯„è®ºå†…å®¹ -->
 											</div>
 										</li>
 
@@ -967,7 +968,7 @@
 
 									<div class="clear"></div>
 
-									<!--·ÖÒ³ -->
+									<!--åˆ†é¡µ -->
 									<ul class="am-pagination am-pagination-right">
 										<li class="am-disabled"><a href="#">&laquo;</a></li>
 										<li class="am-active"><a href="#">1</a></li>
@@ -980,7 +981,7 @@
 									<div class="clear"></div>
 
 									<div class="tb-reviewsft">
-										<div class="tb-rate-alert type-attention">¹ºÂòÇ°Çë²é¿´¸ÃÉÌÆ·µÄ <a href="#" target="_blank">¹ºÎï±£ÕÏ</a>£¬Ã÷È·ÄúµÄÊÛºó±£ÕÏÈ¨Òæ¡£</div>
+										<div class="tb-rate-alert type-attention">è´­ä¹°å‰è¯·æŸ¥çœ‹è¯¥å•†å“çš„ <a href="#" target="_blank">è´­ç‰©ä¿éšœ</a>ï¼Œæ˜Žç¡®æ‚¨çš„å”®åŽä¿éšœæƒç›Šã€‚</div>
 									</div>
 
 								</div>
@@ -991,10 +992,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1002,10 +1003,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1013,10 +1014,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1024,10 +1025,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1035,10 +1036,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1046,10 +1047,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1057,10 +1058,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1068,10 +1069,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1079,10 +1080,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1090,10 +1091,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1101,10 +1102,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1112,10 +1113,10 @@
 											<li>
 												<div class="i-pic limit">
 													<img src="images/imgsearch1.jpg" />
-													<p>¡¾Á¼Æ·ÆÌ×Ó_¿ª¿ÚËÉ×Ó¡¿ÁãÊ³¼á¹ûÌØ²ú³´»õ
-														<span>¶«±±ºìËÉ×ÓÄÌÓÍÎ¶</span></p>
+													<p>ã€è‰¯å“é“ºå­_å¼€å£æ¾å­ã€‘é›¶é£Ÿåšæžœç‰¹äº§ç‚’è´§
+														<span>ä¸œåŒ—çº¢æ¾å­å¥¶æ²¹å‘³</span></p>
 													<p class="price fl">
-														<b>0„6</b>
+														<b>Â¥</b>
 														<strong>298.00</strong>
 													</p>
 												</div>
@@ -1124,7 +1125,7 @@
 									</div>
 									<div class="clear"></div>
 
-									<!--·ÖÒ³ -->
+									<!--åˆ†é¡µ -->
 									<ul class="am-pagination am-pagination-right">
 										<li class="am-disabled"><a href="#">&laquo;</a></li>
 										<li class="am-active"><a href="#">1</a></li>
@@ -1144,26 +1145,14 @@
 
 						<div class="clear"></div>
 
-						<div id="footer">
-			<div id="links">
-				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
-				<a href="">ÁªÏµÎÒÃÇ</a>|
-				<a href="">ÈË²ÅÕÐÆ¸</a>|
-				<a href="">ÉÌ¼ÒÈë×¤</a>|
-				<a href="">¹ã¸æ·þÎñ</a>|
-				<a href="">ÓÑÇéÁ´½Ó</a>|
-				<a href="">ÏúÊÛÁªÃË</a>|
-				<a href="">English Site</a>
-			</div>
-			<div style="color: #999;">
-				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
-			</div>
-		</div>
+						<%@ include file="footer.jsp" %>
+
+			
 					</div>
 
 				</div>
 			</div>
-			<!--²Ëµ¥ -->
+			<!--èœå• -->
 			<div class=tip>
 				<div id="sidebar">
 					<div id="wrap">
@@ -1175,13 +1164,13 @@
 								<div class="avatar_box">
 									<p class="avatar_imgbox"><img src="images/no-img_mid_.jpg" /></p>
 									<ul class="user_info">
-										<li>ÓÃ»§Ãû£ºsl1903</li>
-										<li>¼¶&nbsp;±ð£ºÆÕÍ¨»áÔ±</li>
+										<li>ç”¨æˆ·åï¼šsl1903</li>
+										<li>çº§&nbsp;åˆ«ï¼šæ™®é€šä¼šå‘˜</li>
 									</ul>
 								</div>
 								<div class="login_btnbox">
-									<a href="#" class="login_order">ÎÒµÄ¶©µ¥</a>
-									<a href="#" class="login_favorite">ÎÒµÄÊÕ²Ø</a>
+									<a href="#" class="login_order">æˆ‘çš„è®¢å•</a>
+									<a href="#" class="login_favorite">æˆ‘çš„æ”¶è—</a>
 								</div>
 								<i class="icon_arrow_white"></i>
 							</div>
@@ -1192,7 +1181,7 @@
 								<span class="message"></span>
 							</a>
 							<p>
-								¹ºÎï³µ
+								è´­ç‰©è½¦
 							</p>
 							<p class="cart_num">0</p>
 						</div>
@@ -1201,7 +1190,7 @@
 								<span class="view"></span>
 							</a>
 							<div class="mp_tooltip">
-								ÎÒµÄ×Ê²ú
+								æˆ‘çš„èµ„äº§
 								<i class="icon_arrow_right_black"></i>
 							</div>
 						</div>
@@ -1211,7 +1200,7 @@
 								<span class="zuji"></span>
 							</a>
 							<div class="mp_tooltip">
-								ÎÒµÄ×ã¼£
+								æˆ‘çš„è¶³è¿¹
 								<i class="icon_arrow_right_black"></i>
 							</div>
 						</div>
@@ -1221,7 +1210,7 @@
 								<span class="wdsc"><img src="images/wdsc.png" /></span>
 							</a>
 							<div class="mp_tooltip">
-								ÎÒµÄÊÕ²Ø
+								æˆ‘çš„æ”¶è—
 								<i class="icon_arrow_right_black"></i>
 							</div>
 						</div>
@@ -1231,7 +1220,7 @@
 								<span class="chongzhi"><img src="images/chongzhi.png" /></span>
 							</a>
 							<div class="mp_tooltip">
-								ÎÒÒª³äÖµ
+								æˆ‘è¦å……å€¼
 								<i class="icon_arrow_right_black"></i>
 							</div>
 						</div>
@@ -1239,9 +1228,9 @@
 						<div class="quick_toggle">
 							<li class="qtitem">
 								<a href="#"><span class="kfzx"></span></a>
-								<div class="mp_tooltip">¿Í·þÖÐÐÄ<i class="icon_arrow_right_black"></i></div>
+								<div class="mp_tooltip">å®¢æœä¸­å¿ƒ<i class="icon_arrow_right_black"></i></div>
 							</li>
-							<!--¶þÎ¬Âë -->
+							<!--äºŒç»´ç  -->
 							<li class="qtitem">
 								<a href="#none"><span class="mpbtn_qrcode"></span></a>
 								<div class="mp_qrcode" style="display:none;"><img src="images/weixin_code_145.png" /><i class="icon_arrow_white"></i></div>
@@ -1251,7 +1240,7 @@
 							</li>
 						</div>
 
-						<!--»Øµ½¶¥²¿ -->
+						<!--å›žåˆ°é¡¶éƒ¨ -->
 						<div id="quick_links_pop" class="quick_links_pop hide"></div>
 
 					</div>
@@ -1262,7 +1251,7 @@
 						<i class="am-icon-angle-right am-icon-fw"></i>
 					</div>
 					<div>
-						ÎÒ
+						æˆ‘
 					</div>
 				</div>
 				<div id="shopCart-content" class="nav-content">
@@ -1270,7 +1259,7 @@
 						<i class="am-icon-angle-right am-icon-fw"></i>
 					</div>
 					<div>
-						¹ºÎï³µ
+						è´­ç‰©è½¦
 					</div>
 				</div>
 				<div id="asset-content" class="nav-content">
@@ -1278,21 +1267,21 @@
 						<i class="am-icon-angle-right am-icon-fw"></i>
 					</div>
 					<div>
-						×Ê²ú
+						èµ„äº§
 					</div>
 
 					<div class="ia-head-list">
 						<a href="#" target="_blank" class="pl">
 							<div class="num">0</div>
-							<div class="text">ÓÅ»ÝÈ¯</div>
+							<div class="text">ä¼˜æƒ åˆ¸</div>
 						</a>
 						<a href="#" target="_blank" class="pl">
 							<div class="num">0</div>
-							<div class="text">ºì°ü</div>
+							<div class="text">çº¢åŒ…</div>
 						</a>
 						<a href="#" target="_blank" class="pl money">
-							<div class="num">£¤0</div>
-							<div class="text">Óà¶î</div>
+							<div class="num">ï¿¥0</div>
+							<div class="text">ä½™é¢</div>
 						</a>
 					</div>
 
@@ -1302,7 +1291,7 @@
 						<i class="am-icon-angle-right am-icon-fw"></i>
 					</div>
 					<div>
-						×ã¼£
+						è¶³è¿¹
 					</div>
 				</div>
 				<div id="brand-content" class="nav-content">
@@ -1310,7 +1299,7 @@
 						<i class="am-icon-angle-right am-icon-fw"></i>
 					</div>
 					<div>
-						ÊÕ²Ø
+						æ”¶è—
 					</div>
 				</div>
 				<div id="broadcast-content" class="nav-content">
@@ -1318,7 +1307,7 @@
 						<i class="am-icon-angle-right am-icon-fw"></i>
 					</div>
 					<div>
-						³äÖµ
+						å……å€¼
 					</div>
 				</div>
 			</div>

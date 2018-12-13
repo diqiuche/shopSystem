@@ -1,11 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">			
-		<title>È«²¿·ÖÀà</title>
+		<title>å…¨éƒ¨åˆ†ç±»</title>
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css" />
 		<link href="${pageContext.request.contextPath }/css/footer.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/demo.css" rel="stylesheet" type="text/css" />		
@@ -15,32 +16,32 @@
 
 	<body>
 		
-			<!--¶¥²¿µ¼º½Ìõ -->
+			<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
 			<div class="am-container header">
 				<ul class="message-l">
 					<div class="topMessage">
 						<div class="menu-hd">
-							<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
-							<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
+							<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
+							<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
 						</div>
 					</div>
 				</ul>
 				<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
 						</ul>
 				</div>
 
-				<!--Ðü¸¡ËÑË÷¿ò-->
+				<!--æ‚¬æµ®æœç´¢æ¡†-->
 
 				<div class="nav white">
 					<div class="logo"><img src="images/logo.png" /></div>
@@ -51,8 +52,8 @@
 					<div class="search-bar pr">
 						<a name="index_none_header_sysc" href="#"></a>
 						<form>
-							<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
-							<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
+							<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
+							<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
 						</form>
 					</div>
 				</div>
@@ -62,17 +63,17 @@
 		
 		
 		
-		<!--Ö÷Ìå-->
+		<!--ä¸»ä½“-->
 		
 		<div id="nav" class="navfull">
 			<div class="area clearfix">
 				<div class="category-content" id="guide_2">
-					<div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span><span id="meauBack"><a href="home.jsp">·µ»Ø</a></span></div>
+					<div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span><span id="meauBack"><a href="home.jsp">è¿”å›ž</a></span></div>
 					<div class="category">
 										<ul class="category-list" id="js_climit_li">
 											<li class="appliance js_toggle relative first selected">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/cake.png"></i><a class="ml-22" title="µãÐÄ">µãÐÄ/µ°¸â</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/cake.png"></i><a class="ml-22" title="ç‚¹å¿ƒ">ç‚¹å¿ƒ/è›‹ç³•</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
@@ -80,35 +81,35 @@
 															<div class="menu-srot">
 																
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 												                </div>																
 																
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="µ°¸â">µ°¸â</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è›‹ç³•">è›‹ç³•</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="µ°¸â">µãÐÄ</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è›‹ç³•">ç‚¹å¿ƒ</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 
 																</div>
@@ -121,49 +122,49 @@
 											</li>
 											<li class="appliance js_toggle relative">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/cookies.png"></i><a class="ml-22" title="±ý¸É¡¢Åò»¯">±ý¸É/Åò»¯</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/cookies.png"></i><a class="ml-22" title="é¥¼å¹²ã€è†¨åŒ–">é¥¼å¹²/è†¨åŒ–</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 												                </div>																	
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="±ý¸É">±ý¸É</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
+																		<dt><span title="é¥¼å¹²">é¥¼å¹²</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="ÊíÆ¬">ÊíÆ¬</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è–¯ç‰‡">è–¯ç‰‡</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="µ°¸â">ÏºÌõ</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è›‹ç³•">è™¾æ¡</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																</div>
 
@@ -175,41 +176,41 @@
 											</li>
 											<li class="appliance js_toggle relative">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/meat.png"></i><a class="ml-22" title="ÊìÊ³¡¢ÈâÀà">ÊìÊ³/ÈâÀà</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/meat.png"></i><a class="ml-22" title="ç†Ÿé£Ÿã€è‚‰ç±»">ç†Ÿé£Ÿ/è‚‰ç±»</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 												                </div>																	
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="ÖíÈâ¸¬">ÖíÈâ¸¬</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
+																		<dt><span title="çŒªè‚‰è„¯">çŒªè‚‰è„¯</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="Å£ÈâË¿">Å£ÈâË¿</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
+																		<dt><span title="ç‰›è‚‰ä¸">ç‰›è‚‰ä¸</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="Ð¡Ïã³¦">Ð¡Ïã³¦</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="å°é¦™è‚ ">å°é¦™è‚ </span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																</div>
 
@@ -221,43 +222,43 @@
 											</li>
 											<li class="appliance js_toggle relative">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/bamboo.png"></i><a class="ml-22" title="ËØÊ³¡¢Â±Î¶">ËØÊ³/Â±Î¶</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/bamboo.png"></i><a class="ml-22" title="ç´ é£Ÿã€å¤å‘³">ç´ é£Ÿ/å¤å‘³</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 																</div>																
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="¶¹¸É">¶¹¸É</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è±†å¹²">è±†å¹²</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="¸ÉËñ">¸ÉËñ</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="å¹²ç¬‹">å¹²ç¬‹</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="Ñ¼²±">Ñ¼²±</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="é¸­è„–">é¸­è„–</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																</div>
 
@@ -269,41 +270,41 @@
 											</li>
 											<li class="appliance js_toggle relative">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/nut.png"></i><a class="ml-22" title="¼á¹û¡¢³´»õ">¼á¹û/³´»õ</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/nut.png"></i><a class="ml-22" title="åšæžœã€ç‚’è´§">åšæžœ/ç‚’è´§</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 																</div>																
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="µ°¸â">¼á¹û</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è›‹ç³•">åšæžœ</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="µ°¸â">¹ø°Í</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è›‹ç³•">é”…å·´</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																</div>
 
@@ -315,41 +316,41 @@
 											</li>
 											<li class="appliance js_toggle relative">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/candy.png"></i><a class="ml-22" title="ÌÇ¹û¡¢ÃÛ½¤">ÌÇ¹û/ÃÛ½¤</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/candy.png"></i><a class="ml-22" title="ç³–æžœã€èœœé¥¯">ç³–æžœ/èœœé¥¯</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 																</div>																
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="ÌÇ¹û">ÌÇ¹û</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="ç³–æžœ">ç³–æžœ</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="ÃÛ½¤">ÃÛ½¤</span></dt>
-																		<dd><a title="â¨ºïÌÒ¸É" href="#"><span>â¨ºïÌÒ¸É</span></a></dd>
-																		<dd><a title="ÌÇÓ£ÌÒ" href="#"><span>ÌÇÓ£ÌÒ</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="èœœé¥¯">èœœé¥¯</span></dt>
+																		<dd><a title="çŒ•çŒ´æ¡ƒå¹²" href="#"><span>çŒ•çŒ´æ¡ƒå¹²</span></a></dd>
+																		<dd><a title="ç³–æ¨±æ¡ƒ" href="#"><span>ç³–æ¨±æ¡ƒ</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																</div>
 
@@ -361,41 +362,41 @@
 											</li>
 											<li class="appliance js_toggle relative">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/chocolate.png"></i><a class="ml-22" title="ÇÉ¿ËÁ¦">ÇÉ¿ËÁ¦</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/chocolate.png"></i><a class="ml-22" title="å·§å…‹åŠ›">å·§å…‹åŠ›</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 																</div>																
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="µ°¸â">ÇÉ¿ËÁ¦</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è›‹ç³•">å·§å…‹åŠ›</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="µ°¸â">¹û¶³</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è›‹ç³•">æžœå†»</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																</div>
 
@@ -407,43 +408,43 @@
 											</li>
 											<li class="appliance js_toggle relative">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/fish.png"></i><a class="ml-22" title="º£Î¶¡¢ºÓÏÊ">º£Î¶/ºÓÏÊ</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/fish.png"></i><a class="ml-22" title="æµ·å‘³ã€æ²³é²œ">æµ·å‘³/æ²³é²œ</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 																</div>																
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="º£´øË¿">º£´øË¿</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="æµ·å¸¦ä¸">æµ·å¸¦ä¸</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="Ð¡Óã¸É">Ð¡Óã¸É</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
+																		<dt><span title="å°é±¼å¹²">å°é±¼å¹²</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="öÏÓãË¿">öÏÓãË¿</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
+																		<dt><span title="é±¿é±¼ä¸">é±¿é±¼ä¸</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
 																	</dl>
 																</div>
 
@@ -455,41 +456,41 @@
 											</li>
 											<li class="appliance js_toggle relative">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/tea.png"></i><a class="ml-22" title="»¨²è¡¢¹û²è">»¨²è/¹û²è</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/tea.png"></i><a class="ml-22" title="èŠ±èŒ¶ã€æžœèŒ¶">èŠ±èŒ¶/æžœèŒ¶</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 																</div>																
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="µ°¸â">µ°¸â</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è›‹ç³•">è›‹ç³•</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="µ°¸â">µãÐÄ</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="è›‹ç³•">ç‚¹å¿ƒ</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																</div>
 
@@ -501,41 +502,41 @@
 											</li>
 											<li class="appliance js_toggle relative last">
 												<div class="category-info">
-													<h3 class="category-name b-category-name"><i><img src="images/package.png"></i><a class="ml-22" title="Æ·ÅÆ¡¢Àñ°ü">Æ·ÅÆ/Àñ°ü</a></h3>
+													<h3 class="category-name b-category-name"><i><img src="images/package.png"></i><a class="ml-22" title="å“ç‰Œã€ç¤¼åŒ…">å“ç‰Œ/ç¤¼åŒ…</a></h3>
 													<em>&gt;</em></div>
 												<div class="menu-item menu-in top">
 													<div class="area-in">
 														<div class="area-bg">
 															<div class="menu-srot">
 																<div class="brand-side">
-													              <dl class="dl-sort"><dt><span>ÎªÄúÍÆ¼ö</span></dt>
+													              <dl class="dl-sort"><dt><span>ä¸ºæ‚¨æŽ¨è</span></dt>
 													                <img src="images/TJ.jpg">
 													              </dl>
 																</div>																
 																<div class="sort-side">
 																	<dl class="dl-sort">
-																		<dt><span title="´ó°ü×°">´ó°ü×°</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="å¤§åŒ…è£…">å¤§åŒ…è£…</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																	<dl class="dl-sort">
-																		<dt><span title="Á½¼þÌ×">Á½¼þÌ×</span></dt>
-																		<dd><a title="Õôµ°¸â" href="#"><span>Õôµ°¸â</span></a></dd>
-																		<dd><a title="ÍÑË®µ°¸â" href="#"><span>ÍÑË®µ°¸â</span></a></dd>
-																		<dd><a title="ÈðÊ¿¾í" href="#"><span>ÈðÊ¿¾í</span></a></dd>
-																		<dd><a title="ÈíÃæ°ü" href="#"><span>ÈíÃæ°ü</span></a></dd>
-																		<dd><a title="Âí¿¨Áú" href="#"><span>Âí¿¨Áú</span></a></dd>
-																		<dd><a title="Ç§²ã±ý" href="#"><span>Ç§²ã±ý</span></a></dd>
-																		<dd><a title="ÌðÌðÈ¦" href="#"><span>ÌðÌðÈ¦</span></a></dd>
-																		<dd><a title="ÕôÈýÃ÷ÖÎ" href="#"><span>ÕôÈýÃ÷ÖÎ</span></a></dd>
-																		<dd><a title="Í­ÂàÉÕ" href="#"><span>Í­ÂàÉÕ</span></a></dd>
+																		<dt><span title="ä¸¤ä»¶å¥—">ä¸¤ä»¶å¥—</span></dt>
+																		<dd><a title="è’¸è›‹ç³•" href="#"><span>è’¸è›‹ç³•</span></a></dd>
+																		<dd><a title="è„±æ°´è›‹ç³•" href="#"><span>è„±æ°´è›‹ç³•</span></a></dd>
+																		<dd><a title="ç‘žå£«å·" href="#"><span>ç‘žå£«å·</span></a></dd>
+																		<dd><a title="è½¯é¢åŒ…" href="#"><span>è½¯é¢åŒ…</span></a></dd>
+																		<dd><a title="é©¬å¡é¾™" href="#"><span>é©¬å¡é¾™</span></a></dd>
+																		<dd><a title="åƒå±‚é¥¼" href="#"><span>åƒå±‚é¥¼</span></a></dd>
+																		<dd><a title="ç”œç”œåœˆ" href="#"><span>ç”œç”œåœˆ</span></a></dd>
+																		<dd><a title="è’¸ä¸‰æ˜Žæ²»" href="#"><span>è’¸ä¸‰æ˜Žæ²»</span></a></dd>
+																		<dd><a title="é“œé”£çƒ§" href="#"><span>é“œé”£çƒ§</span></a></dd>
 																	</dl>
 																</div>
 
@@ -559,12 +560,12 @@
 		})
 		</script>
 		<div class="clear"></div>
-		<!--Òýµ¼ -->
+		<!--å¼•å¯¼ -->
 		<div class="navCir">
-			<li><a href="home2.jsp"><i class="am-icon-home "></i>Ê×Ò³</a></li>
-			<li  class="active"><a href="sort.jsp"><i class="am-icon-list"></i>·ÖÀà</a></li>
-			<li><a href="shopcart.jsp"><i class="am-icon-shopping-basket"></i>¹ºÎï³µ</a></li>	
-			<li><a href="../person/index.jsp"><i class="am-icon-user"></i>ÎÒµÄ</a></li>					
+			<li><a href="home2.jsp"><i class="am-icon-home "></i>é¦–é¡µ</a></li>
+			<li  class="active"><a href="sort.jsp"><i class="am-icon-list"></i>åˆ†ç±»</a></li>
+			<li><a href="shopcart.jsp"><i class="am-icon-shopping-basket"></i>è´­ç‰©è½¦</a></li>	
+			<li><a href="../person/index.jsp"><i class="am-icon-user"></i>æˆ‘çš„</a></li>					
 		</div>
 	</body>
 

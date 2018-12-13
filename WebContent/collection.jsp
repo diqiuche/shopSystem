@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>ÎÒµÄÊÕ²Ø</title>
+		<title>æˆ‘çš„æ”¶è—</title>
 
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css">
@@ -17,36 +18,36 @@
 	</head>
 
 	<body>
-		<!--Í· -->
+		<!--å¤´ -->
 		<header>
 			<article>
 				<div class="mt-logo">
-					<!--¶¥²¿µ¼º½Ìõ -->
+					<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
 					<div class="am-container header">
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
-									<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
+									<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
+									<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
 						</ul>
 						</div>
 
-						<!--Ðü¸¡ËÑË÷¿ò-->
+						<!--æ‚¬æµ®æœç´¢æ¡†-->
 
 						<div class="nav white">
 							<div class="logoBig">
@@ -56,8 +57,8 @@
 							<div class="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
-									<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
 								</form>
 							</div>
 						</div>
@@ -68,17 +69,17 @@
 			</article>
 		</header>
             <div class="nav-table">
-					   <div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
+					   <div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">Ê×Ò³</a></li>
-                                <li class="qc"><a href="#">ÉÁ¹º</a></li>
-                                <li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
-                                <li class="qc"><a href="#">ÍÅ¹º</a></li>
-                                <li class="qc last"><a href="#">´ó°ü×°</a></li>
+								<li class="index"><a href="#">é¦–é¡µ</a></li>
+                                <li class="qc"><a href="#">é—ªè´­</a></li>
+                                <li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
+                                <li class="qc"><a href="#">å›¢è´­</a></li>
+                                <li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
 							</ul>
 						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
 						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 						    </div>
 						</div>
@@ -89,17 +90,17 @@
 				<div class="main-wrap">
 
 					<div class="user-collection">
-						<!--±êÌâ -->
+						<!--æ ‡é¢˜ -->
 						<div class="am-cf am-padding">
-							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">ÎÒµÄÊÕ²Ø</strong> / <small>My&nbsp;Collection</small></div>
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">æˆ‘çš„æ”¶è—</strong> / <small>My&nbsp;Collection</small></div>
 						</div>
 						<hr/>
 
 						<div class="you-like">
 							<div class="s-bar">
-								ÎÒµÄÊÕ²Ø
-								<a class="am-badge am-badge-danger am-round">½µ¼Û</a>
-								<a class="am-badge am-badge-danger am-round">ÏÂ¼Ü</a>
+								æˆ‘çš„æ”¶è—
+								<a class="am-badge am-badge-danger am-round">é™ä»·</a>
+								<a class="am-badge am-badge-danger am-round">ä¸‹æž¶</a>
 							</div>
 							<div class="s-content">
 								<div class="s-item-wrap">
@@ -107,26 +108,26 @@
 
 										<div class="s-pic">
 											<a href="#" class="s-pic-link">
-												<img src="images/0-item_pic.jpg_220x220.jpg" alt="°üÓÊs925´¿ÒøÏîÁ´Å®µõ×¹¶Ì¿îËø¹ÇÁ´¾±Á´ÈÕº«Ã¨ßäÒøÊÎ¼òÔ¼ÏÄÅäÊÎ" title="°üÓÊs925´¿ÒøÏîÁ´Å®µõ×¹¶Ì¿îËø¹ÇÁ´¾±Á´ÈÕº«Ã¨ßäÒøÊÎ¼òÔ¼ÏÄÅäÊÎ" class="s-pic-img s-guess-item-img">
+												<img src="images/0-item_pic.jpg_220x220.jpg" alt="åŒ…é‚®s925çº¯é“¶é¡¹é“¾å¥³åŠå çŸ­æ¬¾é”éª¨é“¾é¢ˆé“¾æ—¥éŸ©çŒ«å’ªé“¶é¥°ç®€çº¦å¤é…é¥°" title="åŒ…é‚®s925çº¯é“¶é¡¹é“¾å¥³åŠå çŸ­æ¬¾é”éª¨é“¾é¢ˆé“¾æ—¥éŸ©çŒ«å’ªé“¶é¥°ç®€çº¦å¤é…é¥°" class="s-pic-img s-guess-item-img">
 											</a>
 										</div>
 										<div class="s-info">
-											<div class="s-title"><a href="#" title="°üÓÊs925´¿ÒøÏîÁ´Å®µõ×¹¶Ì¿îËø¹ÇÁ´¾±Á´ÈÕº«Ã¨ßäÒøÊÎ¼òÔ¼ÏÄÅäÊÎ">°üÓÊs925´¿ÒøÏîÁ´Å®µõ×¹¶Ì¿îËø¹ÇÁ´¾±Á´ÈÕº«Ã¨ßäÒøÊÎ¼òÔ¼ÏÄÅäÊÎ</a></div>
+											<div class="s-title"><a href="#" title="åŒ…é‚®s925çº¯é“¶é¡¹é“¾å¥³åŠå çŸ­æ¬¾é”éª¨é“¾é¢ˆé“¾æ—¥éŸ©çŒ«å’ªé“¶é¥°ç®€çº¦å¤é…é¥°">åŒ…é‚®s925çº¯é“¶é¡¹é“¾å¥³åŠå çŸ­æ¬¾é”éª¨é“¾é¢ˆé“¾æ—¥éŸ©çŒ«å’ªé“¶é¥°ç®€çº¦å¤é…é¥°</a></div>
 											<div class="s-price-box">
-												<span class="s-price"><em class="s-price-sign">0„6</em><em class="s-value">42.50</em></span>
-												<span class="s-history-price"><em class="s-price-sign">0„6</em><em class="s-value">68.00</em></span>
+												<span class="s-price"><em class="s-price-sign">Â¥</em><em class="s-value">42.50</em></span>
+												<span class="s-history-price"><em class="s-price-sign">Â¥</em><em class="s-value">68.00</em></span>
 											</div>
 											<div class="s-extra-box">
-												<span class="s-comment">ºÃÆÀ: 98.03%</span>
-												<span class="s-sales">ÔÂÏú: 219</span>
+												<span class="s-comment">å¥½è¯„: 98.03%</span>
+												<span class="s-sales">æœˆé”€: 219</span>
 											</div>
 										</div>
 										<div class="s-tp">
-											<span class="ui-btn-loading-before">ÕÒÏàËÆ</span>
+											<span class="ui-btn-loading-before">æ‰¾ç›¸ä¼¼</span>
 											<i class="am-icon-shopping-cart"></i>
-											<span class="ui-btn-loading-before buy">¼ÓÈë¹ºÎï³µ</span>
+											<span class="ui-btn-loading-before buy">åŠ å…¥è´­ç‰©è½¦</span>
 											<p>
-												<a href="javascript:;" class="c-nodo J_delFav_btn">È¡ÏûÊÕ²Ø</a>
+												<a href="javascript:;" class="c-nodo J_delFav_btn">å–æ¶ˆæ”¶è—</a>
 											</p>
 										</div>
 									</div>
@@ -137,26 +138,26 @@
 
 										<div class="s-pic">
 											<a href="#" class="s-pic-link">
-												<img src="images/1-item_pic.jpg_220x220.jpg" alt="s925´¿ÒøÇ§Ö½º×Ëø¹ÇÁ´¶Ì¿î¼òÔ¼Ê±ÉÐº«°æËØÒøÏîÁ´Ð¡ÇåÐÂÇï¿îÅ®ÅäÊÎ" title="s925´¿ÒøÇ§Ö½º×Ëø¹ÇÁ´¶Ì¿î¼òÔ¼Ê±ÉÐº«°æËØÒøÏîÁ´Ð¡ÇåÐÂÇï¿îÅ®ÅäÊÎ" class="s-pic-img s-guess-item-img">
+												<img src="images/1-item_pic.jpg_220x220.jpg" alt="s925çº¯é“¶åƒçº¸é¹¤é”éª¨é“¾çŸ­æ¬¾ç®€çº¦æ—¶å°šéŸ©ç‰ˆç´ é“¶é¡¹é“¾å°æ¸…æ–°ç§‹æ¬¾å¥³é…é¥°" title="s925çº¯é“¶åƒçº¸é¹¤é”éª¨é“¾çŸ­æ¬¾ç®€çº¦æ—¶å°šéŸ©ç‰ˆç´ é“¶é¡¹é“¾å°æ¸…æ–°ç§‹æ¬¾å¥³é…é¥°" class="s-pic-img s-guess-item-img">
 											</a>
 										</div>
 										<div class="s-info">
-											<div class="s-title"><a href="#" title="s925´¿ÒøÇ§Ö½º×Ëø¹ÇÁ´¶Ì¿î¼òÔ¼Ê±ÉÐº«°æËØÒøÏîÁ´Ð¡ÇåÐÂÇï¿îÅ®ÅäÊÎ">s925´¿ÒøÇ§Ö½º×Ëø¹ÇÁ´¶Ì¿î¼òÔ¼Ê±ÉÐº«°æËØÒøÏîÁ´Ð¡ÇåÐÂÇï¿îÅ®ÅäÊÎ</a></div>
+											<div class="s-title"><a href="#" title="s925çº¯é“¶åƒçº¸é¹¤é”éª¨é“¾çŸ­æ¬¾ç®€çº¦æ—¶å°šéŸ©ç‰ˆç´ é“¶é¡¹é“¾å°æ¸…æ–°ç§‹æ¬¾å¥³é…é¥°">s925çº¯é“¶åƒçº¸é¹¤é”éª¨é“¾çŸ­æ¬¾ç®€çº¦æ—¶å°šéŸ©ç‰ˆç´ é“¶é¡¹é“¾å°æ¸…æ–°ç§‹æ¬¾å¥³é…é¥°</a></div>
 											<div class="s-price-box">
-												<span class="s-price"><em class="s-price-sign">0„6</em><em class="s-value">49.90</em></span>
-												<span class="s-history-price"><em class="s-price-sign">0„6</em><em class="s-value">88.00</em></span>
+												<span class="s-price"><em class="s-price-sign">Â¥</em><em class="s-value">49.90</em></span>
+												<span class="s-history-price"><em class="s-price-sign">Â¥</em><em class="s-value">88.00</em></span>
 											</div>
 											<div class="s-extra-box">
-												<span class="s-comment">ºÃÆÀ: 99.74%</span>
-												<span class="s-sales">ÔÂÏú: 69</span>
+												<span class="s-comment">å¥½è¯„: 99.74%</span>
+												<span class="s-sales">æœˆé”€: 69</span>
 											</div>
 										</div>
 										<div class="s-tp">
-											<span class="ui-btn-loading-before">ÕÒÏàËÆ</span>
+											<span class="ui-btn-loading-before">æ‰¾ç›¸ä¼¼</span>
 											<i class="am-icon-shopping-cart"></i>
-											<span class="ui-btn-loading-before buy">¼ÓÈë¹ºÎï³µ</span>
+											<span class="ui-btn-loading-before buy">åŠ å…¥è´­ç‰©è½¦</span>
 											<p>
-												<a href="javascript:;" class="c-nodo J_delFav_btn">È¡ÏûÊÕ²Ø</a>
+												<a href="javascript:;" class="c-nodo J_delFav_btn">å–æ¶ˆæ”¶è—</a>
 											</p>
 										</div>
 									</div>
@@ -167,27 +168,27 @@
 
 										<div class="s-pic">
 											<a href="#" class="s-pic-link">
-												<img src="images/-0-saturn_solar.jpg_220x220.jpg" alt="4ÕÛÇÀ¹º!Ê®¶þÉúÐ¤925ÒøÅ®½äÖ¸,Ê±ÉÐ¿ª¿ÚÅ®½ä" title="4ÕÛÇÀ¹º!Ê®¶þÉúÐ¤925ÒøÅ®½äÖ¸,Ê±ÉÐ¿ª¿ÚÅ®½ä" class="s-pic-img s-guess-item-img">
-											<span class="tip-title">ÒÑÏÂ¼Ü</span>
+												<img src="images/-0-saturn_solar.jpg_220x220.jpg" alt="4æŠ˜æŠ¢è´­!åäºŒç”Ÿè‚–925é“¶å¥³æˆ’æŒ‡,æ—¶å°šå¼€å£å¥³æˆ’" title="4æŠ˜æŠ¢è´­!åäºŒç”Ÿè‚–925é“¶å¥³æˆ’æŒ‡,æ—¶å°šå¼€å£å¥³æˆ’" class="s-pic-img s-guess-item-img">
+											<span class="tip-title">å·²ä¸‹æž¶</span>
 											</a>
 										</div>
 										<div class="s-info">
-											<div class="s-title"><a href="#" title="4ÕÛÇÀ¹º!Ê®¶þÉúÐ¤925ÒøÅ®½äÖ¸,Ê±ÉÐ¿ª¿ÚÅ®½ä">4ÕÛÇÀ¹º!Ê®¶þÉúÐ¤925ÒøÅ®½äÖ¸,Ê±ÉÐ¿ª¿ÚÅ®½ä</a></div>
+											<div class="s-title"><a href="#" title="4æŠ˜æŠ¢è´­!åäºŒç”Ÿè‚–925é“¶å¥³æˆ’æŒ‡,æ—¶å°šå¼€å£å¥³æˆ’">4æŠ˜æŠ¢è´­!åäºŒç”Ÿè‚–925é“¶å¥³æˆ’æŒ‡,æ—¶å°šå¼€å£å¥³æˆ’</a></div>
 											<div class="s-price-box">
-												<span class="s-price"><em class="s-price-sign">0„6</em><em class="s-value">378.00</em></span>
-												<span class="s-history-price"><em class="s-price-sign">0„6</em><em class="s-value">1888.00</em></span>
+												<span class="s-price"><em class="s-price-sign">Â¥</em><em class="s-value">378.00</em></span>
+												<span class="s-history-price"><em class="s-price-sign">Â¥</em><em class="s-value">1888.00</em></span>
 											</div>
 											<div class="s-extra-box">
-												<span class="s-comment">ºÃÆÀ: 99.93%</span>
-												<span class="s-sales">ÔÂÏú: 278</span>
+												<span class="s-comment">å¥½è¯„: 99.93%</span>
+												<span class="s-sales">æœˆé”€: 278</span>
 											</div>
 										</div>
 										<div class="s-tp">
-											<span class="ui-btn-loading-before">ÕÒÏàËÆ</span>
+											<span class="ui-btn-loading-before">æ‰¾ç›¸ä¼¼</span>
 											<i class="am-icon-trash"></i>
-											<span class="ui-btn-loading-before buy">½øÈëµêÆÌ</span>
+											<span class="ui-btn-loading-before buy">è¿›å…¥åº—é“º</span>
 											<p>
-												<a href="javascript:;" class="c-nodo J_delFav_btn">È¡ÏûÊÕ²Ø</a>
+												<a href="javascript:;" class="c-nodo J_delFav_btn">å–æ¶ˆæ”¶è—</a>
 											</p>
 										</div>
 									</div>
@@ -198,26 +199,26 @@
 
 										<div class="s-pic">
 											<a href="#" class="s-pic-link">
-												<img src="images/0-item_pic.jpg_220x220.jpg" alt="°üÓÊs925´¿ÒøÏîÁ´Å®µõ×¹¶Ì¿îËø¹ÇÁ´¾±Á´ÈÕº«Ã¨ßäÒøÊÎ¼òÔ¼ÏÄÅäÊÎ" title="°üÓÊs925´¿ÒøÏîÁ´Å®µõ×¹¶Ì¿îËø¹ÇÁ´¾±Á´ÈÕº«Ã¨ßäÒøÊÎ¼òÔ¼ÏÄÅäÊÎ" class="s-pic-img s-guess-item-img">
+												<img src="images/0-item_pic.jpg_220x220.jpg" alt="åŒ…é‚®s925çº¯é“¶é¡¹é“¾å¥³åŠå çŸ­æ¬¾é”éª¨é“¾é¢ˆé“¾æ—¥éŸ©çŒ«å’ªé“¶é¥°ç®€çº¦å¤é…é¥°" title="åŒ…é‚®s925çº¯é“¶é¡¹é“¾å¥³åŠå çŸ­æ¬¾é”éª¨é“¾é¢ˆé“¾æ—¥éŸ©çŒ«å’ªé“¶é¥°ç®€çº¦å¤é…é¥°" class="s-pic-img s-guess-item-img">
 											</a>
 										</div>
 										<div class="s-info">
-											<div class="s-title"><a href="#" title="°üÓÊs925´¿ÒøÏîÁ´Å®µõ×¹¶Ì¿îËø¹ÇÁ´¾±Á´ÈÕº«Ã¨ßäÒøÊÎ¼òÔ¼ÏÄÅäÊÎ">°üÓÊs925´¿ÒøÏîÁ´Å®µõ×¹¶Ì¿îËø¹ÇÁ´¾±Á´ÈÕº«Ã¨ßäÒøÊÎ¼òÔ¼ÏÄÅäÊÎ</a></div>
+											<div class="s-title"><a href="#" title="åŒ…é‚®s925çº¯é“¶é¡¹é“¾å¥³åŠå çŸ­æ¬¾é”éª¨é“¾é¢ˆé“¾æ—¥éŸ©çŒ«å’ªé“¶é¥°ç®€çº¦å¤é…é¥°">åŒ…é‚®s925çº¯é“¶é¡¹é“¾å¥³åŠå çŸ­æ¬¾é”éª¨é“¾é¢ˆé“¾æ—¥éŸ©çŒ«å’ªé“¶é¥°ç®€çº¦å¤é…é¥°</a></div>
 											<div class="s-price-box">
-												<span class="s-price"><em class="s-price-sign">0„6</em><em class="s-value">42.50</em></span>
-												<span class="s-history-price"><em class="s-price-sign">0„6</em><em class="s-value">68.00</em></span>
+												<span class="s-price"><em class="s-price-sign">Â¥</em><em class="s-value">42.50</em></span>
+												<span class="s-history-price"><em class="s-price-sign">Â¥</em><em class="s-value">68.00</em></span>
 											</div>
 											<div class="s-extra-box">
-												<span class="s-comment">ºÃÆÀ: 98.03%</span>
-												<span class="s-sales">ÔÂÏú: 219</span>
+												<span class="s-comment">å¥½è¯„: 98.03%</span>
+												<span class="s-sales">æœˆé”€: 219</span>
 											</div>
 										</div>
 										<div class="s-tp">
-											<span class="ui-btn-loading-before">ÕÒÏàËÆ</span>
+											<span class="ui-btn-loading-before">æ‰¾ç›¸ä¼¼</span>
 											<i class="am-icon-shopping-cart"></i>
-											<span class="ui-btn-loading-before buy">¼ÓÈë¹ºÎï³µ</span>
+											<span class="ui-btn-loading-before buy">åŠ å…¥è´­ç‰©è½¦</span>
 											<p>
-												<a href="javascript:;" class="c-nodo J_delFav_btn">È¡ÏûÊÕ²Ø</a>
+												<a href="javascript:;" class="c-nodo J_delFav_btn">å–æ¶ˆæ”¶è—</a>
 											</p>
 										</div>										
 									</div>
@@ -228,26 +229,26 @@
 
 										<div class="s-pic">
 											<a href="#" class="s-pic-link">
-												<img src="images/1-item_pic.jpg_220x220.jpg" alt="s925´¿ÒøÇ§Ö½º×Ëø¹ÇÁ´¶Ì¿î¼òÔ¼Ê±ÉÐº«°æËØÒøÏîÁ´Ð¡ÇåÐÂÇï¿îÅ®ÅäÊÎ" title="s925´¿ÒøÇ§Ö½º×Ëø¹ÇÁ´¶Ì¿î¼òÔ¼Ê±ÉÐº«°æËØÒøÏîÁ´Ð¡ÇåÐÂÇï¿îÅ®ÅäÊÎ" class="s-pic-img s-guess-item-img">
+												<img src="images/1-item_pic.jpg_220x220.jpg" alt="s925çº¯é“¶åƒçº¸é¹¤é”éª¨é“¾çŸ­æ¬¾ç®€çº¦æ—¶å°šéŸ©ç‰ˆç´ é“¶é¡¹é“¾å°æ¸…æ–°ç§‹æ¬¾å¥³é…é¥°" title="s925çº¯é“¶åƒçº¸é¹¤é”éª¨é“¾çŸ­æ¬¾ç®€çº¦æ—¶å°šéŸ©ç‰ˆç´ é“¶é¡¹é“¾å°æ¸…æ–°ç§‹æ¬¾å¥³é…é¥°" class="s-pic-img s-guess-item-img">
 											</a>
 										</div>
 										<div class="s-info">
-											<div class="s-title"><a href="#" title="s925´¿ÒøÇ§Ö½º×Ëø¹ÇÁ´¶Ì¿î¼òÔ¼Ê±ÉÐº«°æËØÒøÏîÁ´Ð¡ÇåÐÂÇï¿îÅ®ÅäÊÎ">s925´¿ÒøÇ§Ö½º×Ëø¹ÇÁ´¶Ì¿î¼òÔ¼Ê±ÉÐº«°æËØÒøÏîÁ´Ð¡ÇåÐÂÇï¿îÅ®ÅäÊÎ</a></div>
+											<div class="s-title"><a href="#" title="s925çº¯é“¶åƒçº¸é¹¤é”éª¨é“¾çŸ­æ¬¾ç®€çº¦æ—¶å°šéŸ©ç‰ˆç´ é“¶é¡¹é“¾å°æ¸…æ–°ç§‹æ¬¾å¥³é…é¥°">s925çº¯é“¶åƒçº¸é¹¤é”éª¨é“¾çŸ­æ¬¾ç®€çº¦æ—¶å°šéŸ©ç‰ˆç´ é“¶é¡¹é“¾å°æ¸…æ–°ç§‹æ¬¾å¥³é…é¥°</a></div>
 											<div class="s-price-box">
-												<span class="s-price"><em class="s-price-sign">0„6</em><em class="s-value">49.90</em></span>
-												<span class="s-history-price"><em class="s-price-sign">0„6</em><em class="s-value">88.00</em></span>
+												<span class="s-price"><em class="s-price-sign">Â¥</em><em class="s-value">49.90</em></span>
+												<span class="s-history-price"><em class="s-price-sign">Â¥</em><em class="s-value">88.00</em></span>
 											</div>
 											<div class="s-extra-box">
-												<span class="s-comment">ºÃÆÀ: 99.74%</span>
-												<span class="s-sales">ÔÂÏú: 69</span>
+												<span class="s-comment">å¥½è¯„: 99.74%</span>
+												<span class="s-sales">æœˆé”€: 69</span>
 											</div>
 										</div>
 										<div class="s-tp">
-											<span class="ui-btn-loading-before">ÕÒÏàËÆ</span>
+											<span class="ui-btn-loading-before">æ‰¾ç›¸ä¼¼</span>
 											<i class="am-icon-shopping-cart"></i>
-											<span class="ui-btn-loading-before buy">¼ÓÈë¹ºÎï³µ</span>
+											<span class="ui-btn-loading-before buy">åŠ å…¥è´­ç‰©è½¦</span>
 											<p>
-												<a href="javascript:;" class="c-nodo J_delFav_btn">È¡ÏûÊÕ²Ø</a>
+												<a href="javascript:;" class="c-nodo J_delFav_btn">å–æ¶ˆæ”¶è—</a>
 											</p>
 										</div>
 									</div>
@@ -258,26 +259,26 @@
 
 										<div class="s-pic">
 											<a href="#" class="s-pic-link">
-												<img src="images/-0-saturn_solar.jpg_220x220.jpg" alt="4ÕÛÇÀ¹º!Ê®¶þÉúÐ¤925ÒøÅ®½äÖ¸,Ê±ÉÐ¿ª¿ÚÅ®½ä" title="4ÕÛÇÀ¹º!Ê®¶þÉúÐ¤925ÒøÅ®½äÖ¸,Ê±ÉÐ¿ª¿ÚÅ®½ä" class="s-pic-img s-guess-item-img">
+												<img src="images/-0-saturn_solar.jpg_220x220.jpg" alt="4æŠ˜æŠ¢è´­!åäºŒç”Ÿè‚–925é“¶å¥³æˆ’æŒ‡,æ—¶å°šå¼€å£å¥³æˆ’" title="4æŠ˜æŠ¢è´­!åäºŒç”Ÿè‚–925é“¶å¥³æˆ’æŒ‡,æ—¶å°šå¼€å£å¥³æˆ’" class="s-pic-img s-guess-item-img">
 											</a>
 										</div>
 										<div class="s-info">
-											<div class="s-title"><a href="#" title="4ÕÛÇÀ¹º!Ê®¶þÉúÐ¤925ÒøÅ®½äÖ¸,Ê±ÉÐ¿ª¿ÚÅ®½ä">4ÕÛÇÀ¹º!Ê®¶þÉúÐ¤925ÒøÅ®½äÖ¸,Ê±ÉÐ¿ª¿ÚÅ®½ä</a></div>
+											<div class="s-title"><a href="#" title="4æŠ˜æŠ¢è´­!åäºŒç”Ÿè‚–925é“¶å¥³æˆ’æŒ‡,æ—¶å°šå¼€å£å¥³æˆ’">4æŠ˜æŠ¢è´­!åäºŒç”Ÿè‚–925é“¶å¥³æˆ’æŒ‡,æ—¶å°šå¼€å£å¥³æˆ’</a></div>
 											<div class="s-price-box">
-												<span class="s-price"><em class="s-price-sign">0„6</em><em class="s-value">378.00</em></span>
-												<span class="s-history-price"><em class="s-price-sign">0„6</em><em class="s-value">1888.00</em></span>
+												<span class="s-price"><em class="s-price-sign">Â¥</em><em class="s-value">378.00</em></span>
+												<span class="s-history-price"><em class="s-price-sign">Â¥</em><em class="s-value">1888.00</em></span>
 											</div>
 											<div class="s-extra-box">
-												<span class="s-comment">ºÃÆÀ: 99.93%</span>
-												<span class="s-sales">ÔÂÏú: 278</span>
+												<span class="s-comment">å¥½è¯„: 99.93%</span>
+												<span class="s-sales">æœˆé”€: 278</span>
 											</div>
 										</div>
 										<div class="s-tp">
-											<span class="ui-btn-loading-before">ÕÒÏàËÆ</span>
+											<span class="ui-btn-loading-before">æ‰¾ç›¸ä¼¼</span>
 											<i class="am-icon-shopping-cart"></i>
-											<span class="ui-btn-loading-before buy">¼ÓÈë¹ºÎï³µ</span>
+											<span class="ui-btn-loading-before buy">åŠ å…¥è´­ç‰©è½¦</span>
 											<p>
-												<a href="javascript:;" class="c-nodo J_delFav_btn">È¡ÏûÊÕ²Ø</a>
+												<a href="javascript:;" class="c-nodo J_delFav_btn">å–æ¶ˆæ”¶è—</a>
 											</p>
 										</div>
 									</div>
@@ -285,84 +286,19 @@
 
 							</div>
 
-							<div class="s-more-btn i-load-more-item" data-screen="0"><i class="am-icon-refresh am-icon-fw"></i>¸ü¶à</div>
+							<div class="s-more-btn i-load-more-item" data-screen="0"><i class="am-icon-refresh am-icon-fw"></i>æ›´å¤š</div>
 
 						</div>
 
 					</div>
 
 				</div>
-				<!--µ×²¿-->
-				<div id="footer">
-			<div id="links">
-				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
-				<a href="">ÁªÏµÎÒÃÇ</a>|
-				<a href="">ÈË²ÅÕÐÆ¸</a>|
-				<a href="">ÉÌ¼ÒÈë×¤</a>|
-				<a href="">¹ã¸æ·þÎñ</a>|
-				<a href="">ÓÑÇéÁ´½Ó</a>|
-				<a href="">ÏúÊÛÁªÃË</a>|
-				<a href="">English Site</a>
-			</div>
-			<div style="color: #999;">
-				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
-			</div>
-		</div>
+				<!--åº•éƒ¨-->
+				<%@ include file="footer.jsp" %>
+
 			</div>
 
-			<aside class="menu">
-				<ul>
-					<li class="person active">
-						<a href="index.jsp"><i class="am-icon-user"></i>¸öÈËÖÐÐÄ</a>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-newspaper-o"></i>¸öÈË×ÊÁÏ</p>
-						<ul>
-							<li> <a href="information.jsp">¸öÈËÐÅÏ¢</a></li>
-							<li> <a href="safety.jsp">°²È«ÉèÖÃ</a></li>
-							<li> <a href="address.jsp">µØÖ·¹ÜÀí</a></li>
-							<li> <a href="cardlist.jsp">¿ì½ÝÖ§¸¶</a></li>
-						</ul>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-balance-scale"></i>ÎÒµÄ½»Ò×</p>
-						<ul>
-							<li><a href="order.jsp">¶©µ¥¹ÜÀí</a></li>
-							<li> <a href="change.jsp">ÍË¿îÊÛºó</a></li>
-							<li> <a href="comment.jsp">ÆÀ¼ÛÉÌÆ·</a></li>
-						</ul>
-					</li>
-					<li class="person">
-						<p><i class="am-icon-dollar"></i>ÎÒµÄ×Ê²ú</p>
-						<ul>
-							<li> <a href="points.jsp">ÎÒµÄ»ý·Ö</a></li>
-							<li> <a href="coupon.jsp">ÓÅ»ÝÈ¯ </a></li>
-							<li> <a href="bonus.jsp">ºì°ü</a></li>
-							<li> <a href="walletlist.jsp">ÕË»§Óà¶î</a></li>
-							<li> <a href="bill.jsp">ÕËµ¥Ã÷Ï¸</a></li>
-						</ul>
-					</li>
-
-					<li class="person">
-						<p><i class="am-icon-tags"></i>ÎÒµÄÊÕ²Ø</p>
-						<ul>
-							<li> <a href="collection.jsp">ÊÕ²Ø</a></li>
-							<li> <a href="foot.jsp">×ã¼£</a></li>
-						</ul>
-					</li>
-
-					<li class="person">
-						<p><i class="am-icon-qq"></i>ÔÚÏß¿Í·þ</p>
-						<ul>
-							<li> <a href="consultation.jsp">ÉÌÆ·×ÉÑ¯</a></li>
-							<li> <a href="suggest.jsp">Òâ¼û·´À¡</a></li>							
-							
-							<li> <a href="news.jsp">ÎÒµÄÏûÏ¢</a></li>
-						</ul>
-					</li>
-				</ul>
-
-			</aside>
+			<%@ include file="menu.jsp" %>
 		</div>
 
 	</body>

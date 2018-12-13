@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0 ,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>½áËãÒ³Ãæ</title>
+		<title>ç»“ç®—é¡µé¢</title>
 
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css" />
 		<link href="${pageContext.request.contextPath }/css/footer.css" rel="stylesheet" type="text/css">
@@ -21,32 +22,32 @@
 
 	<body>
 
-		<!--¶¥²¿µ¼º½Ìõ -->
+		<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
 		<div class="am-container header">
 			<ul class="message-l">
 				<div class="topMessage">
 					<div class="menu-hd">
-						<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
-						<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
+						<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
+						<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
 					</div>
 				</div>
 			</ul>
 			<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
 						</ul>
 			</div>
 
-			<!--Ðü¸¡ËÑË÷¿ò-->
+			<!--æ‚¬æµ®æœç´¢æ¡†-->
 
 			<div class="nav white">
 				<div class="logo"><img src="images/logo.png" /></div>
@@ -57,20 +58,20 @@
 				<div class="search-bar pr">
 					<a name="index_none_header_sysc" href="#"></a>
 					<form>
-						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
-						<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
+						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
+						<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
 					</form>
 				</div>
 			</div>
 
 			<div class="clear"></div>
 			<div class="concent">
-				<!--µØÖ· -->
+				<!--åœ°å€ -->
 				<div class="paycont">
 					<div class="address">
-						<h3>È·ÈÏÊÕ»õµØÖ· </h3>
+						<h3>ç¡®è®¤æ”¶è´§åœ°å€ </h3>
 						<div class="control">
-							<div class="tc-btn createAddr theme-login am-btn am-btn-danger">Ê¹ÓÃÐÂµØÖ·</div>
+							<div class="tc-btn createAddr theme-login am-btn am-btn-danger">ä½¿ç”¨æ–°åœ°å€</div>
 						</div>
 						<div class="clear"></div>
 						<ul>
@@ -81,22 +82,22 @@
 									<div class="user DefaultAddr">
 
 										<span class="buy-address-detail">   
-                   <span class="buy-user">°¬µÏ </span>
+                   <span class="buy-user">è‰¾è¿ª </span>
 										<span class="buy-phone">15888888888</span>
 										</span>
 									</div>
 									<div class="default-address DefaultAddr">
-										<span class="buy-line-title buy-line-title-type">ÊÕ»õµØÖ·£º</span>
+										<span class="buy-line-title buy-line-title-type">æ”¶è´§åœ°å€ï¼š</span>
 										<span class="buy--address-detail">
-								   <span class="province">ºþ±±</span>Ê¡
-										<span class="city">Îäºº</span>ÊÐ
-										<span class="dist">ºéÉ½</span>Çø
-										<span class="street">ÐÛ³þ´óµÀ666ºÅ(ÖÐÄÏ²Æ¾­Õþ·¨´óÑ§)</span>
+								   <span class="province">æ¹–åŒ—</span>çœ
+										<span class="city">æ­¦æ±‰</span>å¸‚
+										<span class="dist">æ´ªå±±</span>åŒº
+										<span class="street">é›„æ¥šå¤§é“666å·(ä¸­å—è´¢ç»æ”¿æ³•å¤§å­¦)</span>
 										</span>
 
 										</span>
 									</div>
-									<ins class="deftip">Ä¬ÈÏµØÖ·</ins>
+									<ins class="deftip">é»˜è®¤åœ°å€</ins>
 								</div>
 								<div class="address-right">
 									<a href="../person/address.jsp">
@@ -105,11 +106,11 @@
 								<div class="clear"></div>
 
 								<div class="new-addr-btn">
-									<a href="#" class="hidden">ÉèÎªÄ¬ÈÏ</a>
+									<a href="#" class="hidden">è®¾ä¸ºé»˜è®¤</a>
 									<span class="new-addr-bar hidden">|</span>
-									<a href="#">±à¼­</a>
+									<a href="#">ç¼–è¾‘</a>
 									<span class="new-addr-bar">|</span>
-									<a href="javascript:void(0);" onclick="delClick(this);">É¾³ý</a>
+									<a href="javascript:void(0);" onclick="delClick(this);">åˆ é™¤</a>
 								</div>
 
 							</li>
@@ -119,22 +120,22 @@
 									<div class="user DefaultAddr">
 
 										<span class="buy-address-detail">   
-                   <span class="buy-user">°¬µÏ </span>
+                   <span class="buy-user">è‰¾è¿ª </span>
 										<span class="buy-phone">15877777777</span>
 										</span>
 									</div>
 									<div class="default-address DefaultAddr">
-										<span class="buy-line-title buy-line-title-type">ÊÕ»õµØÖ·£º</span>
+										<span class="buy-line-title buy-line-title-type">æ”¶è´§åœ°å€ï¼š</span>
 										<span class="buy--address-detail">
-								   <span class="province">ºþ±±</span>Ê¡
-										<span class="city">Îäºº</span>ÊÐ
-										<span class="dist">Îä²ý</span>Çø
-										<span class="street">¶«ºþÂ·75ºÅÖÚ»·´óÏÃ9¶°9²ã999</span>
+								   <span class="province">æ¹–åŒ—</span>çœ
+										<span class="city">æ­¦æ±‰</span>å¸‚
+										<span class="dist">æ­¦æ˜Œ</span>åŒº
+										<span class="street">ä¸œæ¹–è·¯75å·ä¼—çŽ¯å¤§åŽ¦9æ ‹9å±‚999</span>
 										</span>
 
 										</span>
 									</div>
-									<ins class="deftip hidden">Ä¬ÈÏµØÖ·</ins>
+									<ins class="deftip hidden">é»˜è®¤åœ°å€</ins>
 								</div>
 								<div class="address-right">
 									<span class="am-icon-angle-right am-icon-lg"></span>
@@ -142,11 +143,11 @@
 								<div class="clear"></div>
 
 								<div class="new-addr-btn">
-									<a href="#">ÉèÎªÄ¬ÈÏ</a>
+									<a href="#">è®¾ä¸ºé»˜è®¤</a>
 									<span class="new-addr-bar">|</span>
-									<a href="#">±à¼­</a>
+									<a href="#">ç¼–è¾‘</a>
 									<span class="new-addr-bar">|</span>
-									<a href="javascript:void(0);"  onclick="delClick(this);">É¾³ý</a>
+									<a href="javascript:void(0);"  onclick="delClick(this);">åˆ é™¤</a>
 								</div>
 
 							</li>
@@ -155,51 +156,51 @@
 
 						<div class="clear"></div>
 					</div>
-					<!--ÎïÁ÷ -->
+					<!--ç‰©æµ -->
 					<div class="logistics">
-						<h3>Ñ¡ÔñÎïÁ÷·½Ê½</h3>
+						<h3>é€‰æ‹©ç‰©æµæ–¹å¼</h3>
 						<ul class="op_express_delivery_hot">
-							<li data-value="yuantong" class="OP_LOG_BTN  "><i class="c-gap-right" style="background-position:0px -468px"></i>Ô²Í¨<span></span></li>
-							<li data-value="shentong" class="OP_LOG_BTN  "><i class="c-gap-right" style="background-position:0px -1008px"></i>ÉêÍ¨<span></span></li>
-							<li data-value="yunda" class="OP_LOG_BTN  "><i class="c-gap-right" style="background-position:0px -576px"></i>ÔÏ´ï<span></span></li>
-							<li data-value="zhongtong" class="OP_LOG_BTN op_express_delivery_hot_last "><i class="c-gap-right" style="background-position:0px -324px"></i>ÖÐÍ¨<span></span></li>
-							<li data-value="shunfeng" class="OP_LOG_BTN  op_express_delivery_hot_bottom"><i class="c-gap-right" style="background-position:0px -180px"></i>Ë³·á<span></span></li>
+							<li data-value="yuantong" class="OP_LOG_BTN  "><i class="c-gap-right" style="background-position:0px -468px"></i>åœ†é€š<span></span></li>
+							<li data-value="shentong" class="OP_LOG_BTN  "><i class="c-gap-right" style="background-position:0px -1008px"></i>ç”³é€š<span></span></li>
+							<li data-value="yunda" class="OP_LOG_BTN  "><i class="c-gap-right" style="background-position:0px -576px"></i>éŸµè¾¾<span></span></li>
+							<li data-value="zhongtong" class="OP_LOG_BTN op_express_delivery_hot_last "><i class="c-gap-right" style="background-position:0px -324px"></i>ä¸­é€š<span></span></li>
+							<li data-value="shunfeng" class="OP_LOG_BTN  op_express_delivery_hot_bottom"><i class="c-gap-right" style="background-position:0px -180px"></i>é¡ºä¸°<span></span></li>
 						</ul>
 					</div>
 					<div class="clear"></div>
 
-					<!--Ö§¸¶·½Ê½-->
+					<!--æ”¯ä»˜æ–¹å¼-->
 					<div class="logistics">
-						<h3>Ñ¡ÔñÖ§¸¶·½Ê½</h3>
+						<h3>é€‰æ‹©æ”¯ä»˜æ–¹å¼</h3>
 						<ul class="pay-list">
-							<li class="pay card"><img src="images/wangyin.jpg" />ÒøÁª<span></span></li>
-							<li class="pay qq"><img src="images/weizhifu.jpg" />Î¢ÐÅ<span></span></li>
-							<li class="pay taobao"><img src="images/zhifubao.jpg" />Ö§¸¶±¦<span></span></li>
+							<li class="pay card"><img src="images/wangyin.jpg" />é“¶è”<span></span></li>
+							<li class="pay qq"><img src="images/weizhifu.jpg" />å¾®ä¿¡<span></span></li>
+							<li class="pay taobao"><img src="images/zhifubao.jpg" />æ”¯ä»˜å®<span></span></li>
 						</ul>
 					</div>
 					<div class="clear"></div>
 
-					<!--¶©µ¥ -->
+					<!--è®¢å• -->
 					<div class="concent">
 						<div id="payTable">
-							<h3>È·ÈÏ¶©µ¥ÐÅÏ¢</h3>
+							<h3>ç¡®è®¤è®¢å•ä¿¡æ¯</h3>
 							<div class="cart-table-th">
 								<div class="wp">
 
 									<div class="th th-item">
-										<div class="td-inner">ÉÌÆ·ÐÅÏ¢</div>
+										<div class="td-inner">å•†å“ä¿¡æ¯</div>
 									</div>
 									<div class="th th-price">
-										<div class="td-inner">µ¥¼Û</div>
+										<div class="td-inner">å•ä»·</div>
 									</div>
 									<div class="th th-amount">
-										<div class="td-inner">ÊýÁ¿</div>
+										<div class="td-inner">æ•°é‡</div>
 									</div>
 									<div class="th th-sum">
-										<div class="td-inner">½ð¶î</div>
+										<div class="td-inner">é‡‘é¢</div>
 									</div>
 									<div class="th th-oplist">
-										<div class="td-inner">ÅäËÍ·½Ê½</div>
+										<div class="td-inner">é…é€æ–¹å¼</div>
 									</div>
 
 								</div>
@@ -219,14 +220,14 @@
 													</div>
 													<div class="item-info">
 														<div class="item-basic-info">
-															<a href="#" class="item-title J_MakePoint" data-point="tbcart.8.11">ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</a>
+															<a href="#" class="item-title J_MakePoint" data-point="tbcart.8.11">ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</a>
 														</div>
 													</div>
 												</li>
 												<li class="td td-info">
 													<div class="item-props">
-														<span class="sku-line">ÑÕÉ«£º12#´¨ÄÏÂêè§</span>
-														<span class="sku-line">°ü×°£ºÂã×°</span>
+														<span class="sku-line">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™</span>
+														<span class="sku-line">åŒ…è£…ï¼šè£¸è£…</span>
 													</div>
 												</li>
 												<li class="td td-price">
@@ -240,7 +241,7 @@
 											<li class="td td-amount">
 												<div class="amount-wrapper ">
 													<div class="item-amount ">
-														<span class="phone-title">¹ºÂòÊýÁ¿</span>
+														<span class="phone-title">è´­ä¹°æ•°é‡</span>
 														<div class="sl">
 															<input class="min am-btn" name="" type="button" value="-" />
 															<input class="text_box" name="" type="text" value="3" style="width:30px;" />
@@ -256,9 +257,9 @@
 											</li>
 											<li class="td td-oplist">
 												<div class="td-inner">
-													<span class="phone-title">ÅäËÍ·½Ê½</span>
+													<span class="phone-title">é…é€æ–¹å¼</span>
 													<div class="pay-logis">
-														¿ìµÝ<b class="sys_item_freprice">10</b>Ôª
+														å¿«é€’<b class="sys_item_freprice">10</b>å…ƒ
 													</div>
 												</div>
 											</li>
@@ -283,14 +284,14 @@
 													</div>
 													<div class="item-info">
 														<div class="item-basic-info">
-															<a href="#" target="_blank" title="ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«" class="item-title J_MakePoint" data-point="tbcart.8.11">ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</a>
+															<a href="#" target="_blank" title="ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²" class="item-title J_MakePoint" data-point="tbcart.8.11">ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</a>
 														</div>
 													</div>
 												</li>
 												<li class="td td-info">
 													<div class="item-props">
-														<span class="sku-line">ÑÕÉ«£º10#ÃÛéÙÉ«+17#Ó£»¨·Û</span>
-														<span class="sku-line">°ü×°£ºÁ½Ö§ÊÖ´ü×°£¨ËÍ²Ê´ø£©</span>
+														<span class="sku-line">é¢œè‰²ï¼š10#èœœæ©˜è‰²+17#æ¨±èŠ±ç²‰</span>
+														<span class="sku-line">åŒ…è£…ï¼šä¸¤æ”¯æ‰‹è¢‹è£…ï¼ˆé€å½©å¸¦ï¼‰</span>
 													</div>
 												</li>
 												<li class="td td-price">
@@ -305,7 +306,7 @@
 											<li class="td td-amount">
 												<div class="amount-wrapper ">
 													<div class="item-amount ">
-														<span class="phone-title">¹ºÂòÊýÁ¿</span>
+														<span class="phone-title">è´­ä¹°æ•°é‡</span>
 														<div class="sl">
 															<input class="min am-btn" name="" type="button" value="-" />
 															<input class="text_box" name="" type="text" value="3" style="width:30px;" />
@@ -321,9 +322,9 @@
 											</li>
 											<li class="td td-oplist">
 												<div class="td-inner">
-													<span class="phone-title">ÅäËÍ·½Ê½</span>
+													<span class="phone-title">é…é€æ–¹å¼</span>
 													<div class="pay-logis">
-														°üÓÊ
+														åŒ…é‚®
 													</div>
 												</div>
 											</li>
@@ -336,39 +337,39 @@
 							</div>
 							<div class="clear"></div>
 							<div class="pay-total">
-						<!--ÁôÑÔ-->
+						<!--ç•™è¨€-->
 							<div class="order-extra">
 								<div class="order-user-info">
 									<div id="holyshit257" class="memo">
-										<label>Âò¼ÒÁôÑÔ£º</label>
-										<input type="text" title="Ñ¡Ìî,¶Ô±¾´Î½»Ò×µÄËµÃ÷£¨½¨ÒéÌîÐ´ÒÑ¾­ºÍÂô¼Ò´ï³ÉÒ»ÖÂµÄËµÃ÷£©" placeholder="Ñ¡Ìî,½¨ÒéÌîÐ´ºÍÂô¼Ò´ï³ÉÒ»ÖÂµÄËµÃ÷" class="memo-input J_MakePoint c2c-text-default memo-close">
+										<label>ä¹°å®¶ç•™è¨€ï¼š</label>
+										<input type="text" title="é€‰å¡«,å¯¹æœ¬æ¬¡äº¤æ˜“çš„è¯´æ˜Žï¼ˆå»ºè®®å¡«å†™å·²ç»å’Œå–å®¶è¾¾æˆä¸€è‡´çš„è¯´æ˜Žï¼‰" placeholder="é€‰å¡«,å»ºè®®å¡«å†™å’Œå–å®¶è¾¾æˆä¸€è‡´çš„è¯´æ˜Ž" class="memo-input J_MakePoint c2c-text-default memo-close">
 										<div class="msg hidden J-msg">
-											<p class="error">×î¶àÊäÈë500¸ö×Ö·û</p>
+											<p class="error">æœ€å¤šè¾“å…¥500ä¸ªå­—ç¬¦</p>
 										</div>
 									</div>
 								</div>
 
 							</div>
-							<!--ÓÅ»ÝÈ¯ -->
+							<!--ä¼˜æƒ åˆ¸ -->
 							<div class="buy-agio">
 								<li class="td td-coupon">
 
-									<span class="coupon-title">ÓÅ»ÝÈ¯</span>
+									<span class="coupon-title">ä¼˜æƒ åˆ¸</span>
 									<select data-am-selected>
 										<option value="a">
 											<div class="c-price">
-												<strong>£¤8</strong>
+												<strong>ï¿¥8</strong>
 											</div>
 											<div class="c-limit">
-												¡¾Ïû·ÑÂú95Ôª¿ÉÓÃ¡¿
+												ã€æ¶ˆè´¹æ»¡95å…ƒå¯ç”¨ã€‘
 											</div>
 										</option>
 										<option value="b" selected>
 											<div class="c-price">
-												<strong>£¤3</strong>
+												<strong>ï¿¥3</strong>
 											</div>
 											<div class="c-limit">
-												¡¾ÎÞÊ¹ÓÃÃÅ¼÷¡¿
+												ã€æ— ä½¿ç”¨é—¨æ§›ã€‘
 											</div>
 										</option>
 									</select>
@@ -376,22 +377,22 @@
 
 								<li class="td td-bonus">
 
-									<span class="bonus-title">ºì°ü</span>
+									<span class="bonus-title">çº¢åŒ…</span>
 									<select data-am-selected>
 										<option value="a">
 											<div class="item-info">
-												0„650.00<span>Ôª</span>
+												Â¥50.00<span>å…ƒ</span>
 											</div>
 											<div class="item-remainderprice">
-												<span>»¹Ê£</span>10.40<span>Ôª</span>
+												<span>è¿˜å‰©</span>10.40<span>å…ƒ</span>
 											</div>
 										</option>
 										<option value="b" selected>
 											<div class="item-info">
-												0„650.00<span>Ôª</span>
+												Â¥50.00<span>å…ƒ</span>
 											</div>
 											<div class="item-remainderprice">
-												<span>»¹Ê£</span>50.00<span>Ôª</span>
+												<span>è¿˜å‰©</span>50.00<span>å…ƒ</span>
 											</div>
 										</option>
 									</select>
@@ -401,39 +402,39 @@
 							</div>
 							<div class="clear"></div>
 							</div>
-							<!--º¬ÔË·ÑÐ¡¼Æ -->
+							<!--å«è¿è´¹å°è®¡ -->
 							<div class="buy-point-discharge ">
 								<p class="price g_price ">
-									ºÏ¼Æ£¨º¬ÔË·Ñ£© <span>0„6</span><em class="pay-sum">244.00</em>
+									åˆè®¡ï¼ˆå«è¿è´¹ï¼‰ <span>Â¥</span><em class="pay-sum">244.00</em>
 								</p>
 							</div>
 
-							<!--ÐÅÏ¢ -->
+							<!--ä¿¡æ¯ -->
 							<div class="order-go clearfix">
 								<div class="pay-confirm clearfix">
 									<div class="box">
-										<div tabindex="0" id="holyshit267" class="realPay"><em class="t">Êµ¸¶¿î£º</em>
+										<div tabindex="0" id="holyshit267" class="realPay"><em class="t">å®žä»˜æ¬¾ï¼š</em>
 											<span class="price g_price ">
-                                    <span>0„6</span> <em class="style-large-bold-red " id="J_ActualFee">244.00</em>
+                                    <span>Â¥</span> <em class="style-large-bold-red " id="J_ActualFee">244.00</em>
 											</span>
 										</div>
 
 										<div id="holyshit268" class="pay-address">
 
 											<p class="buy-footer-address">
-												<span class="buy-line-title buy-line-title-type">¼ÄËÍÖÁ£º</span>
+												<span class="buy-line-title buy-line-title-type">å¯„é€è‡³ï¼š</span>
 												<span class="buy--address-detail">
-								   <span class="province">ºþ±±</span>Ê¡
-												<span class="city">Îäºº</span>ÊÐ
-												<span class="dist">ºéÉ½</span>Çø
-												<span class="street">ÐÛ³þ´óµÀ666ºÅ(ÖÐÄÏ²Æ¾­Õþ·¨´óÑ§)</span>
+								   <span class="province">æ¹–åŒ—</span>çœ
+												<span class="city">æ­¦æ±‰</span>å¸‚
+												<span class="dist">æ´ªå±±</span>åŒº
+												<span class="street">é›„æ¥šå¤§é“666å·(ä¸­å—è´¢ç»æ”¿æ³•å¤§å­¦)</span>
 												</span>
 												</span>
 											</p>
 											<p class="buy-footer-address">
-												<span class="buy-line-title">ÊÕ»õÈË£º</span>
+												<span class="buy-line-title">æ”¶è´§äººï¼š</span>
 												<span class="buy-address-detail">   
-                                         <span class="buy-user">°¬µÏ </span>
+                                         <span class="buy-user">è‰¾è¿ª </span>
 												<span class="buy-phone">15871145629</span>
 												</span>
 											</p>
@@ -442,7 +443,7 @@
 
 									<div id="holyshit269" class="submitOrder">
 										<div class="go-btn-wrap">
-											<a id="J_Go" href="success.jsp" class="btn-go" tabindex="0" title="µã»÷´Ë°´Å¥£¬Ìá½»¶©µ¥">Ìá½»¶©µ¥</a>
+											<a id="J_Go" href="success.jsp" class="btn-go" tabindex="0" title="ç‚¹å‡»æ­¤æŒ‰é’®ï¼Œæäº¤è®¢å•">æäº¤è®¢å•</a>
 										</div>
 									</div>
 									<div class="clear"></div>
@@ -453,28 +454,15 @@
 						<div class="clear"></div>
 					</div>
 				</div>
-				<div id="footer">
-			<div id="links">
-				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
-				<a href="">ÁªÏµÎÒÃÇ</a>|
-				<a href="">ÈË²ÅÕÐÆ¸</a>|
-				<a href="">ÉÌ¼ÒÈë×¤</a>|
-				<a href="">¹ã¸æ·þÎñ</a>|
-				<a href="">ÓÑÇéÁ´½Ó</a>|
-				<a href="">ÏúÊÛÁªÃË</a>|
-				<a href="">English Site</a>
-			</div>
-			<div style="color: #999;">
-				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
-			</div>
-		</div>
+			<%@ include file="footer.jsp" %>
+
 			</div>
 			<div class="theme-popover-mask"></div>
 			<div class="theme-popover">
 
-				<!--±êÌâ -->
+				<!--æ ‡é¢˜ -->
 				<div class="am-cf am-padding">
-					<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">ÐÂÔöµØÖ·</strong> / <small>Add address</small></div>
+					<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">æ–°å¢žåœ°å€</strong> / <small>Add address</small></div>
 				</div>
 				<hr/>
 
@@ -482,49 +470,49 @@
 					<form class="am-form am-form-horizontal">
 
 						<div class="am-form-group">
-							<label for="user-name" class="am-form-label">ÊÕ»õÈË</label>
+							<label for="user-name" class="am-form-label">æ”¶è´§äºº</label>
 							<div class="am-form-content">
-								<input type="text" id="user-name" placeholder="ÊÕ»õÈË">
+								<input type="text" id="user-name" placeholder="æ”¶è´§äºº">
 							</div>
 						</div>
 
 						<div class="am-form-group">
-							<label for="user-phone" class="am-form-label">ÊÖ»úºÅÂë</label>
+							<label for="user-phone" class="am-form-label">æ‰‹æœºå·ç </label>
 							<div class="am-form-content">
-								<input id="user-phone" placeholder="ÊÖ»úºÅ±ØÌî" type="email">
+								<input id="user-phone" placeholder="æ‰‹æœºå·å¿…å¡«" type="email">
 							</div>
 						</div>
 
 						<div class="am-form-group">
-							<label for="user-phone" class="am-form-label">ËùÔÚµØ</label>
+							<label for="user-phone" class="am-form-label">æ‰€åœ¨åœ°</label>
 							<div class="am-form-content address">
 								<select data-am-selected>
-									<option value="a">Õã½­Ê¡</option>
-									<option value="b">ºþ±±Ê¡</option>
+									<option value="a">æµ™æ±Ÿçœ</option>
+									<option value="b">æ¹–åŒ—çœ</option>
 								</select>
 								<select data-am-selected>
-									<option value="a">ÎÂÖÝÊÐ</option>
-									<option value="b">ÎäººÊÐ</option>
+									<option value="a">æ¸©å·žå¸‚</option>
+									<option value="b">æ­¦æ±‰å¸‚</option>
 								</select>
 								<select data-am-selected>
-									<option value="a">Èð°²Çø</option>
-									<option value="b">ºéÉ½Çø</option>
+									<option value="a">ç‘žå®‰åŒº</option>
+									<option value="b">æ´ªå±±åŒº</option>
 								</select>
 							</div>
 						</div>
 
 						<div class="am-form-group">
-							<label for="user-intro" class="am-form-label">ÏêÏ¸µØÖ·</label>
+							<label for="user-intro" class="am-form-label">è¯¦ç»†åœ°å€</label>
 							<div class="am-form-content">
-								<textarea class="" rows="3" id="user-intro" placeholder="ÊäÈëÏêÏ¸µØÖ·"></textarea>
-								<small>100×ÖÒÔÄÚÐ´³öÄãµÄÏêÏ¸µØÖ·...</small>
+								<textarea class="" rows="3" id="user-intro" placeholder="è¾“å…¥è¯¦ç»†åœ°å€"></textarea>
+								<small>100å­—ä»¥å†…å†™å‡ºä½ çš„è¯¦ç»†åœ°å€...</small>
 							</div>
 						</div>
 
 						<div class="am-form-group theme-poptit">
 							<div class="am-u-sm-9 am-u-sm-push-3">
-								<div class="am-btn am-btn-danger">±£´æ</div>
-								<div class="am-btn am-btn-danger close">È¡Ïû</div>
+								<div class="am-btn am-btn-danger">ä¿å­˜</div>
+								<div class="am-btn am-btn-danger close">å–æ¶ˆ</div>
 							</div>
 						</div>
 					</form>
