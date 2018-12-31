@@ -1,13 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
+<!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>æˆ‘çš„çº¢åŒ…</title>
+		<title>ÎÒµÄºì°ü</title>
 
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css">
@@ -20,36 +19,36 @@
 	</head>
 
 	<body>
-		<!--å¤´ -->
+		<!--Í· -->
 		<header>
 			<article>
 				<div class="mt-logo">
-			<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
+			<!--¶¥²¿µ¼º½Ìõ -->
 			<div class="am-container header">
 				<ul class="message-l">
 					<div class="topMessage">
 						<div class="menu-hd">
-							<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
-							<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
+							<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
+							<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
 						</div>
 					</div>
 				</ul>
 				<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
 						</ul>
 				</div>
 
-				<!--æ‚¬æµ®æœç´¢æ¡†-->
+				<!--Ðü¸¡ËÑË÷¿ò-->
 
 				<div class="nav white">
 					<div class="logoBig">
@@ -59,8 +58,8 @@
 					<div class="search-bar pr">
 						<a name="index_none_header_sysc" href="#"></a>
 						<form>
-							<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
-							<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
+							<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
+							<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
 						</form>
 					</div>
 				</div>
@@ -71,17 +70,17 @@
 			</article>
 		</header>
             <div class="nav-table">
-					   <div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
+					   <div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">é¦–é¡µ</a></li>
-                                <li class="qc"><a href="#">é—ªè´­</a></li>
-                                <li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
-                                <li class="qc"><a href="#">å›¢è´­</a></li>
-                                <li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
+								<li class="index"><a href="#">Ê×Ò³</a></li>
+                                <li class="qc"><a href="#">ÉÁ¹º</a></li>
+                                <li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
+                                <li class="qc"><a href="#">ÍÅ¹º</a></li>
+                                <li class="qc last"><a href="#">´ó°ü×°</a></li>
 							</ul>
 						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
 						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 						    </div>
 						</div>
@@ -92,17 +91,17 @@
 				<div class="main-wrap">
 
 					<div class="user-bonus">
-						<!--æ ‡é¢˜ -->
+						<!--±êÌâ -->
 						<div class="am-cf am-padding">
-							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">çº¢åŒ…</strong> / <small>Bonus</small></div>
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">ºì°ü</strong> / <small>Bonus</small></div>
 						</div>
 						<hr/>
 
 						<div class="am-tabs-d2 am-tabs  am-margin" data-am-tabs>
 
 							<ul class="am-avg-sm-2 am-tabs-nav am-nav am-nav-tabs">
-								<li class="am-active"><a href="#tab1">å¯ç”¨çº¢åŒ…</a></li>
-								<li><a href="#tab2">å·²ç”¨/è¿‡æœŸçº¢åŒ…</a></li>
+								<li class="am-active"><a href="#tab1">¿ÉÓÃºì°ü</a></li>
+								<li><a href="#tab2">ÒÑÓÃ/¹ýÆÚºì°ü</a></li>
 
 							</ul>
 
@@ -112,16 +111,16 @@
 									<div class="cart-table-th">
 										<div class="order-top">
 											<div class="th th-from">
-												æ¥æº
+												À´Ô´
 											</div>
 											<div class="th th-remainderprice">
-												å‰©ä½™é‡‘é¢
+												Ê£Óà½ð¶î
 											</div>
 											<div class="th th-term">
-												æœ‰æ•ˆæœŸ
+												ÓÐÐ§ÆÚ
 											</div>
 											<div class="th th-usestatus">
-												ä½¿ç”¨çŠ¶æ€
+												Ê¹ÓÃ×´Ì¬
 											</div>
 										</div>
 										<div class="clear"></div>
@@ -136,27 +135,27 @@
 													<div class="item-info">
 
 														<a href="#">
-															<p>è“èƒ–å­èµ ä¸Ž</p>
-															<p class="info-little "><span>çº¢åŒ…åˆå§‹é¢é¢ï¼š</span>Â¥50.00<span>å…ƒ</span></p>
+															<p>À¶ÅÖ×ÓÔùÓë</p>
+															<p class="info-little "><span>ºì°ü³õÊ¼Ãæ¶î£º</span>0„650.00<span>Ôª</span></p>
 														</a>
 
 													</div>
 												</li>
 												<li class="td td-remainderprice">
 													<div class="item-remainderprice">
-														<span>è¿˜å‰©</span>10.40<span>å…ƒ</span>
+														<span>»¹Ê£</span>10.40<span>Ôª</span>
 													</div>
 												</li>
 
 												<li class="td td-term ">
 													<div class="item-term">
-														<span>æœ‰æ•ˆæœŸ</span> 2015.12.26-2016.2.1
+														<span>ÓÐÐ§ÆÚ</span> 2015.12.26-2016.2.1
 													</div>
 												</li>
 
 												<li class="td td-usestatus ">
 													<div class="item-usestatus ">
-														<p>å¯ä½¿ç”¨</p><span><img src="images/gift_stamp_1.png"</span>
+														<p>¿ÉÊ¹ÓÃ</p><span><img src="images/gift_stamp_1.png"</span>
 													</div>
 												</li>
 											</ul>
@@ -169,16 +168,16 @@
 									<div class="cart-table-th">
 										<div class="order-top">
 											<div class="th th-from">
-												æ¥æº
+												À´Ô´
 											</div>
 											<div class="th th-remainderprice">
-												å‰©ä½™é‡‘é¢
+												Ê£Óà½ð¶î
 											</div>
 											<div class="th th-term">
-												æœ‰æ•ˆæœŸ
+												ÓÐÐ§ÆÚ
 											</div>
 											<div class="th th-usestatus">
-												ä½¿ç”¨çŠ¶æ€
+												Ê¹ÓÃ×´Ì¬
 											</div>
 										</div>
 										<div class="clear"></div>
@@ -193,32 +192,32 @@
 													<div class="item-info">
 
 														<a href="# ">
-															<p>è“èƒ–å­èµ ä¸Ž</p>
-															<p class="info-little "><span>çº¢åŒ…åˆå§‹é¢é¢ï¼š</span>Â¥50.00<span>å…ƒ</span></p>
+															<p>À¶ÅÖ×ÓÔùÓë</p>
+															<p class="info-little "><span>ºì°ü³õÊ¼Ãæ¶î£º</span>0„650.00<span>Ôª</span></p>
 														</a>
 
 													</div>
 												</li>
 												<li class="td td-remainderprice">
 													<div class="item-remainderprice">
-														<span>è¿˜å‰©</span>0.00<span>å…ƒ</span>
+														<span>»¹Ê£</span>0.00<span>Ôª</span>
 													</div>
 												</li>
 
 												<li class="td td-term ">
 													<div class="item-term">
-														<span>æœ‰æ•ˆæœŸ</span> 2015.12.26-2016.2.1
+														<span>ÓÐÐ§ÆÚ</span> 2015.12.26-2016.2.1
 													</div>
 												</li>
 
 												<li class="td td-usestatus ">
 													<div class="item-usestatus ">
-														<p>å·²ç”¨å®Œ</p><span><img src="images/gift_stamp_2.png"</span>
+														<p>ÒÑÓÃÍê</p><span><img src="images/gift_stamp_2.png"</span>
 													</div>
 												</li>
 											</ul>
 
-<!--å·²è¿‡æœŸ-->
+<!--ÒÑ¹ýÆÚ-->
 											<ul class="item-list">
 												
 												<li class="td td-from">
@@ -229,27 +228,27 @@
 													<div class="item-info">
 
 														<a href="# ">
-															<p>è“èƒ–å­èµ ä¸Ž</p>
-															<p class="info-little "><span>çº¢åŒ…åˆå§‹é¢é¢ï¼š</span>Â¥50.00<span>å…ƒ</span></p>
+															<p>À¶ÅÖ×ÓÔùÓë</p>
+															<p class="info-little "><span>ºì°ü³õÊ¼Ãæ¶î£º</span>0„650.00<span>Ôª</span></p>
 														</a>
 
 													</div>
 												</li>
 												<li class="td td-remainderprice">
 													<div class="item-remainderprice">
-														<span>è¿˜å‰©</span>50.00<span>å…ƒ</span>
+														<span>»¹Ê£</span>50.00<span>Ôª</span>
 													</div>
 												</li>
 
 												<li class="td td-term ">
 													<div class="item-term">
-														<span>æœ‰æ•ˆæœŸ</span> 2015.12.26-2016.2.1
+														<span>ÓÐÐ§ÆÚ</span> 2015.12.26-2016.2.1
 													</div>
 												</li>
 
 												<li class="td td-usestatus ">
 													<div class="item-usestatus ">
-														<p>å·²è¿‡æœŸ</p><span><img src="images/gift_stamp_3.png"</span>
+														<p>ÒÑ¹ýÆÚ</p><span><img src="images/gift_stamp_3.png"</span>
 													</div>
 												</li>
 											</ul>
@@ -265,12 +264,78 @@
 						</div>
 					</div>
 				</div>
-				<!--åº•éƒ¨-->
-				<%@ include file="footer.jsp" %>
+				<!--µ×²¿-->
+				<div id="footer">
+			<div id="links">
+				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
+				<a href="">ÁªÏµÎÒÃÇ</a>|
+				<a href="">ÈË²ÅÕÐÆ¸</a>|
+				<a href="">ÉÌ¼ÒÈë×¤</a>|
+				<a href="">¹ã¸æ·þÎñ</a>|
+				<a href="">ÓÑÇéÁ´½Ó</a>|
+				<a href="">ÏúÊÛÁªÃË</a>|
+				<a href="">English Site</a>
+			</div>
+			<div style="color: #999;">
+				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
+			</div>
+		</div>
 
 			</div>
 
-			<%@ include file="menu.jsp" %>
+			<aside class="menu">
+				<ul>
+					<li class="person active">
+						<a href="index.jsp"><i class="am-icon-user"></i>¸öÈËÖÐÐÄ</a>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-newspaper-o"></i>¸öÈË×ÊÁÏ</p>
+						<ul>
+							<li> <a href="information.jsp">¸öÈËÐÅÏ¢</a></li>
+							<li> <a href="safety.jsp">°²È«ÉèÖÃ</a></li>
+							<li> <a href="address.jsp">µØÖ·¹ÜÀí</a></li>
+							<li> <a href="cardlist.jsp">¿ì½ÝÖ§¸¶</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-balance-scale"></i>ÎÒµÄ½»Ò×</p>
+						<ul>
+							<li><a href="order.jsp">¶©µ¥¹ÜÀí</a></li>
+							<li> <a href="change.jsp">ÍË¿îÊÛºó</a></li>
+							<li> <a href="comment.jsp">ÆÀ¼ÛÉÌÆ·</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-dollar"></i>ÎÒµÄ×Ê²ú</p>
+						<ul>
+							<li> <a href="points.jsp">ÎÒµÄ»ý·Ö</a></li>
+							<li> <a href="coupon.jsp">ÓÅ»ÝÈ¯ </a></li>
+							<li> <a href="bonus.jsp">ºì°ü</a></li>
+							<li> <a href="walletlist.jsp">ÕË»§Óà¶î</a></li>
+							<li> <a href="bill.jsp">ÕËµ¥Ã÷Ï¸</a></li>
+						</ul>
+					</li>
+
+					<li class="person">
+						<p><i class="am-icon-tags"></i>ÎÒµÄÊÕ²Ø</p>
+						<ul>
+							<li> <a href="collection.jsp">ÊÕ²Ø</a></li>
+							<li> <a href="foot.jsp">×ã¼£</a></li>														
+						</ul>
+					</li>
+
+					<li class="person">
+						<p><i class="am-icon-qq"></i>ÔÚÏß¿Í·þ</p>
+						<ul>
+							<li> <a href="consultation.jsp">ÉÌÆ·×ÉÑ¯</a></li>
+							<li> <a href="suggest.jsp">Òâ¼û·´À¡</a></li>							
+							
+							<li> <a href="news.jsp">ÎÒµÄÏûÏ¢</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</aside>
 		</div>
 
 	</body>

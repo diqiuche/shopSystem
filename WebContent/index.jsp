@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>ä¸ªäººä¸­å¿ƒ</title>
+		<title>¸öÈËÖÐÐÄ</title>
 		<link href="${pageContext.request.contextPath }/css/footer.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css">
@@ -19,14 +17,14 @@
 	</head>
 
 	<body>
-		<!--å¤´ -->
+		<!--Í· -->
 		<header>
 			<article>
 				<div class="mt-logo">
-					<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
+					<!--¶¥²¿µ¼º½Ìõ -->
 				<%@ include file="nav.jsp" %>
 
-						<!--æ‚¬æµ®æœç´¢æ¡†-->
+						<!--Ðü¸¡ËÑË÷¿ò-->
 
 						<div class="nav white">
 							<div class="logoBig">
@@ -36,8 +34,8 @@
 							<div class="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
-									<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
 								</form>
 							</div>
 						</div>
@@ -48,18 +46,18 @@
 			</article>
 		</header>
 		<div class="nav-table">
-			<div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
+			<div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
 			<div class="nav-cont">
 				<ul>
-					<li class="index"><a href="#">é¦–é¡µ</a></li>
-					<li class="qc"><a href="#">é—ªè´­</a></li>
-					<li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
-					<li class="qc"><a href="#">å›¢è´­</a></li>
-					<li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
-					<li class="qc last"><a href="studentInfoManage.jsp">ç”¨æˆ·è¯„ä»·</a></li>
+					<li class="index"><a href="#">Ê×Ò³</a></li>
+					<li class="qc"><a href="#">ÉÁ¹º</a></li>
+					<li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
+					<li class="qc"><a href="#">ÍÅ¹º</a></li>
+					<li class="qc last"><a href="#">´ó°ü×°</a></li>
+					<li class="qc last"><a href="studentInfoManage.jsp">ÓÃ»§ÆÀ¼Û</a></li>
 				</ul>
 				<div class="nav-extra">
-					<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
+					<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
 					<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 				</div>
 			</div>
@@ -71,7 +69,7 @@
 					<div class="wrap-left">
 						<div class="wrap-list">
 							<div class="m-user">
-								<!--ä¸ªäººä¿¡æ¯ -->
+								<!--¸öÈËÐÅÏ¢ -->
 
 								<div class="m-userinfo">
 									<a href="news.jsp">
@@ -82,70 +80,70 @@
 											<img src="images/getAvatar.do.jpg">
 										</a>
 										<div class="m-info">
-											<em class="s-name">å°å®å½“</em>
-											<div class="vip1"><a href="#"><span></span><em>ä¼šå‘˜ä¸“äº«</em></a></div>
-											<div class="safeText"><a href="safety.jsp">è´¦æˆ·å®‰å…¨:<em style="margin-left:20px ;">60</em>åˆ†</a>
+											<em class="s-name">Ð¡¶£µ±</em>
+											<div class="vip1"><a href="#"><span></span><em>»áÔ±×¨Ïí</em></a></div>
+											<div class="safeText"><a href="safety.jsp">ÕË»§°²È«:<em style="margin-left:20px ;">60</em>·Ö</a>
 												<div class="progressBar"><span style="left: -95px;" class="progress"></span></div>
 											</div>
 											<div class="m-address">
-												<a href="address.jsp" class="i-trigger">æ”¶è´§åœ°å€<i class="am-icon-angle-right" style="padding-left:5px ;"></i></a>
+												<a href="address.jsp" class="i-trigger">ÊÕ»õµØÖ·<i class="am-icon-angle-right" style="padding-left:5px ;"></i></a>
 											</div>
 										</div>
 									</div>
 									<div class="m-right">
 										<div class="m-new">
-											<a href="news.jsp"><i class="am-icon-dropbox  am-icon-md" style="padding-right:5px ;"></i>æ¶ˆæ¯ç›’å­</a>
+											<a href="news.jsp"><i class="am-icon-dropbox  am-icon-md" style="padding-right:5px ;"></i>ÏûÏ¢ºÐ×Ó</a>
 										</div>
 
 									</div>
 								</div>
 
-								<!--ä¸ªäººèµ„äº§-->
+								<!--¸öÈË×Ê²ú-->
 								<div class="m-userproperty">
 									<div class="s-bar">
-										<i class="s-icon"></i>ä¸ªäººèµ„äº§
+										<i class="s-icon"></i>¸öÈË×Ê²ú
 									</div>
 									<p class="m-coupon">
 										<a href="coupon.jsp">
 											<em class="m-num">2</em>
-											<span class="m-title">ä¼˜æƒ åˆ¸</span>
+											<span class="m-title">ÓÅ»ÝÈ¯</span>
 										</a>
 									</p>
 									<p class="m-wallet">
 										<a href="wallet.jsp">
 											<em class="m-num">0.00</em>
-											<span class="m-title">è´¦æˆ·ä½™é¢</span>
+											<span class="m-title">ÕË»§Óà¶î</span>
 										</a>
 									</p>
 									<p class="m-bill">
 										<a href="pointnew.jsp">
 											<em class="m-num">10</em>
-											<span class="m-title">æ€»ç§¯åˆ†</span>
+											<span class="m-title">×Ü»ý·Ö</span>
 										</a>
 									</p>
 								</div>
 
-								<!--æˆ‘çš„é’±åŒ…-->
+								<!--ÎÒµÄÇ®°ü-->
 								<div class="wallet">
 									<div class="s-bar">
-										<i class="s-icon"></i>å•†åŸŽé’±åŒ…
+										<i class="s-icon"></i>ÉÌ³ÇÇ®°ü
 									</div>
 									<p class="m-big squareS">
 										<a href="#">
 											<i><img src="images/shopping.png"/></i>
-											<span class="m-title">èƒ½è´­ç‰©</span>
+											<span class="m-title">ÄÜ¹ºÎï</span>
 										</a>
 									</p>
 									<p class="m-big squareA">
 										<a href="#">
 											<i><img src="images/safe.png"/></i>
-											<span class="m-title">å¤Ÿå®‰å…¨</span>
+											<span class="m-title">¹»°²È«</span>
 										</a>
 									</p>
 									<p class="m-big squareL">
 										<a href="#">
 											<i><img src="images/profit.png"/></i>
-											<span class="m-title">å¾ˆçµæ´»</span>
+											<span class="m-title">ºÜÁé»î</span>
 										</a>
 									</p>
 								</div>
@@ -153,18 +151,18 @@
 							</div>
 							<div class="box-container-bottom"></div>
 
-							<!--è®¢å• -->
+							<!--¶©µ¥ -->
 							<div class="m-order">
 								<div class="s-bar">
-									<i class="s-icon"></i>æˆ‘çš„è®¢å•
-									<a class="i-load-more-item-shadow" href="order.jsp">å…¨éƒ¨è®¢å•</a>
+									<i class="s-icon"></i>ÎÒµÄ¶©µ¥
+									<a class="i-load-more-item-shadow" href="order.jsp">È«²¿¶©µ¥</a>
 								</div>
 								<ul>
-									<li><a href="order.jsp"><i><img src="images/pay.png"/></i><span>å¾…ä»˜æ¬¾</span></a></li>
-									<li><a href="order.jsp"><i><img src="images/send.png"/></i><span>å¾…å‘è´§<em class="m-num">1</em></span></a></li>
-									<li><a href="order.jsp"><i><img src="images/receive.png"/></i><span>å¾…æ”¶è´§</span></a></li>
-									<li><a href="order.jsp"><i><img src="images/comment.png"/></i><span>å¾…è¯„ä»·<em class="m-num">3</em></span></a></li>
-									<li><a href="change.jsp"><i><img src="images/refund.png"/></i><span>é€€æ¢è´§</span></a></li>
+									<li><a href="order.jsp"><i><img src="images/pay.png"/></i><span>´ý¸¶¿î</span></a></li>
+									<li><a href="order.jsp"><i><img src="images/send.png"/></i><span>´ý·¢»õ<em class="m-num">1</em></span></a></li>
+									<li><a href="order.jsp"><i><img src="images/receive.png"/></i><span>´ýÊÕ»õ</span></a></li>
+									<li><a href="order.jsp"><i><img src="images/comment.png"/></i><span>´ýÆÀ¼Û<em class="m-num">3</em></span></a></li>
+									<li><a href="change.jsp"><i><img src="images/refund.png"/></i><span>ÍË»»»õ</span></a></li>
 								</ul>
 								<div class="orderContentBox">
 									<div class="orderContent">
@@ -174,21 +172,21 @@
 											</div>
 										</div>
 										<div class="detailContent">
-											<a href="orderinfo.jsp" class="delivery">ç­¾æ”¶</a>
+											<a href="orderinfo.jsp" class="delivery">Ç©ÊÕ</a>
 											<div class="orderID">
 												<span class="time">2016-03-09</span>
 												<span class="splitBorder">|</span>
 												<span class="time">21:52:47</span>
 											</div>
 											<div class="orderID">
-												<span class="num">å…±1ä»¶å•†å“</span>
+												<span class="num">¹²1¼þÉÌÆ·</span>
 											</div>
 										</div>
-										<div class="state">å¾…è¯„ä»·</div>
-										<div class="price"><span class="sym">Â¥</span>23.<span class="sym">80</span></div>
+										<div class="state">´ýÆÀ¼Û</div>
+										<div class="price"><span class="sym">0„6</span>23.<span class="sym">80</span></div>
 
 									</div>
-									<a href="youzi.jsp" class="btnPay">å†æ¬¡è´­ä¹°</a>
+									<a href="youzi.jsp" class="btnPay">ÔÙ´Î¹ºÂò</a>
 								</div>
 
 								<div class="orderContentBox">
@@ -199,57 +197,57 @@
 											</div>
 										</div>
 										<div class="detailContent">
-											<a href="orderinfo.jsp" class="delivery">æ´¾ä»¶</a>
+											<a href="orderinfo.jsp" class="delivery">ÅÉ¼þ</a>
 											<div class="orderID">
 												<span class="time">2016-03-09</span>
 												<span class="splitBorder">|</span>
 												<span class="time">21:52:47</span>
 											</div>
 											<div class="orderID">
-												<span class="num">å…±2ä»¶å•†å“</span>
+												<span class="num">¹²2¼þÉÌÆ·</span>
 											</div>
 										</div>
-										<div class="state">å·²å‘è´§</div>
-										<div class="price"><span class="sym">Â¥</span>246.<span class="sym">50</span></div>
+										<div class="state">ÒÑ·¢»õ</div>
+										<div class="price"><span class="sym">0„6</span>246.<span class="sym">50</span></div>
 
 									</div>
-									<a href="heart.jsp" class="btnPay">å†æ¬¡è´­ä¹°</a>
+									<a href="heart.jsp" class="btnPay">ÔÙ´Î¹ºÂò</a>
 								</div>
 							</div>
-							<!--ä¹å®«æ ¼-->
+							<!--¾Å¹¬¸ñ-->
 							<div class="user-squaredIcon">
 								<div class="s-bar">
-									<i class="s-icon"></i>æˆ‘çš„å¸¸ç”¨
+									<i class="s-icon"></i>ÎÒµÄ³£ÓÃ
 								</div>
 								<ul>
 									<a href="order.jsp">
 										<li class="am-u-sm-4"><i class="am-icon-truck am-icon-md"></i>
-											<p>ç‰©æµæŸ¥è¯¢</p>
+											<p>ÎïÁ÷²éÑ¯</p>
 										</li>
 									</a>
 									<a href="collection.jsp">
 										<li class="am-u-sm-4"><i class="am-icon-heart am-icon-md"></i>
-											<p>æˆ‘çš„æ”¶è—</p>
+											<p>ÎÒµÄÊÕ²Ø</p>
 										</li>
 									</a>
 									<a href="foot.jsp">
 										<li class="am-u-sm-4"><i class="am-icon-paw am-icon-md"></i>
-											<p>æˆ‘çš„è¶³è¿¹</p>
+											<p>ÎÒµÄ×ã¼£</p>
 										</li>
 									</a>
 									<a href="#">
 										<li class="am-u-sm-4"><i class="am-icon-gift am-icon-md"></i>
-											<p>ä¸ºä½ æŽ¨è</p>
+											<p>ÎªÄãÍÆ¼ö</p>
 										</li>
 									</a>
 									<a href="blog.jsp">
 										<li class="am-u-sm-4"><i class="am-icon-share-alt am-icon-md"></i>
-											<p>æˆ‘çš„åˆ†äº«</p>
+											<p>ÎÒµÄ·ÖÏí</p>
 										</li>
 									</a>
 									<a href="../home/home2.jsp">
 										<li class="am-u-sm-4"><i class="am-icon-clock-o am-icon-md"></i>
-											<p>é™æ—¶æ´»åŠ¨</p>
+											<p>ÏÞÊ±»î¶¯</p>
 										</li>
 									</a>
 
@@ -258,31 +256,31 @@
 
 							<div class="user-suggestion">
 								<div class="s-bar">
-									<i class="s-icon"></i>ä¼šå‘˜ä¸­å¿ƒ
+									<i class="s-icon"></i>»áÔ±ÖÐÐÄ
 								</div>
 								<div class="s-bar">
-									<a href="suggest.jsp"><i class="s-icon"></i>æ„è§åé¦ˆ</a>
+									<a href="suggest.jsp"><i class="s-icon"></i>Òâ¼û·´À¡</a>
 								</div>
 							</div>
 
-							<!--ä¼˜æƒ åˆ¸ç§¯åˆ†-->
+							<!--ÓÅ»ÝÈ¯»ý·Ö-->
 							<div class="twoTab">
 								<div class="twoTabModel Coupon">
-									<h5 class="squareTitle"><a href="#"><span class="splitBorder"></span>ä¼˜æƒ åˆ¸<i class="am-icon-angle-right"></i></a></h5>
+									<h5 class="squareTitle"><a href="#"><span class="splitBorder"></span>ÓÅ»ÝÈ¯<i class="am-icon-angle-right"></i></a></h5>
 									<div class="Box">
 										<div class="CouponList">
-											<span class="price">Â¥<strong class="num">50</strong></span>
-	                                        <p class="brandName"><a href="#">ABCå“ç‰Œ499å‡50</a></p>
-	                                        <p class="discount">æ»¡<span>499</span>å…ƒæŠµæ‰£</p>
-                                            <a  href="#" class="btnReceive">ç«‹å³é¢†å–</a>
+											<span class="price">0„6<strong class="num">50</strong></span>
+	                                        <p class="brandName"><a href="#">ABCÆ·ÅÆ499¼õ50</a></p>
+	                                        <p class="discount">Âú<span>499</span>ÔªµÖ¿Û</p>
+                                            <a  href="#" class="btnReceive">Á¢¼´ÁìÈ¡</a>
 										</div>
 									</div>
 								</div>
 								<div class="twoTabModel credit">
-									<h5 class="squareTitle"><a href="#"><span class="splitBorder"></span>ç§¯åˆ†å•†åŸŽ<i class="am-icon-angle-right"></i></a></h5>
+									<h5 class="squareTitle"><a href="#"><span class="splitBorder"></span>»ý·ÖÉÌ³Ç<i class="am-icon-angle-right"></i></a></h5>
 									<div class="Box">
 										<p class="countDown">
-											<span class="hour">12</span>ï¼š<span class="minute">09</span>ï¼š<span class="second">02</span><em class="txtStart">å³å°†å¼€å§‹</em>
+											<span class="hour">12</span>£º<span class="minute">09</span>£º<span class="second">02</span><em class="txtStart">¼´½«¿ªÊ¼</em>
 										</p>
 										<div class="am-slider am-slider-default am-slider-carousel" data-am-flexslider="{itemWidth:108, itemMargin:3, slideshow: false}">
 											<ul class="am-slides">
@@ -302,27 +300,27 @@
 					</div>
 					<div class="wrap-right">
 
-						<!-- æ—¥åŽ†-->
+						<!-- ÈÕÀú-->
 						<div class="day-list">
 							<div class="s-title">
-								æ¯æ—¥æ–°é²œäº‹
+								Ã¿ÈÕÐÂÏÊÊÂ
 							</div>
 							<div class="s-box">
 								<ul>
-									<li><a><p>ç²®æ²¹å†²é”‹å‘¨ æ»¡128å‡18</p></a></li>
-									<li><a><p>é˜²æ™’è¿™ä¹ˆé‡è¦çš„äº‹æ€Žèƒ½éšæ„</p></a></li>
-									<li><a><p>æ˜¥æ—¥æŠ¤è‚¤é¢è†œä¸å¯å°‘ï¼Œä½ é€‰å¯¹äº†å—ï¼Ÿ</p></a></li>
-									<li><a><p>çº¯ç²¹æ—¶å°šï¼Œæ‘©ç™»å‡ºæ¸¸ï¼Œå¸ç›ç¾Žè¡£</p></a></li>
-									<li><a><p>ç²®æ²¹å†²é”‹å‘¨ æ»¡128å‡18</p></a></li>
-									<li><a><p>æ˜¥æ—¥æŠ¤è‚¤é¢è†œä¸å¯å°‘ï¼Œä½ é€‰å¯¹äº†å—ï¼Ÿ</p></a></li>									
+									<li><a><p>Á¸ÓÍ³å·æÖÜ Âú128¼õ18</p></a></li>
+									<li><a><p>·ÀÉ¹ÕâÃ´ÖØÒªµÄÊÂÔõÄÜËæÒâ</p></a></li>
+									<li><a><p>´ºÈÕ»¤·ôÃæÄ¤²»¿ÉÉÙ£¬ÄãÑ¡¶ÔÁËÂð£¿</p></a></li>
+									<li><a><p>´¿´âÊ±ÉÐ£¬Ä¦µÇ³öÓÎ£¬Îü¾¦ÃÀÒÂ</p></a></li>
+									<li><a><p>Á¸ÓÍ³å·æÖÜ Âú128¼õ18</p></a></li>
+									<li><a><p>´ºÈÕ»¤·ôÃæÄ¤²»¿ÉÉÙ£¬ÄãÑ¡¶ÔÁËÂð£¿</p></a></li>									
 								</ul>
 							</div>
 						</div>
-						<!--æ–°å“ -->
+						<!--ÐÂÆ· -->
 						<div class="new-goods">
 							<div class="s-bar">
-								<i class="s-icon"></i>ä»Šæ—¥æ–°å“
-								<a class="i-load-more-item-shadow">15æ¬¾æ–°å“</a>
+								<i class="s-icon"></i>½ñÈÕÐÂÆ·
+								<a class="i-load-more-item-shadow">15¿îÐÂÆ·</a>
 							</div>
 							<div class="new-goods-info">
 								<a class="shop-info" href="#">
@@ -330,34 +328,34 @@
 										<img src="images/imgsearch1.jpg" alt="">
 									</div>
 									<span class="new-goods-num ">4</span>
-									<span class="shop-title">å‰¥å£³æ¾å­</span>
+									<span class="shop-title">°þ¿ÇËÉ×Ó</span>
 								</a>
-								<a class="follow">æ”¶è—</a>
+								<a class="follow">ÊÕ²Ø</a>
 							</div>
 						</div>						
 
-						<!--çƒ­å–æŽ¨è -->
+						<!--ÈÈÂôÍÆ¼ö -->
 						<div class="new-goods">
 							<div class="s-bar">
-								<i class="s-icon"></i>çƒ­å–æŽ¨è
+								<i class="s-icon"></i>ÈÈÂôÍÆ¼ö
 							</div>
 							<div class="new-goods-info">
 								<a class="shop-info" href="#" target="_blank">
 									<div >
 										<img src="images/666.jpg" alt="">
 									</div>
-                                    <span class="one-hot-goods">ï¿¥189.60</span>
+                                    <span class="one-hot-goods">£¤189.60</span>
 								</a>
 							</div>
 						</div>						
      				</div>
      				<div class="clear"></div>
      				
-     				<!--æ”¶è—å’Œè¶³è¿¹-->
+     				<!--ÊÕ²ØºÍ×ã¼£-->
      				 <div data-am-widget="tabs" class="am-tabs collection">
                          <ul class="am-tabs-nav am-cf">
-                         	<li class="am-active"><a href="[data-tab-panel-0]"><i class="am-icon-heart"></i>å•†å“æ”¶è—</a></li>
-                            <li class=""><a href="[data-tab-panel-1]"><i class="am-icon-paw"></i>è´­ç‰©è¶³è¿¹</a></li>
+                         	<li class="am-active"><a href="[data-tab-panel-0]"><i class="am-icon-heart"></i>ÉÌÆ·ÊÕ²Ø</a></li>
+                            <li class=""><a href="[data-tab-panel-1]"><i class="am-icon-paw"></i>¹ºÎï×ã¼£</a></li>
                         </ul>
                         <div class="am-tabs-bd">
 
@@ -366,35 +364,35 @@
 									<ul class="am-slides">
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/EZA27501.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/BxJk6.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/Hxcag60.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/youzi.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/EZA27501.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/BxJk6.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/Hxcag60.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/youzi.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
 
 									</ul>
@@ -405,35 +403,35 @@
 									<ul class="am-slides">
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/BxJk6.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/Hxcag60.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/youzi.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/EZA27501.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/BxJk6.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/Hxcag60.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/youzi.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
                                        <li>
                                        	  <a><img class="am-thumbnail" src="images/EZA27501.jpg" /></a>
-                                       	  <strong class="price">Â¥32.9</strong>
+                                       	  <strong class="price">0„632.9</strong>
                                        </li>
 									</ul>
 								</div>                            	
@@ -443,19 +441,33 @@
 
 
 				</div>
-				<!--åº•éƒ¨-->
-				<%@ include file="footer.jsp" %>
+				<!--µ×²¿-->
+				<div id="footer">
+			<div id="links">
+				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
+				<a href="">ÁªÏµÎÒÃÇ</a>|
+				<a href="">ÈË²ÅÕÐÆ¸</a>|
+				<a href="">ÉÌ¼ÒÈë×¤</a>|
+				<a href="">¹ã¸æ·þÎñ</a>|
+				<a href="">ÓÑÇéÁ´½Ó</a>|
+				<a href="">ÏúÊÛÁªÃË</a>|
+				<a href="">English Site</a>
+			</div>
+			<div style="color: #999;">
+				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
+			</div>
+		</div>
 
 			</div>
 
 			<%@ include file="menu.jsp" %>
 		</div>
-		<!--å¼•å¯¼ -->
+		<!--Òýµ¼ -->
 		<div class="navCir">
-			<li><a href="../home/home2.jsp"><i class="am-icon-home "></i>é¦–é¡µ</a></li>
-			<li><a href="../home/sort.jsp"><i class="am-icon-list"></i>åˆ†ç±»</a></li>
-			<li><a href="../home/shopcart.jsp"><i class="am-icon-shopping-basket"></i>è´­ç‰©è½¦</a></li>
-			<li class="active"><a href="index.jsp"><i class="am-icon-user"></i>æˆ‘çš„</a></li>
+			<li><a href="../home/home2.jsp"><i class="am-icon-home "></i>Ê×Ò³</a></li>
+			<li><a href="../home/sort.jsp"><i class="am-icon-list"></i>·ÖÀà</a></li>
+			<li><a href="../home/shopcart.jsp"><i class="am-icon-shopping-basket"></i>¹ºÎï³µ</a></li>
+			<li class="active"><a href="index.jsp"><i class="am-icon-user"></i>ÎÒµÄ</a></li>
 		</div>
 	</body>
 

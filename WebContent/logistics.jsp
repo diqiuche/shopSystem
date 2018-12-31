@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>ç‰©æµ</title>
+		<title>ÎïÁ÷</title>
 
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css">
@@ -19,36 +17,36 @@
 	</head>
 
 	<body>
-		<!--å¤´ -->
+		<!--Í· -->
 		<header>
 			<article>
 				<div class="mt-logo">
-					<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
+					<!--¶¥²¿µ¼º½Ìõ -->
 					<div class="am-container header">
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
-									<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
+									<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
+									<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
 						</ul>
 						</div>
 
-						<!--æ‚¬æµ®æœç´¢æ¡†-->
+						<!--Ðü¸¡ËÑË÷¿ò-->
 
 						<div class="nav white">
 							<div class="logoBig">
@@ -58,8 +56,8 @@
 							<div class="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
-									<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
 								</form>
 							</div>
 						</div>
@@ -70,17 +68,17 @@
 			</article>
 		</header>
             <div class="nav-table">
-					   <div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
+					   <div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">é¦–é¡µ</a></li>
-                                <li class="qc"><a href="#">é—ªè´­</a></li>
-                                <li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
-                                <li class="qc"><a href="#">å›¢è´­</a></li>
-                                <li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
+								<li class="index"><a href="#">Ê×Ò³</a></li>
+                                <li class="qc"><a href="#">ÉÁ¹º</a></li>
+                                <li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
+                                <li class="qc"><a href="#">ÍÅ¹º</a></li>
+                                <li class="qc last"><a href="#">´ó°ü×°</a></li>
 							</ul>
 						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
 						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 						    </div>
 						</div>
@@ -90,9 +88,9 @@
 			<div class="col-main">
 				<div class="main-wrap">
 					<div class="user-logistics">
-						<!--æ ‡é¢˜ -->
+						<!--±êÌâ -->
 						<div class="am-cf am-padding">
-							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">ç‰©æµè·Ÿè¸ª</strong> / <small>Logistics&nbsp;History</small></div>
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">ÎïÁ÷¸ú×Ù</strong> / <small>Logistics&nbsp;History</small></div>
 						</div>
 						<hr/>
 						<div class="package-title">
@@ -101,10 +99,10 @@
 									<img src="images/kouhong.jpg_80x80.jpg" class="itempic J_ItemImg">
 								</div>
 								<div class="item-info">
-									<p class="log-status">ç‰©æµçŠ¶æ€:<span>å·²ç­¾æ”¶</span> </p>
-									<p>æ‰¿è¿å…¬å¸ï¼šå¤©å¤©ç‰©æµ</p>
-									<p>å¿«é€’å•å·ï¼š373269427868</p>
-									<p>å®˜æ–¹ç”µè¯ï¼š4001-888-888</p>
+									<p class="log-status">ÎïÁ÷×´Ì¬:<span>ÒÑÇ©ÊÕ</span> </p>
+									<p>³ÐÔË¹«Ë¾£ºÌìÌìÎïÁ÷</p>
+									<p>¿ìµÝµ¥ºÅ£º373269427868</p>
+									<p>¹Ù·½µç»°£º4001-888-888</p>
 								</div>
 							</div>
                          <div class="clear"></div>
@@ -112,69 +110,69 @@
 						<div class="package-status">
 							<ul class="status-list">		
 								<li class="latest">
-									<p class="text">ã€æ­¦æ±‰å¸‚ã€‘å·²ç­¾æ”¶,ç­¾æ”¶äººæ˜¯é’å¹´åŸŽç­¾æ”¶ï¼Œæ„Ÿè°¢ä½¿ç”¨å¤©å¤©å¿«é€’ï¼ŒæœŸå¾…å†æ¬¡ä¸ºæ‚¨æœåŠ¡</p>
+									<p class="text">¡¾ÎäººÊÐ¡¿ÒÑÇ©ÊÕ,Ç©ÊÕÈËÊÇÇàÄê³ÇÇ©ÊÕ£¬¸ÐÐ»Ê¹ÓÃÌìÌì¿ìµÝ£¬ÆÚ´ýÔÙ´ÎÎªÄú·þÎñ</p>
 									<div class="time-list">
-										<span class="date">2015-12-19</span><span class="week">å‘¨å…­</span><span class="time">15:35:42</span>
+										<span class="date">2015-12-19</span><span class="week">ÖÜÁù</span><span class="time">15:35:42</span>
 									</div>
 								</li>
 								<li>
-									<p class="text">ã€æ­¦æ±‰å¸‚ã€‘å…‰è°·å…³å±±åˆ†éƒ¨æ´¾ä»¶å‘˜æ­£åœ¨ä¸ºæ‚¨æ´¾ä»¶</p>
+									<p class="text">¡¾ÎäººÊÐ¡¿¹â¹È¹ØÉ½·Ö²¿ÅÉ¼þÔ±ÕýÔÚÎªÄúÅÉ¼þ</p>
 									<div class="time-list">
-										<span class="date hidden">2015-12-19</span><span class="week hidden">å‘¨å…­</span><span class="time">14:27:28</span>
+										<span class="date hidden">2015-12-19</span><span class="week hidden">ÖÜÁù</span><span class="time">14:27:28</span>
 									</div>
 								</li>
 								<li>
-									<p class="text">ã€æ­¦æ±‰å¸‚ã€‘å¿«ä»¶å·²åˆ°è¾¾ å…‰è°·å…³å±±åˆ†éƒ¨</p>
+									<p class="text">¡¾ÎäººÊÐ¡¿¿ì¼þÒÑµ½´ï ¹â¹È¹ØÉ½·Ö²¿</p>
 									<div class="time-list">
-										<span class="date hidden">2015-12-19</span><span class="week hidden">å‘¨å…­</span><span class="time">09:25:51</span>
+										<span class="date hidden">2015-12-19</span><span class="week hidden">ÖÜÁù</span><span class="time">09:25:51</span>
 									</div>
 								</li>
 								<li>
-									<p class="text">ã€æ­¦æ±‰å¸‚ã€‘æ­¦æ±‰ å·²å‘å‡º</p>
+									<p class="text">¡¾ÎäººÊÐ¡¿Îäºº ÒÑ·¢³ö</p>
 									<div class="time-list">
-										<span class="date  hidden">2015-12-19</span><span class="week  hidden">å‘¨å…­</span><span class="time">06:56:03</span>
+										<span class="date  hidden">2015-12-19</span><span class="week  hidden">ÖÜÁù</span><span class="time">06:56:03</span>
 									</div>
 								</li>
 								<li>
-									<p class="text">ã€æ­å·žå¸‚ã€‘æ­å·žé›†æ•£é™†è¿ å·²å‘å‡º</P>
+									<p class="text">¡¾º¼ÖÝÊÐ¡¿º¼ÖÝ¼¯É¢Â½ÔË ÒÑ·¢³ö</P>
 									<div class="time-list">
-										<span class="date">2015-12-17</span><span class="week">å‘¨å››</span><span class="time">22:15:23</span>
+										<span class="date">2015-12-17</span><span class="week">ÖÜËÄ</span><span class="time">22:15:23</span>
 									</div>
 								</li>
 								<li>
-									<p class="text">ã€ç»å…´å¸‚ã€‘è¯¸æš¨ å·²å‘å‡º</p>
+									<p class="text">¡¾ÉÜÐËÊÐ¡¿Öîôß ÒÑ·¢³ö</p>
 									<div class="time-list">
-										<span class="date hidden">2015-12-17</span><span class="week hidden">å‘¨å››</span><span class="time">18:55:25</span>
+										<span class="date hidden">2015-12-17</span><span class="week hidden">ÖÜËÄ</span><span class="time">18:55:25</span>
 									</div>
 								</li>
 								<li>
-									<p class="text">ã€ç»å…´å¸‚ã€‘å¤©å¤©å¿«é€’ è¯¸æš¨æ”¶ä»¶å‘˜ å·²æ½ä»¶</span>
+									<p class="text">¡¾ÉÜÐËÊÐ¡¿ÌìÌì¿ìµÝ ÖîôßÊÕ¼þÔ± ÒÑÀ¿¼þ</span>
 										<div class="time-list">
-											<span class="date hidden">2015-12-17</span><span class="week hidden">å‘¨å››</span><span class="time">18:54:25</span>
+											<span class="date hidden">2015-12-17</span><span class="week hidden">ÖÜËÄ</span><span class="time">18:54:25</span>
 										</div>
 								</li>
 								<li>
-									<p class="text">å•†å®¶æ­£é€šçŸ¥å¿«é€’å…¬å¸æ½ä»¶</span>
+									<p class="text">ÉÌ¼ÒÕýÍ¨Öª¿ìµÝ¹«Ë¾À¿¼þ</span>
 										<div class="time-list">
-											<span class="date hidden">2015-12-17</span><span class="week hidden">å‘¨å››</span><span class="time">15:49:40</span>
+											<span class="date hidden">2015-12-17</span><span class="week hidden">ÖÜËÄ</span><span class="time">15:49:40</span>
 										</div>
 								</li>
 								<li>
-									<p class="text">æ‚¨çš„åŒ…è£¹å·²å‡ºåº“</span>
+									<p class="text">ÄúµÄ°ü¹üÒÑ³ö¿â</span>
 										<div class="time-list">
-											<span class="date hidden">2015-12-17</span><span class="week hidden">å‘¨å››</span><span class="time">15:49:40</span>
+											<span class="date hidden">2015-12-17</span><span class="week hidden">ÖÜËÄ</span><span class="time">15:49:40</span>
 										</div>
 								</li>
 								<li>
-									<p class="text">æ‚¨çš„è®¢å•å¾…é…è´§</p>
+									<p class="text">ÄúµÄ¶©µ¥´ýÅä»õ</p>
 									<div class="time-list">
-										<span class="date hidden">2015-12-17</span><span class="week hidden">å‘¨å››</span><span class="time">15:18:15</span>
+										<span class="date hidden">2015-12-17</span><span class="week hidden">ÖÜËÄ</span><span class="time">15:18:15</span>
 									</div>
 								</li>
 								<li class="first">
-									<p class="text">æ‚¨çš„è®¢å•å¼€å§‹å¤„ç†</p>
+									<p class="text">ÄúµÄ¶©µ¥¿ªÊ¼´¦Àí</p>
 									<div class="time-list">
-										<span class="date  hidden">2015-12-17</span><span class="week  hidden">å‘¨å››</span><span class="time">14:27:50</span>
+										<span class="date  hidden">2015-12-17</span><span class="week  hidden">ÖÜËÄ</span><span class="time">14:27:50</span>
 									</div>
 								</li>															
 								
@@ -182,12 +180,76 @@
 						</div>
 					</div>
 				</div>
-				<!--åº•éƒ¨-->
-			<%@ include file="footer.jsp" %>
-
+				<!--µ×²¿-->
+				<div id="footer">
+			<div id="links">
+				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
+				<a href="">ÁªÏµÎÒÃÇ</a>|
+				<a href="">ÈË²ÅÕÐÆ¸</a>|
+				<a href="">ÉÌ¼ÒÈë×¤</a>|
+				<a href="">¹ã¸æ·þÎñ</a>|
+				<a href="">ÓÑÇéÁ´½Ó</a>|
+				<a href="">ÏúÊÛÁªÃË</a>|
+				<a href="">English Site</a>
 			</div>
+			<div style="color: #999;">
+				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
+			</div>
+		</div>
+			</div>
+			<aside class="menu">
+				<ul>
+					<li class="person active">
+						<a href="index.jsp"><i class="am-icon-user"></i>¸öÈËÖÐÐÄ</a>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-newspaper-o"></i>¸öÈË×ÊÁÏ</p>
+						<ul>
+							<li> <a href="information.jsp">¸öÈËÐÅÏ¢</a></li>
+							<li> <a href="safety.jsp">°²È«ÉèÖÃ</a></li>
+							<li> <a href="address.jsp">µØÖ·¹ÜÀí</a></li>
+							<li> <a href="cardlist.jsp">¿ì½ÝÖ§¸¶</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-balance-scale"></i>ÎÒµÄ½»Ò×</p>
+						<ul>
+							<li><a href="order.jsp">¶©µ¥¹ÜÀí</a></li>
+							<li> <a href="change.jsp">ÍË¿îÊÛºó</a></li>
+							<li> <a href="comment.jsp">ÆÀ¼ÛÉÌÆ·</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-dollar"></i>ÎÒµÄ×Ê²ú</p>
+						<ul>
+							<li> <a href="points.jsp">ÎÒµÄ»ý·Ö</a></li>
+							<li> <a href="coupon.jsp">ÓÅ»ÝÈ¯ </a></li>
+							<li> <a href="bonus.jsp">ºì°ü</a></li>
+							<li> <a href="walletlist.jsp">ÕË»§Óà¶î</a></li>
+							<li> <a href="bill.jsp">ÕËµ¥Ã÷Ï¸</a></li>
+						</ul>
+					</li>
 
-			<%@ include file="menu.jsp" %>
+					<li class="person">
+						<p><i class="am-icon-tags"></i>ÎÒµÄÊÕ²Ø</p>
+						<ul>
+							<li> <a href="collection.jsp">ÊÕ²Ø</a></li>
+							<li> <a href="foot.jsp">×ã¼£</a></li>
+						</ul>
+					</li>
+
+					<li class="person">
+						<p><i class="am-icon-qq"></i>ÔÚÏß¿Í·þ</p>
+						<ul>
+							<li> <a href="consultation.jsp">ÉÌÆ·×ÉÑ¯</a></li>
+							<li> <a href="suggest.jsp">Òâ¼û·´À¡</a></li>							
+							
+							<li> <a href="news.jsp">ÎÒµÄÏûÏ¢</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</aside>
 		</div>
 
 	</body>

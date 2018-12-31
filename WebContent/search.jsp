@@ -1,13 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>æœç´¢é¡µé¢</title>
+		<title>ËÑË÷Ò³Ãæ</title>
 
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css" />
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css" />
@@ -22,32 +21,32 @@
 
 	<body>
 
-		<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
+		<!--¶¥²¿µ¼º½Ìõ -->
 		<div class="am-container header">
 			<ul class="message-l">
 				<div class="topMessage">
 					<div class="menu-hd">
-						<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
-						<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
+						<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
+						<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
 					</div>
 				</div>
 			</ul>
 			<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
 						</ul>
 			</div>
 
-			<!--æ‚¬æµ®æœç´¢æ¡†-->
+			<!--Ðü¸¡ËÑË÷¿ò-->
 
 			<div class="nav white">
 				<div class="logo"><img src="images/logo.png" /></div>
@@ -58,8 +57,8 @@
 				<div class="search-bar pr">
 					<a name="index_none_header_sysc" href="#"></a>
 					<form>
-						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
-						<input id="ai-topsearch" class="submit am-btn"  value="æœç´¢" index="1" type="submit">
+						<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
+						<input id="ai-topsearch" class="submit am-btn"  value="ËÑË÷" index="1" type="submit">
 					</form>
 				</div>
 			</div>
@@ -69,17 +68,17 @@
            <div class="search">
 			<div class="search-list">
 			<div class="nav-table">
-					   <div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
+					   <div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">é¦–é¡µ</a></li>
-                                <li class="qc"><a href="#">é—ªè´­</a></li>
-                                <li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
-                                <li class="qc"><a href="#">å›¢è´­</a></li>
-                                <li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
+								<li class="index"><a href="#">Ê×Ò³</a></li>
+                                <li class="qc"><a href="#">ÉÁ¹º</a></li>
+                                <li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
+                                <li class="qc"><a href="#">ÍÅ¹º</a></li>
+                                <li class="qc last"><a href="#">´ó°ü×°</a></li>
 							</ul>
 						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
 						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 						    </div>
 						</div>
@@ -90,63 +89,63 @@
 						<div class="am-u-sm-12 am-u-md-12">
 	                  	<div class="theme-popover">														
 							<div class="searchAbout">
-								<span class="font-pale">ç›¸å…³æœç´¢ï¼š</span>
-								<a title="åšæžœ" href="#">åšæžœ</a>
-								<a title="ç“œå­" href="#">ç“œå­</a>
-								<a title="é¸¡è…¿" href="#">è±†å¹²</a>
+								<span class="font-pale">Ïà¹ØËÑË÷£º</span>
+								<a title="¼á¹û" href="#">¼á¹û</a>
+								<a title="¹Ï×Ó" href="#">¹Ï×Ó</a>
+								<a title="¼¦ÍÈ" href="#">¶¹¸É</a>
 
 							</div>
 							<ul class="select">
 								<p class="title font-normal">
-									<span class="fl">æ¾å­</span>
-									<span class="total fl">æœç´¢åˆ°<strong class="num">997</strong>ä»¶ç›¸å…³å•†å“</span>
+									<span class="fl">ËÉ×Ó</span>
+									<span class="total fl">ËÑË÷µ½<strong class="num">997</strong>¼þÏà¹ØÉÌÆ·</span>
 								</p>
 								<div class="clear"></div>
 								<li class="select-result">
 									<dl>
-										<dt>å·²é€‰</dt>
+										<dt>ÒÑÑ¡</dt>
 										<dd class="select-no"></dd>
-										<p class="eliminateCriteria">æ¸…é™¤</p>
+										<p class="eliminateCriteria">Çå³ý</p>
 									</dl>
 								</li>
 								<div class="clear"></div>
 								<li class="select-list">
 									<dl id="select1">
-										<dt class="am-badge am-round">å“ç‰Œ</dt>	
+										<dt class="am-badge am-round">Æ·ÅÆ</dt>	
 									
 										 <div class="dd-conent">										
-											<dd class="select-all selected"><a href="#">å…¨éƒ¨</a></dd>
-											<dd><a href="#">ç™¾è‰å‘³</a></dd>
-											<dd><a href="#">è‰¯å“é“ºå­</a></dd>
-											<dd><a href="#">æ–°å†œå“¥</a></dd>
-											<dd><a href="#">æ¥¼å…°èœœè¯­</a></dd>
-											<dd><a href="#">å£æ°´å¨ƒ</a></dd>
-											<dd><a href="#">è€ƒæ‹‰å…„å¼Ÿ</a></dd>
+											<dd class="select-all selected"><a href="#">È«²¿</a></dd>
+											<dd><a href="#">°Ù²ÝÎ¶</a></dd>
+											<dd><a href="#">Á¼Æ·ÆÌ×Ó</a></dd>
+											<dd><a href="#">ÐÂÅ©¸ç</a></dd>
+											<dd><a href="#">Â¥À¼ÃÛÓï</a></dd>
+											<dd><a href="#">¿ÚË®ÍÞ</a></dd>
+											<dd><a href="#">¿¼À­ÐÖµÜ</a></dd>
 										 </div>
 						
 									</dl>
 								</li>
 								<li class="select-list">
 									<dl id="select2">
-										<dt class="am-badge am-round">ç§ç±»</dt>
+										<dt class="am-badge am-round">ÖÖÀà</dt>
 										<div class="dd-conent">
-											<dd class="select-all selected"><a href="#">å…¨éƒ¨</a></dd>
-											<dd><a href="#">ä¸œåŒ—æ¾å­</a></dd>
-											<dd><a href="#">å·´è¥¿æ¾å­</a></dd>
-											<dd><a href="#">å¤å¨å¤·æžœ</a></dd>
-											<dd><a href="#">æ¾å­</a></dd>
+											<dd class="select-all selected"><a href="#">È«²¿</a></dd>
+											<dd><a href="#">¶«±±ËÉ×Ó</a></dd>
+											<dd><a href="#">°ÍÎ÷ËÉ×Ó</a></dd>
+											<dd><a href="#">ÏÄÍþÒÄ¹û</a></dd>
+											<dd><a href="#">ËÉ×Ó</a></dd>
 										</div>
 									</dl>
 								</li>
 								<li class="select-list">
 									<dl id="select3">
-										<dt class="am-badge am-round">é€‰è´­çƒ­ç‚¹</dt>
+										<dt class="am-badge am-round">Ñ¡¹ºÈÈµã</dt>
 										<div class="dd-conent">
-											<dd class="select-all selected"><a href="#">å…¨éƒ¨</a></dd>
-											<dd><a href="#">æ‰‹å‰¥æ¾å­</a></dd>
-											<dd><a href="#">è–„å£³æ¾å­</a></dd>
-											<dd><a href="#">è¿›å£é›¶é£Ÿ</a></dd>
-											<dd><a href="#">æœ‰æœºé›¶é£Ÿ</a></dd>
+											<dd class="select-all selected"><a href="#">È«²¿</a></dd>
+											<dd><a href="#">ÊÖ°þËÉ×Ó</a></dd>
+											<dd><a href="#">±¡¿ÇËÉ×Ó</a></dd>
+											<dd><a href="#">½ø¿ÚÁãÊ³</a></dd>
+											<dd><a href="#">ÓÐ»úÁãÊ³</a></dd>
 										</div>
 									</dl>
 								</li>
@@ -156,10 +155,10 @@
                         </div>
 							<div class="search-content">
 								<div class="sort">
-									<li class="first"><a title="ç»¼åˆ">ç»¼åˆæŽ’åº</a></li>
-									<li><a title="é”€é‡">é”€é‡æŽ’åº</a></li>
-									<li><a title="ä»·æ ¼">ä»·æ ¼ä¼˜å…ˆ</a></li>
-									<li class="big"><a title="è¯„ä»·" href="#">è¯„ä»·ä¸ºä¸»</a></li>
+									<li class="first"><a title="×ÛºÏ">×ÛºÏÅÅÐò</a></li>
+									<li><a title="ÏúÁ¿">ÏúÁ¿ÅÅÐò</a></li>
+									<li><a title="¼Û¸ñ">¼Û¸ñÓÅÏÈ</a></li>
+									<li class="big"><a title="ÆÀ¼Û" href="#">ÆÀ¼ÛÎªÖ÷</a></li>
 								</div>
 								<div class="clear"></div>
 
@@ -167,13 +166,13 @@
 									<li>
 										<div class="i-pic limit">
 											<img src="images/imgsearch1.jpg" />											
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -181,13 +180,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -195,13 +194,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -209,13 +208,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -223,13 +222,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -237,13 +236,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -251,13 +250,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -265,13 +264,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -279,13 +278,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -293,13 +292,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -307,13 +306,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -321,13 +320,13 @@
 										<div class="i-pic limit">
 											
 											<img src="images/imgsearch1.jpg" />
-											<p class="title fl">ã€è‰¯å“é“ºå­æ——èˆ°åº—ã€‘æ‰‹å‰¥æ¾å­218g åšæžœç‚’è´§é›¶é£Ÿæ–°è´§å·´è¥¿æ¾å­åŒ…é‚®</p>
+											<p class="title fl">¡¾Á¼Æ·ÆÌ×ÓÆì½¢µê¡¿ÊÖ°þËÉ×Ó218g ¼á¹û³´»õÁãÊ³ÐÂ»õ°ÍÎ÷ËÉ×Ó°üÓÊ</p>
 											<p class="price fl">
-												<b>Â¥</b>
+												<b>0„6</b>
 												<strong>56.90</strong>
 											</p>
 											<p class="number fl">
-												é”€é‡<span>1110</span>
+												ÏúÁ¿<span>1110</span>
 											</p>
 										</div>
 									</li>
@@ -336,52 +335,52 @@
 							<div class="search-side">
 
 								<div class="side-title">
-									ç»å…¸æ­é…
+									¾­µä´îÅä
 								</div>
 
 								<li>
 									<div class="i-pic check">
 										<img src="images/cp.jpg" />
-										<p class="check-title">è¨æ‹‰ç±³ 1+1å°é¸¡è…¿</p>
+										<p class="check-title">ÈøÀ­Ã× 1+1Ð¡¼¦ÍÈ</p>
 										<p class="price fl">
-											<b>Â¥</b>
+											<b>0„6</b>
 											<strong>29.90</strong>
 										</p>
 										<p class="number fl">
-											é”€é‡<span>1110</span>
+											ÏúÁ¿<span>1110</span>
 										</p>
 									</div>
 								</li>
 								<li>
 									<div class="i-pic check">
 										<img src="images/cp2.jpg" />
-										<p class="check-title">ZEK åŽŸå‘³æµ·è‹”</p>
+										<p class="check-title">ZEK Ô­Î¶º£Ì¦</p>
 										<p class="price fl">
-											<b>Â¥</b>
+											<b>0„6</b>
 											<strong>8.90</strong>
 										</p>
 										<p class="number fl">
-											é”€é‡<span>1110</span>
+											ÏúÁ¿<span>1110</span>
 										</p>
 									</div>
 								</li>
 								<li>
 									<div class="i-pic check">
 										<img src="images/cp.jpg" />
-										<p class="check-title">è¨æ‹‰ç±³ 1+1å°é¸¡è…¿</p>
+										<p class="check-title">ÈøÀ­Ã× 1+1Ð¡¼¦ÍÈ</p>
 										<p class="price fl">
-											<b>Â¥</b>
+											<b>0„6</b>
 											<strong>29.90</strong>
 										</p>
 										<p class="number fl">
-											é”€é‡<span>1110</span>
+											ÏúÁ¿<span>1110</span>
 										</p>
 									</div>
 								</li>
 
 							</div>
 							<div class="clear"></div>
-							<!--åˆ†é¡µ -->
+							<!--·ÖÒ³ -->
 							<ul class="am-pagination am-pagination-right">
 								<li class="am-disabled"><a href="#">&laquo;</a></li>
 								<li class="am-active"><a href="#">1</a></li>
@@ -394,22 +393,34 @@
 
 						</div>
 					</div>
-					<%@ include file="footer.jsp" %>
-
-			
+					<div id="footer">
+			<div id="links">
+				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
+				<a href="">ÁªÏµÎÒÃÇ</a>|
+				<a href="">ÈË²ÅÕÐÆ¸</a>|
+				<a href="">ÉÌ¼ÒÈë×¤</a>|
+				<a href="">¹ã¸æ·þÎñ</a>|
+				<a href="">ÓÑÇéÁ´½Ó</a>|
+				<a href="">ÏúÊÛÁªÃË</a>|
+				<a href="">English Site</a>
+			</div>
+			<div style="color: #999;">
+				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
+			</div>
+		</div>
 				</div>
 
 			</div>
 
-		<!--å¼•å¯¼ -->
+		<!--Òýµ¼ -->
 		<div class="navCir">
-			<li><a href="home2.jsp"><i class="am-icon-home "></i>é¦–é¡µ</a></li>
-			<li><a href="sort.jsp"><i class="am-icon-list"></i>åˆ†ç±»</a></li>
-			<li><a href="shopcart.jsp"><i class="am-icon-shopping-basket"></i>è´­ç‰©è½¦</a></li>	
-			<li><a href="../person/index.jsp"><i class="am-icon-user"></i>æˆ‘çš„</a></li>					
+			<li><a href="home2.jsp"><i class="am-icon-home "></i>Ê×Ò³</a></li>
+			<li><a href="sort.jsp"><i class="am-icon-list"></i>·ÖÀà</a></li>
+			<li><a href="shopcart.jsp"><i class="am-icon-shopping-basket"></i>¹ºÎï³µ</a></li>	
+			<li><a href="../person/index.jsp"><i class="am-icon-user"></i>ÎÒµÄ</a></li>					
 		</div>
 
-		<!--èœå• -->
+		<!--²Ëµ¥ -->
 		<div class=tip>
 			<div id="sidebar">
 				<div id="wrap">
@@ -421,13 +432,13 @@
 							<div class="avatar_box">
 								<p class="avatar_imgbox"><img src="images/no-img_mid_.jpg" /></p>
 								<ul class="user_info">
-									<li>ç”¨æˆ·åï¼šsl1903</li>
-									<li>çº§&nbsp;åˆ«ï¼šæ™®é€šä¼šå‘˜</li>
+									<li>ÓÃ»§Ãû£ºsl1903</li>
+									<li>¼¶&nbsp;±ð£ºÆÕÍ¨»áÔ±</li>
 								</ul>
 							</div>
 							<div class="login_btnbox">
-								<a href="#" class="login_order">æˆ‘çš„è®¢å•</a>
-								<a href="#" class="login_favorite">æˆ‘çš„æ”¶è—</a>
+								<a href="#" class="login_order">ÎÒµÄ¶©µ¥</a>
+								<a href="#" class="login_favorite">ÎÒµÄÊÕ²Ø</a>
 							</div>
 							<i class="icon_arrow_white"></i>
 						</div>
@@ -438,7 +449,7 @@
 							<span class="message"></span>
 						</a>
 						<p>
-							è´­ç‰©è½¦
+							¹ºÎï³µ
 						</p>
 						<p class="cart_num">0</p>
 					</div>
@@ -447,7 +458,7 @@
 							<span class="view"></span>
 						</a>
 						<div class="mp_tooltip">
-							æˆ‘çš„èµ„äº§
+							ÎÒµÄ×Ê²ú
 							<i class="icon_arrow_right_black"></i>
 						</div>
 					</div>
@@ -457,7 +468,7 @@
 							<span class="zuji"></span>
 						</a>
 						<div class="mp_tooltip">
-							æˆ‘çš„è¶³è¿¹
+							ÎÒµÄ×ã¼£
 							<i class="icon_arrow_right_black"></i>
 						</div>
 					</div>
@@ -467,7 +478,7 @@
 							<span class="wdsc"><img src="images/wdsc.png" /></span>
 						</a>
 						<div class="mp_tooltip">
-							æˆ‘çš„æ”¶è—
+							ÎÒµÄÊÕ²Ø
 							<i class="icon_arrow_right_black"></i>
 						</div>
 					</div>
@@ -477,7 +488,7 @@
 							<span class="chongzhi"><img src="images/chongzhi.png" /></span>
 						</a>
 						<div class="mp_tooltip">
-							æˆ‘è¦å……å€¼
+							ÎÒÒª³äÖµ
 							<i class="icon_arrow_right_black"></i>
 						</div>
 					</div>
@@ -485,9 +496,9 @@
 					<div class="quick_toggle">
 						<li class="qtitem">
 							<a href="#"><span class="kfzx"></span></a>
-							<div class="mp_tooltip">å®¢æœä¸­å¿ƒ<i class="icon_arrow_right_black"></i></div>
+							<div class="mp_tooltip">¿Í·þÖÐÐÄ<i class="icon_arrow_right_black"></i></div>
 						</li>
-						<!--äºŒç»´ç  -->
+						<!--¶þÎ¬Âë -->
 						<li class="qtitem">
 							<a href="#none"><span class="mpbtn_qrcode"></span></a>
 							<div class="mp_qrcode" style="display:none;"><img src="images/weixin_code_145.png" /><i class="icon_arrow_white"></i></div>
@@ -497,7 +508,7 @@
 						</li>
 					</div>
 
-					<!--å›žåˆ°é¡¶éƒ¨ -->
+					<!--»Øµ½¶¥²¿ -->
 					<div id="quick_links_pop" class="quick_links_pop hide"></div>
 
 				</div>
@@ -508,7 +519,7 @@
 					<i class="am-icon-angle-right am-icon-fw"></i>
 				</div>
 				<div>
-					æˆ‘
+					ÎÒ
 				</div>
 			</div>
 			<div id="shopCart-content" class="nav-content">
@@ -516,7 +527,7 @@
 					<i class="am-icon-angle-right am-icon-fw"></i>
 				</div>
 				<div>
-					è´­ç‰©è½¦
+					¹ºÎï³µ
 				</div>
 			</div>
 			<div id="asset-content" class="nav-content">
@@ -524,21 +535,21 @@
 					<i class="am-icon-angle-right am-icon-fw"></i>
 				</div>
 				<div>
-					èµ„äº§
+					×Ê²ú
 				</div>
 
 				<div class="ia-head-list">
 					<a href="#" target="_blank" class="pl">
 						<div class="num">0</div>
-						<div class="text">ä¼˜æƒ åˆ¸</div>
+						<div class="text">ÓÅ»ÝÈ¯</div>
 					</a>
 					<a href="#" target="_blank" class="pl">
 						<div class="num">0</div>
-						<div class="text">çº¢åŒ…</div>
+						<div class="text">ºì°ü</div>
 					</a>
 					<a href="#" target="_blank" class="pl money">
-						<div class="num">ï¿¥0</div>
-						<div class="text">ä½™é¢</div>
+						<div class="num">£¤0</div>
+						<div class="text">Óà¶î</div>
 					</a>
 				</div>
 
@@ -548,7 +559,7 @@
 					<i class="am-icon-angle-right am-icon-fw"></i>
 				</div>
 				<div>
-					è¶³è¿¹
+					×ã¼£
 				</div>
 			</div>
 			<div id="brand-content" class="nav-content">
@@ -556,7 +567,7 @@
 					<i class="am-icon-angle-right am-icon-fw"></i>
 				</div>
 				<div>
-					æ”¶è—
+					ÊÕ²Ø
 				</div>
 			</div>
 			<div id="broadcast-content" class="nav-content">
@@ -564,7 +575,7 @@
 					<i class="am-icon-angle-right am-icon-fw"></i>
 				</div>
 				<div>
-					å……å€¼
+					³äÖµ
 				</div>
 			</div>
 		</div>

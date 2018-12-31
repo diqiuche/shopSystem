@@ -1,13 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
+<!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>Ф┬▒Г └Х╤ЁХ©╧</title>
+		<title>нр╣двЦ╪ё</title>
 
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css">
@@ -18,37 +17,37 @@
 	</head>
 
 	<body>
-		<!--Е╓╢ -->
-		<!--Е╓╢ -->
+		<!--м╥ -->
+		<!--м╥ -->
 		<header>
 			<article>
 				<div class="mt-logo">
-					<!--И║╤И┐╗Е╞╪Х┬╙Ф²║ -->
+					<!--╤╔╡©╣╪╨╫лУ -->
 					<div class="am-container header">
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="login.jsp" target="_top" class="h">Д╨╡О╪▄Х╞╥Г≥╩Е╫∙</a>
-									<a href="register.jsp" target="_top">Е┘█Х╢╧ФЁ╗Е├▄</a>
+									<a href="login.jsp" target="_top" class="h">гвё╛гК╣гб╪</a>
+									<a href="register.jsp" target="_top">цБ╥яв╒╡А</a>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">Е∙├Е÷▌И╕√И║╣</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">илЁгйврЁ</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>Д╦╙Д╨╨Д╦╜Е©┐</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>╦Жхкжппд</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>Х╢╜Г┴╘Х╫╕</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>╧╨нОЁ╣</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>Ф■╤Х≈▐Е╓╧</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>йу╡ь╪п</span></a></div>
 						</ul>
 						</div>
 
-						<!--Ф┌╛Ф╣╝Ф░°Г╢╒Ф║├-->
+						<!--пЭ╦║кякВ©Р-->
 
 						<div class="nav white">
 							<div class="logoBig">
@@ -58,8 +57,8 @@
 							<div class="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="Ф░°Г╢╒" autocomplete="off">
-									<input id="ai-topsearch" class="submit am-btn" value="Ф░°Г╢╒" index="1" type="submit">
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="кякВ" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="кякВ" index="1" type="submit">
 								</form>
 							</div>
 						</div>
@@ -70,17 +69,17 @@
 			</article>
 		</header>
             <div class="nav-table">
-					   <div class="long-title"><span class="all-goods">Е┘╗И┐╗Е┬├Г╠╩</span></div>
+					   <div class="long-title"><span class="all-goods">х╚╡©╥жюЮ</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">И╕√И║╣</a></li>
-                                <li class="qc"><a href="#">И≈╙Х╢╜</a></li>
-                                <li class="qc"><a href="#">И≥░Ф≈╤Ф┼╒</a></li>
-                                <li class="qc"><a href="#">Е⌡╒Х╢╜</a></li>
-                                <li class="qc last"><a href="#">Е╓╖Е▄┘Хё┘</a></li>
+								<li class="index"><a href="#">йврЁ</a></li>
+                                <li class="qc"><a href="#">иа╧╨</a></li>
+                                <li class="qc"><a href="#">очй╠гю</a></li>
+                                <li class="qc"><a href="#">ме╧╨</a></li>
+                                <li class="qc last"><a href="#">╢С╟Эв╟</a></li>
 							</ul>
 						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>Ф┬▒Г └Г╕▐Е┬╘
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>нр╣д╦ёюШ
 						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 						    </div>
 						</div>
@@ -91,17 +90,17 @@
 				<div class="main-wrap">
 
 					<div class="user-foot">
-						<!--Ф═┤И╒≤ -->
+						<!--╠ЙлБ -->
 						<div class="am-cf am-padding">
-							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">Ф┬▒Г └Х╤ЁХ©╧</strong> / <small>Browser&nbsp;History</small></div>
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">нр╣двЦ╪ё</strong> / <small>Browser&nbsp;History</small></div>
 						</div>
 						<hr/>
 
-						<!--Х╤ЁХ©╧Е┬≈Х║╗ -->
+						<!--вЦ╪ёап╠М -->
 
 						<div class="goods">
 							<div class="goods-date" data-date="2015-12-21">
-								<span><i class="month-lite">12</i>.<i class="day-lite">21</i><i class="date-desc">Д╩┼Е╓╘</i></span>
+								<span><i class="month-lite">12</i>.<i class="day-lite">21</i><i class="date-desc">╫ЯлЛ</i></span>
 								<del class="am-icon-trash"></del>
 								<s class="line"></s>
 							</div>
@@ -109,30 +108,30 @@
 							<div class="goods-box first-box">
 								<div class="goods-pic">
 									<div class="goods-pic-box">
-										<a class="goods-pic-link" target="_blank" href="#" title="Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│">
+										<a class="goods-pic-link" target="_blank" href="#" title="рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥">
 											<img src="images/TB1_pic.jpg_200x200.jpg" class="goods-img"></a>
 									</div>
 									<a class="goods-delete" href="javascript:void(0);"><i class="am-icon-trash"></i></a>
-									<div class="goods-status goods-status-show"><span class="desc">Е╝²Х╢²Е╥╡Д╦▀Ф·╤</span></div>
+									<div class="goods-status goods-status-show"><span class="desc">╠╕╠╢ряоб╪э</span></div>
 								</div>
 
 								<div class="goods-attr">
 									<div class="good-title">
-										<a class="title" href="#" target="_blank">Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│</a>
+										<a class="title" href="#" target="_blank">рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥</a>
 									</div>
 									<div class="goods-price">
 										<span class="g_price">                                    
-                                        <span>б╔</span><strong>71</strong>
+                                        <span>│0└6</span><strong>71</strong>
 										</span>
 										<span class="g_price g_price-original">                                    
-                                        <span>б╔</span><strong>142</strong>
+                                        <span>│0└6</span><strong>142</strong>
 										</span>
 									</div>
 									<div class="clear"></div>
 									<div class="goods-num">
 										<div class="match-recom">
-											<a href="#" class="match-recom-item">Ф┴╬Г⌡╦Д╪╪</a>
-											<a href="#" class="match-recom-item">Ф┴╬Ф░╜И┘█</a>
+											<a href="#" class="match-recom-item">уроЮкф</a>
+											<a href="#" class="match-recom-item">ур╢НеД</a>
 											<i><em></em><span></span></i>
 										</div>
 									</div>
@@ -148,30 +147,30 @@
 							<div class="goods-box">
 								<div class="goods-pic">
 									<div class="goods-pic-box">
-										<a class="goods-pic-link" target="_blank" href="#" title="Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│">
+										<a class="goods-pic-link" target="_blank" href="#" title="рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥">
 											<img src="images/TB1_pic.jpg_200x200.jpg" class="goods-img"></a>
 									</div>
 									<a class="goods-delete" href="javascript:void(0);"><i class="am-icon-trash"></i></a>
-									<div class="goods-status goods-status-show"><span class="desc">Е╝²Х╢²Е╥╡Д╦▀Ф·╤</span></div>
+									<div class="goods-status goods-status-show"><span class="desc">╠╕╠╢ряоб╪э</span></div>
 								</div>
 
 								<div class="goods-attr">
 									<div class="good-title">
-										<a class="title" href="#" target="_blank">Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│</a>
+										<a class="title" href="#" target="_blank">рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥</a>
 									</div>
 									<div class="goods-price">
 										<span class="g_price">                                    
-                                        <span>б╔</span><strong>71</strong>
+                                        <span>│0└6</span><strong>71</strong>
 										</span>
 										<span class="g_price g_price-original">                                    
-                                        <span>б╔</span><strong>142</strong>
+                                        <span>│0└6</span><strong>142</strong>
 										</span>
 									</div>
 									<div class="clear"></div>
 									<div class="goods-num">
 										<div class="match-recom">
-											<a href="#" class="match-recom-item">Ф┴╬Г⌡╦Д╪╪</a>
-											<a href="#" class="match-recom-item">Ф┴╬Ф░╜И┘█</a>
+											<a href="#" class="match-recom-item">уроЮкф</a>
+											<a href="#" class="match-recom-item">ур╢НеД</a>
 											<i><em></em><span></span></i>
 										</div>
 									</div>
@@ -187,30 +186,30 @@
 							<div class="goods-box">
 								<div class="goods-pic">
 									<div class="goods-pic-box">
-										<a class="goods-pic-link" target="_blank" href="#" title="Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│">
+										<a class="goods-pic-link" target="_blank" href="#" title="рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥">
 											<img src="images/TB1_pic.jpg_200x200.jpg" class="goods-img"></a>
 									</div>
 									<a class="goods-delete" href="javascript:void(0);"><i class="am-icon-trash"></i></a>
-									<div class="goods-status goods-status-show"><span class="desc">Е╝²Х╢²Е╥╡Д╦▀Ф·╤</span></div>
+									<div class="goods-status goods-status-show"><span class="desc">╠╕╠╢ряоб╪э</span></div>
 								</div>
 
 								<div class="goods-attr">
 									<div class="good-title">
-										<a class="title" href="#" target="_blank">Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│</a>
+										<a class="title" href="#" target="_blank">рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥</a>
 									</div>
 									<div class="goods-price">
 										<span class="g_price">                                    
-                                        <span>б╔</span><strong>71</strong>
+                                        <span>│0└6</span><strong>71</strong>
 										</span>
 										<span class="g_price g_price-original">                                    
-                                        <span>б╔</span><strong>142</strong>
+                                        <span>│0└6</span><strong>142</strong>
 										</span>
 									</div>
 									<div class="clear"></div>
 									<div class="goods-num">
 										<div class="match-recom">
-											<a href="#" class="match-recom-item">Ф┴╬Г⌡╦Д╪╪</a>
-											<a href="#" class="match-recom-item">Ф┴╬Ф░╜И┘█</a>
+											<a href="#" class="match-recom-item">уроЮкф</a>
+											<a href="#" class="match-recom-item">ур╢НеД</a>
 											<i><em></em><span></span></i>
 										</div>
 									</div>
@@ -226,30 +225,30 @@
 							<div class="goods-box">
 								<div class="goods-pic">
 									<div class="goods-pic-box">
-										<a class="goods-pic-link" target="_blank" href="#" title="Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│">
+										<a class="goods-pic-link" target="_blank" href="#" title="рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥">
 											<img src="images/TB1_pic.jpg_200x200.jpg" class="goods-img"></a>
 									</div>
 									<a class="goods-delete" href="javascript:void(0);"><i class="am-icon-trash"></i></a>
-									<div class="goods-status goods-status-show"><span class="desc">Е╝²Х╢²Е╥╡Д╦▀Ф·╤</span></div>
+									<div class="goods-status goods-status-show"><span class="desc">╠╕╠╢ряоб╪э</span></div>
 								</div>
 
 								<div class="goods-attr">
 									<div class="good-title">
-										<a class="title" href="#" target="_blank">Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│</a>
+										<a class="title" href="#" target="_blank">рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥</a>
 									</div>
 									<div class="goods-price">
 										<span class="g_price">                                    
-                                        <span>б╔</span><strong>71</strong>
+                                        <span>│0└6</span><strong>71</strong>
 										</span>
 										<span class="g_price g_price-original">                                    
-                                        <span>б╔</span><strong>142</strong>
+                                        <span>│0└6</span><strong>142</strong>
 										</span>
 									</div>
 									<div class="clear"></div>
 									<div class="goods-num">
 										<div class="match-recom">
-											<a href="#" class="match-recom-item">Ф┴╬Г⌡╦Д╪╪</a>
-											<a href="#" class="match-recom-item">Ф┴╬Ф░╜И┘█</a>
+											<a href="#" class="match-recom-item">уроЮкф</a>
+											<a href="#" class="match-recom-item">ур╢НеД</a>
 											<i><em></em><span></span></i>
 										</div>
 									</div>
@@ -266,30 +265,30 @@
 							<div class="goods-box">
 								<div class="goods-pic">
 									<div class="goods-pic-box">
-										<a class="goods-pic-link" target="_blank" href="#" title="Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│">
+										<a class="goods-pic-link" target="_blank" href="#" title="рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥">
 											<img src="images/TB1_pic.jpg_200x200.jpg" class="goods-img"></a>
 									</div>
 									<a class="goods-delete" href="javascript:void(0);"><i class="am-icon-trash"></i></a>
-									<div class="goods-status goods-status-show"><span class="desc">Е╝²Х╢²Е╥╡Д╦▀Ф·╤</span></div>
+									<div class="goods-status goods-status-show"><span class="desc">╠╕╠╢ряоб╪э</span></div>
 								</div>
 
 								<div class="goods-attr">
 									<div class="good-title">
-										<a class="title" href="#" target="_blank">Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│</a>
+										<a class="title" href="#" target="_blank">рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥</a>
 									</div>
 									<div class="goods-price">
 										<span class="g_price">                                    
-                                        <span>б╔</span><strong>71</strong>
+                                        <span>│0└6</span><strong>71</strong>
 										</span>
 										<span class="g_price g_price-original">                                    
-                                        <span>б╔</span><strong>142</strong>
+                                        <span>│0└6</span><strong>142</strong>
 										</span>
 									</div>
 									<div class="clear"></div>
 									<div class="goods-num">
 										<div class="match-recom">
-											<a href="#" class="match-recom-item">Ф┴╬Г⌡╦Д╪╪</a>
-											<a href="#" class="match-recom-item">Ф┴╬Ф░╜И┘█</a>
+											<a href="#" class="match-recom-item">уроЮкф</a>
+											<a href="#" class="match-recom-item">ур╢НеД</a>
 											<i><em></em><span></span></i>
 										</div>
 									</div>
@@ -299,37 +298,37 @@
 						<div class="clear"></div>
 						<div class="goods">
 							<div class="goods-date" data-date="2015-12-17">
-								<span><i class="month-lite"></i><i class="day-lite"></i>	<i class="date-desc">Д╦─Е▒╗Е├┘</i></span>
+								<span><i class="month-lite"></i><i class="day-lite"></i>	<i class="date-desc">р╩жэдз</i></span>
 								<del class="am-icon-trash"></del>
 								<s class="line"></s>
 							</div>
 							<div class="goods-box">
 								<div class="goods-pic">
 									<div class="goods-pic-box">
-										<a class="goods-pic-link" target="_blank" href="#" title="Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│">
+										<a class="goods-pic-link" target="_blank" href="#" title="рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥">
 											<img src="images/TB1_pic.jpg_200x200.jpg" class="goods-img"></a>
 									</div>
 									<a class="goods-delete" href="javascript:void(0);"><i class="am-icon-trash"></i></a>
-									<div class="goods-status goods-status-show"><span class="desc">Е╝²Х╢²Е╥╡Д╦▀Ф·╤</span></div>
+									<div class="goods-status goods-status-show"><span class="desc">╠╕╠╢ряоб╪э</span></div>
 								</div>
 
 								<div class="goods-attr">
 									<div class="good-title">
-										<a class="title" href="#" target="_blank">Ф└▐Е╓╖Е┬╘Х╢╧Е┬≈Г╫≈Х©⌡Е▐ёИё÷Е⌠│Е╥╖Е┘▀Е┼⌡И⌡╤Иё÷24Г╡▓  Х©⌡Е▐ёЕ╥╖Е┘▀Е┼⌡Иё÷Е⌠│</a>
+										<a class="title" href="#" target="_blank">рБ╢СюШ╥яапбч╫Ь©зйЁф╥ги©ка╕аЦйЁ24аё  ╫Ь©зги©ка╕йЁф╥</a>
 									</div>
 									<div class="goods-price">
 										<span class="g_price">                                    
-                                        <span>б╔</span><strong>71</strong>
+                                        <span>│0└6</span><strong>71</strong>
 										</span>
 										<span class="g_price g_price-original">                                    
-                                        <span>б╔</span><strong>142</strong>
+                                        <span>│0└6</span><strong>142</strong>
 										</span>
 									</div>
 									<div class="clear"></div>
 									<div class="goods-num">
 										<div class="match-recom">
-											<a href="#" class="match-recom-item">Ф┴╬Г⌡╦Д╪╪</a>
-											<a href="#" class="match-recom-item">Ф┴╬Ф░╜И┘█</a>
+											<a href="#" class="match-recom-item">уроЮкф</a>
+											<a href="#" class="match-recom-item">ур╢НеД</a>
 											<i><em></em><span></span></i>
 										</div>
 									</div>
@@ -341,12 +340,77 @@
 					</div>
 				</div>
 
-				<!--Е╨∙И┐╗-->
-				<%@ include file="footer.jsp" %>
-
+				<!--╣в╡©-->
+				<div id="footer">
+			<div id="links">
+				<a href=""> ╧ьсзнрцг</a>|
+				<a href="">а╙о╣нрцг</a>|
+				<a href="">хк╡еупф╦</a>|
+				<a href="">ил╪рхКв╓</a>|
+				<a href="">╧Ц╦Ф╥ЧнЯ</a>|
+				<a href="">сягИа╢╫с</a>|
+				<a href="">оЗйша╙цк</a>|
+				<a href="">English Site</a>
+			</div>
+			<div style="color: #999;">
+				Copyright│0└82004-2018&nbsp;&nbsp;&nbsp;╟Фх╗кЫсп
+			</div>
+		</div>
 			</div>
 
-			<%@ include file="menu.jsp" %>
+			<aside class="menu">
+				<ul>
+					<li class="person active">
+						<a href="index.jsp"><i class="am-icon-user"></i>╦Жхкжппд</a>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-newspaper-o"></i>╦Жхквйао</p>
+						<ul>
+							<li> <a href="information.jsp">╦Жхкпео╒</a></li>
+							<li> <a href="safety.jsp">╟╡х╚иХжц</a></li>
+							<li> <a href="address.jsp">╣ьж╥╧эюМ</a></li>
+							<li> <a href="cardlist.jsp">©Л╫щж╖╦╤</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-balance-scale"></i>нр╣д╫╩рв</p>
+						<ul>
+							<li><a href="order.jsp">╤╘╣╔╧эюМ</a></li>
+							<li> <a href="change.jsp">мк©Нйш╨С</a></li>
+							<li> <a href="comment.jsp">фю╪шилф╥</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-dollar"></i>нр╣двй╡З</p>
+						<ul>
+							<li> <a href="points.jsp">нр╣д╩Щ╥ж</a></li>
+							<li> <a href="coupon.jsp">се╩щх╞ </a></li>
+							<li> <a href="bonus.jsp">╨Л╟Э</a></li>
+							<li> <a href="walletlist.jsp">ук╩╖сЮ╤Н</a></li>
+							<li> <a href="bill.jsp">ук╣╔цВо╦</a></li>
+						</ul>
+					</li>
+
+					<li class="person">
+						<p><i class="am-icon-tags"></i>нр╣дйу╡ь</p>
+						<ul>
+							<li> <a href="collection.jsp">йу╡ь</a></li>
+							<li> <a href="foot.jsp">вЦ╪ё</a></li>
+						</ul>
+					</li>
+
+					<li class="person">
+						<p><i class="am-icon-qq"></i>тзоъ©м╥Ч</p>
+						<ul>
+							<li> <a href="consultation.jsp">илф╥вия╞</a></li>
+							<li> <a href="suggest.jsp">рБ╪Ш╥╢ю║</a></li>							
+							
+							<li> <a href="news.jsp">нр╣доШо╒</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</aside>
 		</div>
 
 	</body>

@@ -1,6 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
 <!DOCTYPE html>
 <html>
 
@@ -8,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>ä¸ªäººè´¦å•</title>
+		<title>¸öÈËÕËµ¥</title>
 
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css">
@@ -20,36 +18,36 @@
 	</head>
 
 	<body>
-		<!--å¤´ -->
+		<!--Í· -->
 		<header>
 			<article>
 				<div class="mt-logo">
-					<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
+					<!--¶¥²¿µ¼º½Ìõ -->
 					<div class="am-container header">
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
-									<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
+									<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
+									<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
 						</ul>
 						</div>
 
-						<!--æ‚¬æµ®æœç´¢æ¡†-->
+						<!--Ðü¸¡ËÑË÷¿ò-->
 
 						<div class="nav white">
 							<div class="logoBig">
@@ -59,8 +57,8 @@
 							<div class="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
-									<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
 								</form>
 							</div>
 						</div>
@@ -72,17 +70,17 @@
 		</header>
 
 		<div class="nav-table">
-			<div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
+			<div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
 			<div class="nav-cont">
 				<ul>
-					<li class="index"><a href="#">é¦–é¡µ</a></li>
-					<li class="qc"><a href="#">é—ªè´­</a></li>
-					<li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
-					<li class="qc"><a href="#">å›¢è´­</a></li>
-					<li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
+					<li class="index"><a href="#">Ê×Ò³</a></li>
+					<li class="qc"><a href="#">ÉÁ¹º</a></li>
+					<li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
+					<li class="qc"><a href="#">ÍÅ¹º</a></li>
+					<li class="qc last"><a href="#">´ó°ü×°</a></li>
 				</ul>
 				<div class="nav-extra">
-					<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
+					<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
 					<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 				</div>
 			</div>
@@ -94,17 +92,17 @@
 				<div class="main-wrap">
 
 					<div class="user-bill">
-						<!--æ ‡é¢˜ -->
+						<!--±êÌâ -->
 						<div class="am-cf am-padding">
-							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">è´¦å•</strong> / <small>Electronic&nbsp;bill</small></div>
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">ÕËµ¥</strong> / <small>Electronic&nbsp;bill</small></div>
 						</div>
 						<hr/>
 
 						<div class="ebill-section">
 							<div class="ebill-title-section">
 								<h2 class="trade-title section-title">
-                                                                                                                                     äº¤æ˜“
-                            <span class="desc">ï¼ˆé‡‘é¢å•ä½ï¼šå…ƒï¼‰</span>
+                                                                                                                                     ½»Ò×
+                            <span class="desc">£¨½ð¶îµ¥Î»£ºÔª£©</span>
                         </h2>
 
 								<div class=" ng-scope">
@@ -112,7 +110,7 @@
 										<a href="javascript:void(0);" class="current-circle ng-binding">2015/11/01 - 2015/11/30</a>
 
 									</div>
-									<span class="title-tag"><i class="num ng-binding">12</i>æœˆ</span>
+									<span class="title-tag"><i class="num ng-binding">12</i>ÔÂ</span>
 								</div>
 							</div>
 
@@ -120,33 +118,33 @@
 								<div class="income-slider ">
 									<div class="block-income block  fn-left">
 										<h3 class="income-title block-title">
-                                                                                                          æ”¯å‡º
+                                                                                                          Ö§³ö
                                       <span class="num ng-binding">
                                               119.80
                                        </span>
                                     <span class="desc ng-binding">
-                                           <a href="billlist.jsp">æŸ¥çœ‹æ”¯å‡ºæ˜Žç»†</a>
+                                           <a href="billlist.jsp">²é¿´Ö§³öÃ÷Ï¸</a>
                                          </span>
                                              </h3>
 
 										<div ng-class="shoppingChart" class="catatory-details  fn-hide shopping">
 											<div class="catatory-chart fn-left fn-hide">
-												<div class="title">ç±»åž‹</div>
+												<div class="title">ÀàÐÍ</div>
 												<ul>
 
 												</ul>
 											</div>
 											<div class="catatory-detail fn-left">
 												<div class="title ng-binding">
-													è´­ä¹°å•†å“
+													¹ºÂòÉÌÆ·
 												</div>
 												<ul>
 
 													<li class="ng-scope  delete-false">
 
 														<div class="  ng-scope">
-															<a href="#" class="text fn-left " title="å‘¢å­å¤§è¡£">
-																<span class="emoji-span ng-binding">å‘¢å­å¤§è¡£</span>
+															<a href="#" class="text fn-left " title="ÄØ×Ó´óÒÂ">
+																<span class="emoji-span ng-binding">ÄØ×Ó´óÒÂ</span>
 																<span class="amount fn-right ng-binding">349.00</span>
 															</a>
 														</div>
@@ -155,8 +153,8 @@
 													<li class="ng-scope  delete-false">
 
 														<div class="  ng-scope">
-															<a href="#" class="text fn-left " title="é‡‘å£«é¡¿ç¾Šå¹´é™é‡ç‰ˆ16gUç›˜">
-																<span class="emoji-span ng-binding">é‡‘å£«é¡¿ç¾Šå¹´é™é‡ç‰ˆ16gUç›˜</span>
+															<a href="#" class="text fn-left " title="½ðÊ¿¶ÙÑòÄêÏÞÁ¿°æ16gUÅÌ">
+																<span class="emoji-span ng-binding">½ðÊ¿¶ÙÑòÄêÏÞÁ¿°æ16gUÅÌ</span>
 																<span class="amount fn-right ng-binding">39.00</span>
 															</a>
 														</div>
@@ -165,8 +163,8 @@
 													<li class="ng-scope  delete-false">
 
 														<div class="  ng-scope">
-															<a href="#" class="text fn-left " title="å‘¢å­å¤§è¡£">
-																<span class="emoji-span ng-binding">å‘¢å­å¤§è¡£</span>
+															<a href="#" class="text fn-left " title="ÄØ×Ó´óÒÂ">
+																<span class="emoji-span ng-binding">ÄØ×Ó´óÒÂ</span>
 																<span class="amount fn-right ng-binding">349.00</span>
 															</a>
 														</div>
@@ -175,8 +173,8 @@
 													<li class="ng-scope  delete-false">
 
 														<div class="  ng-scope">
-															<a href="#" class="text fn-left " title="é‡‘å£«é¡¿ç¾Šå¹´é™é‡ç‰ˆ16gUç›˜">
-																<span class="emoji-span ng-binding">é‡‘å£«é¡¿ç¾Šå¹´é™é‡ç‰ˆ16gUç›˜</span>
+															<a href="#" class="text fn-left " title="½ðÊ¿¶ÙÑòÄêÏÞÁ¿°æ16gUÅÌ">
+																<span class="emoji-span ng-binding">½ðÊ¿¶ÙÑòÄêÏÞÁ¿°æ16gUÅÌ</span>
 																<span class="amount fn-right ng-binding">39.00</span>
 															</a>
 														</div>
@@ -185,8 +183,8 @@
 													<li class="ng-scope  delete-false">
 
 														<div class="  ng-scope">
-															<a href="#" class="text fn-left " title="å‘¢å­å¤§è¡£">
-																<span class="emoji-span ng-binding">å‘¢å­å¤§è¡£</span>
+															<a href="#" class="text fn-left " title="ÄØ×Ó´óÒÂ">
+																<span class="emoji-span ng-binding">ÄØ×Ó´óÒÂ</span>
 																<span class="amount fn-right ng-binding">349.00</span>
 															</a>
 														</div>
@@ -195,8 +193,8 @@
 													<li class="ng-scope  delete-false">
 
 														<div class="  ng-scope">
-															<a href="#" class="text fn-left " title="ç¾Šæ¯›æ¯¡åº•éž‹åž«">
-																<span class="emoji-span ng-binding">ç¾Šæ¯›æ¯¡åº•éž‹åž«</span>
+															<a href="#" class="text fn-left " title="ÑòÃ«Õ±µ×Ð¬µæ">
+																<span class="emoji-span ng-binding">ÑòÃ«Õ±µ×Ð¬µæ</span>
 																<span class="amount fn-right ng-binding">9.90</span>
 															</a>
 														</div>
@@ -211,30 +209,30 @@
 									</div>
 									<div class="clear"></div>
 
-									<!--æ”¶å…¥-->
+									<!--ÊÕÈë-->
 									<h3 class="expense income-title block-title">
-                                                                                                                       æ”¶å…¥                                                              
+                                                                                                                       ÊÕÈë                                                              
                                       <span class="num ng-binding">
                                               0.00
                                        </span>
                                     <span class="desc ng-binding">
-                                           <a href="billlist.jsp">æŸ¥çœ‹æ”¶å…¥æ˜Žç»†</a>
+                                           <a href="billlist.jsp">²é¿´ÊÕÈëÃ÷Ï¸</a>
                                     </span>
                                 </h3>
 								</div>
 
-								<!--æ¶ˆè´¹èµ°åŠ¿-->
+								<!--Ïû·Ñ×ßÊÆ-->
 								<div class="module-consumeTrend inner-module">
-									<h3 class="module-title">æ¶ˆè´¹èµ°åŠ¿</h3>
+									<h3 class="module-title">Ïû·Ñ×ßÊÆ</h3>
 									<div id="consumeTrend-chart" class="consumeTrend-chart">
 
 									</div>
 								</div>
 
-								<!--é“¶è¡Œå¡ä½¿ç”¨æƒ…å†µ-->
+								<!--ÒøÐÐ¿¨Ê¹ÓÃÇé¿ö-->
 
 								<div class="module-card inner-module">
-									<h3 class="module-title">é“¶è¡Œå¡ä½¿ç”¨æƒ…å†µ</h3>
+									<h3 class="module-title">ÒøÐÐ¿¨Ê¹ÓÃÇé¿ö</h3>
 									<div class="card-chart valid am-slider am-slider-default" data-am-widget="slider" data-am-slider='{"animation":"slide","slideshow":false}'>
 										<ul class="am-slides">
 											<li>
@@ -242,9 +240,9 @@
 													<div class="mask">
 
 														<div class="bac fn-left"></div>
-														<div class="bank ng-binding" style="background-image: url(../images/combo.png);">ä¸­å›½å†œä¸šé“¶è¡Œ</div>
+														<div class="bank ng-binding" style="background-image: url(../images/combo.png);">ÖÐ¹úÅ©ÒµÒøÐÐ</div>
 														<div class="details">
-															<a>æŸ¥çœ‹è¯¦æƒ…</a>
+															<a>²é¿´ÏêÇé</a>
 														</div>
 													</div>
 												</div>
@@ -255,32 +253,32 @@
 													</div>
 													<div class="bank-detail">
 														<div class="totalin fn-left">
-															<span class="fn-left">æµå…¥</span>
+															<span class="fn-left">Á÷Èë</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="totalout fn-left">
-															<span class="fn-left">æµå‡º</span>
+															<span class="fn-left">Á÷³ö</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="expand fn-left">
-															<span class="fn-left">æ”¯å‡º</span>
+															<span class="fn-left">Ö§³ö</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="withdraw fn-left">
-															<span class="fn-left">æçŽ°</span>
+															<span class="fn-left">ÌáÏÖ</span>
 															<span class="amount fn-right">
 							                                0.00
                             						</span>
 														</div>
 														<div class="recharge fn-left">
-															<span class="fn-left">å……å€¼</span>
+															<span class="fn-left">³äÖµ</span>
 															<span class="amount fn-right">
                                                             0.00
                             						</span>
 														</div>
 
 														<div class="refund fn-left">
-															<span class="fn-left">é“¶è¡Œå¡é€€æ¬¾</span>
+															<span class="fn-left">ÒøÐÐ¿¨ÍË¿î</span>
 															<span class="amount fn-right ">0.00</span>
 														</div>
 													</div>
@@ -291,9 +289,9 @@
 													<div class="mask">
 
 														<div class="bac fn-left"></div>
-														<div class="bank ng-binding" style="background-image: url(../images/combo1.png);">ä¸­å›½å»ºè®¾é“¶è¡Œ</div>
+														<div class="bank ng-binding" style="background-image: url(../images/combo1.png);">ÖÐ¹ú½¨ÉèÒøÐÐ</div>
 														<div class="details">
-															<a>æŸ¥çœ‹è¯¦æƒ…</a>
+															<a>²é¿´ÏêÇé</a>
 														</div>
 													</div>
 												</div>
@@ -304,32 +302,32 @@
 													</div>
 													<div class="bank-detail">
 														<div class="totalin fn-left">
-															<span class="fn-left">æµå…¥</span>
+															<span class="fn-left">Á÷Èë</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="totalout fn-left">
-															<span class="fn-left">æµå‡º</span>
+															<span class="fn-left">Á÷³ö</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="expand fn-left">
-															<span class="fn-left">æ”¯å‡º</span>
+															<span class="fn-left">Ö§³ö</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="withdraw fn-left">
-															<span class="fn-left">æçŽ°</span>
+															<span class="fn-left">ÌáÏÖ</span>
 															<span class="amount fn-right">
 							                                0.00
                             						</span>
 														</div>
 														<div class="recharge fn-left">
-															<span class="fn-left">å……å€¼</span>
+															<span class="fn-left">³äÖµ</span>
 															<span class="amount fn-right">
                                                             0.00
                             						</span>
 														</div>
 
 														<div class="refund fn-left">
-															<span class="fn-left">é“¶è¡Œå¡é€€æ¬¾</span>
+															<span class="fn-left">ÒøÐÐ¿¨ÍË¿î</span>
 															<span class="amount fn-right ">0.00</span>
 														</div>
 													</div>
@@ -340,9 +338,9 @@
 													<div class="mask">
 
 														<div class="bac fn-left"></div>
-														<div class="bank ng-binding" style="background-image: url(../images/combo2.png);">æµ¦å‘é“¶è¡Œ</div>
+														<div class="bank ng-binding" style="background-image: url(../images/combo2.png);">ÆÖ·¢ÒøÐÐ</div>
 														<div class="details">
-															<a>æŸ¥çœ‹è¯¦æƒ…</a>
+															<a>²é¿´ÏêÇé</a>
 														</div>
 													</div>
 												</div>
@@ -353,32 +351,32 @@
 													</div>
 													<div class="bank-detail">
 														<div class="totalin fn-left">
-															<span class="fn-left">æµå…¥</span>
+															<span class="fn-left">Á÷Èë</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="totalout fn-left">
-															<span class="fn-left">æµå‡º</span>
+															<span class="fn-left">Á÷³ö</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="expand fn-left">
-															<span class="fn-left">æ”¯å‡º</span>
+															<span class="fn-left">Ö§³ö</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="withdraw fn-left">
-															<span class="fn-left">æçŽ°</span>
+															<span class="fn-left">ÌáÏÖ</span>
 															<span class="amount fn-right">
 							                                0.00
                             						</span>
 														</div>
 														<div class="recharge fn-left">
-															<span class="fn-left">å……å€¼</span>
+															<span class="fn-left">³äÖµ</span>
 															<span class="amount fn-right">
                                                             0.00
                             						</span>
 														</div>
 
 														<div class="refund fn-left">
-															<span class="fn-left">é“¶è¡Œå¡é€€æ¬¾</span>
+															<span class="fn-left">ÒøÐÐ¿¨ÍË¿î</span>
 															<span class="amount fn-right ">0.00</span>
 														</div>
 													</div>
@@ -389,9 +387,9 @@
 													<div class="mask">
 
 														<div class="bac fn-left"></div>
-														<div class="bank ng-binding" style="background-image: url(../images/combo3.png);">ä¸­å›½å…‰å¤§é“¶è¡Œ</div>
+														<div class="bank ng-binding" style="background-image: url(../images/combo3.png);">ÖÐ¹ú¹â´óÒøÐÐ</div>
 														<div class="details">
-															<a>æŸ¥çœ‹è¯¦æƒ…</a>
+															<a>²é¿´ÏêÇé</a>
 														</div>
 													</div>
 												</div>
@@ -402,32 +400,32 @@
 													</div>
 													<div class="bank-detail">
 														<div class="totalin fn-left">
-															<span class="fn-left">æµå…¥</span>
+															<span class="fn-left">Á÷Èë</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="totalout fn-left">
-															<span class="fn-left">æµå‡º</span>
+															<span class="fn-left">Á÷³ö</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="expand fn-left">
-															<span class="fn-left">æ”¯å‡º</span>
+															<span class="fn-left">Ö§³ö</span>
 															<span class="amount fn-right">0.00</span>
 														</div>
 														<div class="withdraw fn-left">
-															<span class="fn-left">æçŽ°</span>
+															<span class="fn-left">ÌáÏÖ</span>
 															<span class="amount fn-right">
 							                                0.00
                             						</span>
 														</div>
 														<div class="recharge fn-left">
-															<span class="fn-left">å……å€¼</span>
+															<span class="fn-left">³äÖµ</span>
 															<span class="amount fn-right">
                                                             0.00
                             						</span>
 														</div>
 
 														<div class="refund fn-left">
-															<span class="fn-left">é“¶è¡Œå¡é€€æ¬¾</span>
+															<span class="fn-left">ÒøÐÐ¿¨ÍË¿î</span>
 															<span class="amount fn-right ">0.00</span>
 														</div>
 													</div>
@@ -459,12 +457,78 @@
 
 					</div>
 				</div>
-				<!--åº•éƒ¨-->
-			<%@ include file="footer.jsp" %>
+				<!--µ×²¿-->
+				<div id="footer">
+			<div id="links">
+				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
+				<a href="">ÁªÏµÎÒÃÇ</a>|
+				<a href="">ÈË²ÅÕÐÆ¸</a>|
+				<a href="">ÉÌ¼ÒÈë×¤</a>|
+				<a href="">¹ã¸æ·þÎñ</a>|
+				<a href="">ÓÑÇéÁ´½Ó</a>|
+				<a href="">ÏúÊÛÁªÃË</a>|
+				<a href="">English Site</a>
+			</div>
+			<div style="color: #999;">
+				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
+			</div>
+		</div>
 
 			</div>
 
-			<%@ include file="menu.jsp" %>
+			<aside class="menu">
+				<ul>
+					<li class="person active">
+						<a href="index.jsp"><i class="am-icon-user"></i>¸öÈËÖÐÐÄ</a>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-newspaper-o"></i>¸öÈË×ÊÁÏ</p>
+						<ul>
+							<li> <a href="information.jsp">¸öÈËÐÅÏ¢</a></li>
+							<li> <a href="safety.jsp">°²È«ÉèÖÃ</a></li>
+							<li> <a href="address.jsp">µØÖ·¹ÜÀí</a></li>
+							<li> <a href="cardlist.jsp">¿ì½ÝÖ§¸¶</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-balance-scale"></i>ÎÒµÄ½»Ò×</p>
+						<ul>
+							<li><a href="order.jsp">¶©µ¥¹ÜÀí</a></li>
+							<li> <a href="change.jsp">ÍË¿îÊÛºó</a></li>
+							<li> <a href="comment.jsp">ÆÀ¼ÛÉÌÆ·</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-dollar"></i>ÎÒµÄ×Ê²ú</p>
+						<ul>
+							<li> <a href="points.jsp">ÎÒµÄ»ý·Ö</a></li>
+							<li> <a href="coupon.jsp">ÓÅ»ÝÈ¯ </a></li>
+							<li> <a href="bonus.jsp">ºì°ü</a></li>
+							<li> <a href="walletlist.jsp">ÕË»§Óà¶î</a></li>
+							<li> <a href="bill.jsp">ÕËµ¥Ã÷Ï¸</a></li>
+						</ul>
+					</li>
+
+					<li class="person">
+						<p><i class="am-icon-tags"></i>ÎÒµÄÊÕ²Ø</p>
+						<ul>
+							<li> <a href="collection.jsp">ÊÕ²Ø</a></li>
+							<li> <a href="foot.jsp">×ã¼£</a></li>							
+						</ul>
+					</li>
+
+					<li class="person">
+						<p><i class="am-icon-qq"></i>ÔÚÏß¿Í·þ</p>
+						<ul>
+							<li> <a href="consultation.jsp">ÉÌÆ·×ÉÑ¯</a></li>
+							<li> <a href="suggest.jsp">Òâ¼û·´À¡</a></li>
+							
+							<li> <a href="news.jsp">ÎÒµÄÏûÏ¢</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</aside>
 		</div>
 
 	</body>

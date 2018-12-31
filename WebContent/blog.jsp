@@ -1,11 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
 <!DOCTYPE html>
 <html>
 <head lang="en">
   <meta charset="UTF-8">
-  <title>æ–°é—»é¡µé¢</title>
+  <title>ÐÂÎÅÒ³Ãæ</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <meta name="format-detection" content="telephone=no">
@@ -17,36 +15,36 @@
    <link href="${pageContext.request.contextPath }/css/personal.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-		<!--å¤´ -->
+		<!--Í· -->
 		<header>
 			<article>
 				<div class="mt-logo">
-					<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
+					<!--¶¥²¿µ¼º½Ìõ -->
 					<div class="am-container header">
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
-									<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
+									<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
+									<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
 						</ul>
 						</div>
 
-						<!--æ‚¬æµ®æœç´¢æ¡†-->
+						<!--Ðü¸¡ËÑË÷¿ò-->
 
 						<div class="nav white">
 							<div class="logoBig">
@@ -56,8 +54,8 @@
 							<div class="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
-									<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
 								</form>
 							</div>
 						</div>
@@ -68,63 +66,63 @@
 			</article>
 		</header>
             <div class="nav-table">
-					   <div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
+					   <div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">é¦–é¡µ</a></li>
-                                <li class="qc"><a href="#">é—ªè´­</a></li>
-                                <li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
-                                <li class="qc"><a href="#">å›¢è´­</a></li>
-                                <li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
+								<li class="index"><a href="#">Ê×Ò³</a></li>
+                                <li class="qc"><a href="#">ÉÁ¹º</a></li>
+                                <li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
+                                <li class="qc"><a href="#">ÍÅ¹º</a></li>
+                                <li class="qc last"><a href="#">´ó°ü×°</a></li>
 							</ul>
 						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
 						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 						    </div>
 						</div>
 			</div>
 			<b class="line"></b>	
-<!--æ–‡ç«  -->
+<!--ÎÄÕÂ -->
 <div class="am-g am-g-fixed blog-g-fixed bloglist">
   <div class="am-u-md-9">
     <article class="blog-main">
       <h3 class="am-article-title blog-title">
-        <a href="#">Ã—å¼ æ¯›çˆ·çˆ·ï¼Œæžå®šé“å¦†å®¹</a>
+        <a href="#">¡ÁÕÅÃ«Ò¯Ò¯£¬¸ã¶¨ö¦×±ÈÝ</a>
       </h3>
       <h4 class="am-article-meta blog-meta">2014-06-17 09:52</h4>
 
       <div class="am-g blog-content">
         <div class="am-u-sm-12">
-          <p>å¹´è½»çš„å¦¹å­çˆ±ç¾Žä¸½ï¼Œè¿™æ˜¯äººä¹‹å¸¸æƒ…ï¼Œä½†æ˜¯æ²¡æœ‰è¶³å¤Ÿçš„ç»æµŽå®žåŠ›ï¼Œé¢å¯¹æ˜‚è´µå¥¢åŽçš„æŠ¤è‚¤å“éš¾å…å›Šä¸­ç¾žæ¶©ã€‚ä¸è¿‡ä¸ç”¨æ‹…å¿ƒï¼Œå¹´è½»çš„èµ„æœ¬å°±æ˜¯ï¼Œä¸éœ€è¦æŠ•å…¥å¤ªå¤šï¼Œå´ä¾ç„¶æœ‰ä¿ä¸½çš„è„¸è›‹å„¿~ä»Šå¤©å°ç¼–å°±ç»™å¦¹å­ä»¬å‡†å¤‡äº†ç‚™æ‰‹å¯çƒ­çš„ç™¾å…ƒæŠ¤è‚¤å¤§ç¤¼åŒ…ï¼Œçœ‹çœ‹æœ‰æ²¡æœ‰è‡ªå·±éœ€è¦çš„å§ï¼</p>
+          <p>ÄêÇáµÄÃÃ×Ó°®ÃÀÀö£¬ÕâÊÇÈËÖ®³£Çé£¬µ«ÊÇÃ»ÓÐ×ã¹»µÄ¾­¼ÃÊµÁ¦£¬Ãæ¶Ô°º¹óÉÝ»ªµÄ»¤·ôÆ·ÄÑÃâÄÒÖÐÐßÉ¬¡£²»¹ý²»ÓÃµ£ÐÄ£¬ÄêÇáµÄ×Ê±¾¾ÍÊÇ£¬²»ÐèÒªÍ¶ÈëÌ«¶à£¬È´ÒÀÈ»ÓÐÇÎÀöµÄÁ³µ°¶ù~½ñÌìÐ¡±à¾Í¸øÃÃ×ÓÃÇ×¼±¸ÁËÖËÊÖ¿ÉÈÈµÄ°ÙÔª»¤·ô´óÀñ°ü£¬¿´¿´ÓÐÃ»ÓÐ×Ô¼ºÐèÒªµÄ°É£¡</p>
           
-          <strong class="blog-tit"><p>ä¸€å¼ æ¯›çˆ·çˆ·<span>ä¸¨</span>åŸºç¡€æŠ¤è‚¤</p></strong>
+          <strong class="blog-tit"><p>Ò»ÕÅÃ«Ò¯Ò¯<span>Ø­</span>»ù´¡»¤·ô</p></strong>
           <div class="Row">
           	<li><img src="images/blog01.jpg"/></li>
           	<li><img src="images/blog02.jpg"/></li>
           	<li><img src="images/blog03.jpg"/></li>
           </div>
-          <p>ç™¾å…ƒä»¥å†…çš„åŸºç¡€æŠ¤è‚¤å¥—è£…ï¼Œå°ç¼–ç»™å¦¹å­ä»¬æŒ‘é€‰äº†æ´—é¢å¥¶ã€çˆ½è‚¤æ°´å’Œé¢éœœï¼ŒæŒ‰ç…§æ´é¢å’ŒæŠ¤è‚¤çš„é¡ºåºï¼Œå¤§å®¶å¯ä»¥å°½æƒ…å°†è¿™äº›å£ç¢‘å¥½è´§åŠ å…¥è´­ç‰©è½¦å“¦ã€‚</p>
-          <p>ä¸€å‘æ˜¯ï¼›å¹³ä»·åˆå¥½ç”¨çš„éœ²å¾—æ¸…æ´—é¢å¥¶ï¼ŒåŠ ä¸Šå¾ˆå¤§ä¸€æ”¯æ„Ÿè§‰æ€Žä¹ˆéƒ½ç”¨ä¸å®Œçš„åƒçº¤è‰ä¸ç“œæ°´ï¼Œæœ€åŽç”¨çŽ‰å…°æ²¹é¢éœœé”ä½é¢éƒ¨æ°´åˆ†ï¼Œç®€ç›´å®Œç¾Žï¼</p>
+          <p>°ÙÔªÒÔÄÚµÄ»ù´¡»¤·ôÌ××°£¬Ð¡±à¸øÃÃ×ÓÃÇÌôÑ¡ÁËÏ´ÃæÄÌ¡¢Ë¬·ôË®ºÍÃæËª£¬°´ÕÕ½àÃæºÍ»¤·ôµÄË³Ðò£¬´ó¼Ò¿ÉÒÔ¾¡Çé½«ÕâÐ©¿Ú±®ºÃ»õ¼ÓÈë¹ºÎï³µÅ¶¡£</p>
+          <p>Ò»ÏòÊÇ£»Æ½¼ÛÓÖºÃÓÃµÄÂ¶µÃÇåÏ´ÃæÄÌ£¬¼ÓÉÏºÜ´óÒ»Ö§¸Ð¾õÔõÃ´¶¼ÓÃ²»ÍêµÄÇ§ÏË²ÝË¿¹ÏË®£¬×îºóÓÃÓñÀ¼ÓÍÃæËªËø×¡Ãæ²¿Ë®·Ö£¬¼òÖ±ÍêÃÀ£¡</p>
 
 
-         <strong class="blog-tit"><p>ä¸¤å¼ æ¯›çˆ·çˆ·<span>ä¸¨</span>å½©å¦†</p></strong>
+         <strong class="blog-tit"><p>Á½ÕÅÃ«Ò¯Ò¯<span>Ø­</span>²Ê×±</p></strong>
           <div class="Row">
           	<li><img src="images/blog04.jpg"/></li>
           	<li><img src="images/blog05.jpg"/></li>
           	<li><img src="images/blog06.jpg"/></li>
           </div>
           
-          <p>çœ¼å¦†æ˜¯æ•´ä¸ªå¦†é¢çš„ç²¾é«“ï¼Œä¸€ä¸ªç²¾è‡´çš„çœ¼å¦†å¯ä»¥çž¬é—´æå‡äººçš„æ°”åœºï¼Œæˆ–æ˜¯å¨‡ç¾žå¯çˆ±ï¼Œæˆ–è€…æ¸©å©‰è´¤æ·‘ï¼Œæˆ–æ˜¯å¦©åªšå¦–å¨†ï¼Œæ€»æœ‰ä¸€ç§é£Žæ ¼é€‚åˆè‡ªå·±ã€‚æƒ³ä¸åˆ°ä»…ä»…ä¸åˆ°200è½¯å¦¹å¸å°±èƒ½æžå®šçœ¼å¦†è¿™ä¸ªç£¨äººçš„å°å¦–ç²¾å§ï¼</p>
+          <p>ÑÛ×±ÊÇÕû¸ö×±ÃæµÄ¾«Ëè£¬Ò»¸ö¾«ÖÂµÄÑÛ×±¿ÉÒÔË²¼äÌáÉýÈËµÄÆø³¡£¬»òÊÇ½¿Ðß¿É°®£¬»òÕßÎÂÍñÏÍÊç£¬»òÊÇåüÃÄÑýæ¬£¬×ÜÓÐÒ»ÖÖ·ç¸ñÊÊºÏ×Ô¼º¡£Ïë²»µ½½ö½ö²»µ½200ÈíÃÃ±Ò¾ÍÄÜ¸ã¶¨ÑÛ×±Õâ¸öÄ¥ÈËµÄÐ¡Ñý¾«°É£¡</p>
           
           
-         <strong class="blog-tit"><p>ä¸‰å¼ æ¯›çˆ·çˆ·<span>ä¸¨</span>èº«ä½“æŠ¤ç†</p></strong>
+         <strong class="blog-tit"><p>ÈýÕÅÃ«Ò¯Ò¯<span>Ø­</span>ÉíÌå»¤Àí</p></strong>
           <div class="Row">
           	<li><img src="images/blog07.jpg"/></li>
           	<li><img src="images/blog08.jpg"/></li>
           	<li><img src="images/blog09.jpg"/></li>
           </div>          
           
-           <p>åˆæ˜¥ç©ºæ°”å¹²ç‡¥ï¼Œæ´—æ‰‹æ´—æ¾¡åŽä¸é©¬ä¸Šæ¶‚ç‚¹æ¶¦è‚¤ä¹³ï¼Œçš®è‚¤å°±ä¼šä¸å¬è¯å¾—å¹²ç‡¥ç²—ç³™èµ·æ¥ï¼Œç€å®žè®©çˆ±ç¾Žçš„å¦¹å­ä»¬æ“ç¢Žäº†å¿ƒã€‚æ˜¥å¤©ä¸å…‰æ˜¯ä¸‡ç‰©å¤è‹çš„å­£èŠ‚ï¼Œè¿˜æ˜¯ä¸‡ç‰©éœ€è¦æ»‹å…»çš„å­£èŠ‚ï¼Œè€Œä¸”è¦ä»Žå¤´åˆ°è„šå¾—æ»‹å…»ã€‚</p>
+           <p>³õ´º¿ÕÆø¸ÉÔï£¬Ï´ÊÖÏ´Ôèºó²»ÂíÉÏÍ¿µãÈó·ôÈé£¬Æ¤·ô¾Í»á²»Ìý»°µÃ¸ÉÔï´Ö²ÚÆðÀ´£¬×ÅÊµÈÃ°®ÃÀµÄÃÃ×ÓÃÇ²ÙËéÁËÐÄ¡£´ºÌì²»¹âÊÇÍòÎï¸´ËÕµÄ¼¾½Ú£¬»¹ÊÇÍòÎïÐèÒª×ÌÑøµÄ¼¾½Ú£¬¶øÇÒÒª´ÓÍ·µ½½ÅµÃ×ÌÑø¡£</p>
           
 
         </div>
@@ -136,8 +134,8 @@
 
     <hr class="am-article-divider blog-hr">
     <ul class="am-pagination blog-pagination">
-      <li class="am-pagination-prev"><a href="">&laquo; ä¸Šä¸€é¡µ</a></li>
-      <li class="am-pagination-next"><a href="">ä¸‹ä¸€é¡µ &raquo;</a></li>
+      <li class="am-pagination-prev"><a href="">&laquo; ÉÏÒ»Ò³</a></li>
+      <li class="am-pagination-next"><a href="">ÏÂÒ»Ò³ &raquo;</a></li>
     </ul>
   </div>
 
@@ -145,13 +143,13 @@
     <div class="am-panel-group">
 
       <section class="am-panel am-panel-default">
-        <div class="am-panel-hd">çƒ­é—¨è¯é¢˜</div>
+        <div class="am-panel-hd">ÈÈÃÅ»°Ìâ</div>
         <ul class="am-list blog-list">
-        	<li><a href="#"><p>[ç‰¹æƒ ]é—ºèœœå–Šä½ æ¥å›¤å›½è´§å•¦</p></a></li>  
-          <li><a href="#"><p>[å…¬å‘Š]åŽåŒ—ã€åŽä¸­éƒ¨åˆ†åœ°åŒºé…é€å»¶è¿Ÿ</p></a></li>
-          <li><a href="#"><p>[ç‰¹æƒ ]å®¶ç”µç‹‚æ¬¢åƒäº¿ç¤¼åˆ¸ ä¹°1é€1ï¼</p></a></li>
-          <li><a href="#"><p>[å…¬å‘Š]å•†åŸŽä¸Žå¹¿å·žå¸‚ç­¾ç½²æˆ˜ç•¥åˆä½œåè®®</p></a></li>
-          <li><a href="#"><p>[ç‰¹æƒ ]æ´‹æ²³å¹´æœ«å¤§ä¿ƒï¼Œä½Žè‡³ä¸¤ä»¶äº”æŠ˜</p></a></li>      
+        	<li><a href="#"><p>[ÌØ»Ý]¹ëÃÛº°ÄãÀ´¶Ú¹ú»õÀ²</p></a></li>  
+          <li><a href="#"><p>[¹«¸æ]»ª±±¡¢»ªÖÐ²¿·ÖµØÇøÅäËÍÑÓ³Ù</p></a></li>
+          <li><a href="#"><p>[ÌØ»Ý]¼Òµç¿ñ»¶Ç§ÒÚÀñÈ¯ Âò1ËÍ1£¡</p></a></li>
+          <li><a href="#"><p>[¹«¸æ]ÉÌ³ÇÓë¹ãÖÝÊÐÇ©ÊðÕ½ÂÔºÏ×÷Ð­Òé</p></a></li>
+          <li><a href="#"><p>[ÌØ»Ý]ÑóºÓÄêÄ©´ó´Ù£¬µÍÖÁÁ½¼þÎåÕÛ</p></a></li>      
         </ul>
       </section>
 
@@ -160,9 +158,21 @@
 
 </div>
 
-<%@ include file="footer.jsp" %>
-
-		
+<div id="footer">
+			<div id="links">
+				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
+				<a href="">ÁªÏµÎÒÃÇ</a>|
+				<a href="">ÈË²ÅÕÐÆ¸</a>|
+				<a href="">ÉÌ¼ÒÈë×¤</a>|
+				<a href="">¹ã¸æ·þÎñ</a>|
+				<a href="">ÓÑÇéÁ´½Ó</a>|
+				<a href="">ÏúÊÛÁªÃË</a>|
+				<a href="">English Site</a>
+			</div>
+			<div style="color: #999;">
+				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
+			</div>
+		</div>
 </div>
 
 <!--[if lt IE 9]>

@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<title>ä»˜æ¬¾æˆåŠŸé¡µé¢</title>
+<title>¸¶¿î³É¹¦Ò³Ãæ</title>
 <link rel="stylesheet"  type="text/css" href="${pageContext.request.contextPath }/css/amazeui.css"/>
 <link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
 <link href="${pageContext.request.contextPath }/css/demo.css" rel="stylesheet" type="text/css" />
@@ -18,31 +17,31 @@
 <body>
 
 
-<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
+<!--¶¥²¿µ¼º½Ìõ -->
 <div class="am-container header">
   <ul class="message-l">
     <div class="topMessage">
      <div class="menu-hd">
-       <a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
-       <a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
+       <a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
+       <a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
      </div></div>
   </ul>
   <ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
 						</ul>
 </div>
 
-<!--æ‚¬æµ®æœç´¢æ¡†-->
+<!--Ðü¸¡ËÑË÷¿ò-->
 
 <div class="nav white">
 	<div class="logo"><img src="images/logo.png" /></div>
@@ -53,8 +52,8 @@
     <div class="search-bar pr">
         <a name="index_none_header_sysc" href="#"></a>       
         <form>
-        <input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
-        <input id="ai-topsearch" class="submit" value="æœç´¢" index="1" type="submit"></form>
+        <input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
+        <input id="ai-topsearch" class="submit" value="ËÑË÷" index="1" type="submit"></form>
     </div>     
 </div>
 
@@ -64,29 +63,43 @@
 
 <div class="take-delivery">
  <div class="status">
-   <h2>æ‚¨å·²æˆåŠŸä»˜æ¬¾</h2>
+   <h2>ÄúÒÑ³É¹¦¸¶¿î</h2>
    <div class="successInfo">
      <ul>
-       <li>ä»˜æ¬¾é‡‘é¢<em>Â¥9.90</em></li>
+       <li>¸¶¿î½ð¶î<em>0„69.90</em></li>
        <div class="user-info">
-         <p>æ”¶è´§äººï¼šè‰¾è¿ª</p>
-         <p>è”ç³»ç”µè¯ï¼š15871145629</p>
-         <p>æ”¶è´§åœ°å€ï¼šæ¹–åŒ—çœ æ­¦æ±‰å¸‚ æ­¦æ˜ŒåŒº ä¸œæ¹–è·¯75å·ä¼—çŽ¯å¤§åŽ¦</p>
+         <p>ÊÕ»õÈË£º°¬µÏ</p>
+         <p>ÁªÏµµç»°£º15871145629</p>
+         <p>ÊÕ»õµØÖ·£ººþ±±Ê¡ ÎäººÊÐ Îä²ýÇø ¶«ºþÂ·75ºÅÖÚ»·´óÏÃ</p>
        </div>
-             è¯·è®¤çœŸæ ¸å¯¹æ‚¨çš„æ”¶è´§ä¿¡æ¯ï¼Œå¦‚æœ‰é”™è¯¯è¯·è”ç³»å®¢æœ
+             ÇëÈÏÕæºË¶ÔÄúµÄÊÕ»õÐÅÏ¢£¬ÈçÓÐ´íÎóÇëÁªÏµ¿Í·þ
                                
      </ul>
      <div class="option">
-       <span class="info">æ‚¨å¯ä»¥</span>
-        <a href="../person/order.jsp" class="J_MakePoint">æŸ¥çœ‹<span>å·²ä¹°åˆ°çš„å®è´</span></a>
-        <a href="../person/orderinfo.jsp" class="J_MakePoint">æŸ¥çœ‹<span>äº¤æ˜“è¯¦æƒ…</span></a>
+       <span class="info">Äú¿ÉÒÔ</span>
+        <a href="../person/order.jsp" class="J_MakePoint">²é¿´<span>ÒÑÂòµ½µÄ±¦±´</span></a>
+        <a href="../person/orderinfo.jsp" class="J_MakePoint">²é¿´<span>½»Ò×ÏêÇé</span></a>
      </div>
     </div>
   </div>
 </div>
 
-<%@ include file="footer.jsp" %>
 
+<div id="footer">
+			<div id="links">
+				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
+				<a href="">ÁªÏµÎÒÃÇ</a>|
+				<a href="">ÈË²ÅÕÐÆ¸</a>|
+				<a href="">ÉÌ¼ÒÈë×¤</a>|
+				<a href="">¹ã¸æ·þÎñ</a>|
+				<a href="">ÓÑÇéÁ´½Ó</a>|
+				<a href="">ÏúÊÛÁªÃË</a>|
+				<a href="">English Site</a>
+			</div>
+			<div style="color: #999;">
+				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
+			</div>
+		</div>
 
 
 </body>

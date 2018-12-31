@@ -1,13 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-      <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%><!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=GB18030" pageEncoding="GB18030"%>
+<!DOCTYPE html>
 <html>
 
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0">
 
-		<title>è®¢å•ç®¡ç†</title>
+		<title>¶©µ¥¹ÜÀí</title>
 
 		<link href="${pageContext.request.contextPath }/css/admin.css" rel="stylesheet" type="text/css">
 		<link href="${pageContext.request.contextPath }/css/amazeui.css" rel="stylesheet" type="text/css">
@@ -21,36 +20,36 @@
 	</head>
 
 	<body>
-		<!--å¤´ -->
+		<!--Í· -->
 		<header>
 			<article>
 				<div class="mt-logo">
-					<!--é¡¶éƒ¨å¯¼èˆªæ¡ -->
+					<!--¶¥²¿µ¼º½Ìõ -->
 					<div class="am-container header">
 						<ul class="message-l">
 							<div class="topMessage">
 								<div class="menu-hd">
-									<a href="login.jsp" target="_top" class="h">äº²ï¼Œè¯·ç™»å½•</a>
-									<a href="register.jsp" target="_top">å…è´¹æ³¨å†Œ</a>
+									<a href="login.jsp" target="_top" class="h">Ç×£¬ÇëµÇÂ¼</a>
+									<a href="register.jsp" target="_top">Ãâ·Ñ×¢²á</a>
 								</div>
 							</div>
 						</ul>
 						<ul class="message-r">
 							<div class="topMessage home">
-								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">å•†åŸŽé¦–é¡µ</a></div>
+								<div class="menu-hd"><a href="home2.jsp" target="_top" class="h">ÉÌ³ÇÊ×Ò³</a></div>
 							</div>
 							<div class="topMessage my-shangcheng">
-								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>ä¸ªäººä¸­å¿ƒ</a></div>
+								<div class="menu-hd MyShangcheng"><a href="index.jsp" target="_top"><i class="am-icon-user am-icon-fw"></i>¸öÈËÖÐÐÄ</a></div>
 							</div>
 							<div class="topMessage mini-cart">
-								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>è´­ç‰©è½¦</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
+								<div class="menu-hd"><a id="mc-menu-hd" href="shopcart.jsp" target="_top"><i class="am-icon-shopping-cart  am-icon-fw"></i><span>¹ºÎï³µ</span><strong id="J_MiniCartNum" class="h">0</strong></a></div>
 							</div>
 							<div class="topMessage favorite">
-								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>æ”¶è—å¤¹</span></a></div>
+								<div class="menu-hd"><a href="collection.jsp" target="_top"><i class="am-icon-heart am-icon-fw"></i><span>ÊÕ²Ø¼Ð</span></a></div>
 						</ul>
 						</div>
 
-						<!--æ‚¬æµ®æœç´¢æ¡†-->
+						<!--Ðü¸¡ËÑË÷¿ò-->
 
 						<div class="nav white">
 							<div class="logoBig">
@@ -60,8 +59,8 @@
 							<div class="search-bar pr">
 								<a name="index_none_header_sysc" href="#"></a>
 								<form>
-									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="æœç´¢" autocomplete="off">
-									<input id="ai-topsearch" class="submit am-btn" value="æœç´¢" index="1" type="submit">
+									<input id="searchInput" name="index_none_header_sysc" type="text" placeholder="ËÑË÷" autocomplete="off">
+									<input id="ai-topsearch" class="submit am-btn" value="ËÑË÷" index="1" type="submit">
 								</form>
 							</div>
 						</div>
@@ -72,17 +71,17 @@
 			</article>
 		</header>
             <div class="nav-table">
-					   <div class="long-title"><span class="all-goods">å…¨éƒ¨åˆ†ç±»</span></div>
+					   <div class="long-title"><span class="all-goods">È«²¿·ÖÀà</span></div>
 					   <div class="nav-cont">
 							<ul>
-								<li class="index"><a href="#">é¦–é¡µ</a></li>
-                                <li class="qc"><a href="#">é—ªè´­</a></li>
-                                <li class="qc"><a href="#">é™æ—¶æŠ¢</a></li>
-                                <li class="qc"><a href="#">å›¢è´­</a></li>
-                                <li class="qc last"><a href="#">å¤§åŒ…è£…</a></li>
+								<li class="index"><a href="#">Ê×Ò³</a></li>
+                                <li class="qc"><a href="#">ÉÁ¹º</a></li>
+                                <li class="qc"><a href="#">ÏÞÊ±ÇÀ</a></li>
+                                <li class="qc"><a href="#">ÍÅ¹º</a></li>
+                                <li class="qc last"><a href="#">´ó°ü×°</a></li>
 							</ul>
 						    <div class="nav-extra">
-						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>æˆ‘çš„ç¦åˆ©
+						    	<i class="am-icon-user-secret am-icon-md nav-user"></i><b></b>ÎÒµÄ¸£Àû
 						    	<i class="am-icon-angle-right" style="padding-left: 10px;"></i>
 						    </div>
 						</div>
@@ -94,57 +93,57 @@
 
 					<div class="user-order">
 
-						<!--æ ‡é¢˜ -->
+						<!--±êÌâ -->
 						<div class="am-cf am-padding">
-							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">è®¢å•ç®¡ç†</strong> / <small>Order</small></div>
+							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">¶©µ¥¹ÜÀí</strong> / <small>Order</small></div>
 						</div>
 						<hr/>
 
 						<div class="am-tabs am-tabs-d2 am-margin" data-am-tabs>
 
 							<ul class="am-avg-sm-5 am-tabs-nav am-nav am-nav-tabs">
-								<li class="am-active"><a href="#tab1">æ‰€æœ‰è®¢å•</a></li>
-								<li><a href="#tab2">å¾…ä»˜æ¬¾</a></li>
-								<li><a href="#tab3">å¾…å‘è´§</a></li>
-								<li><a href="#tab4">å¾…æ”¶è´§</a></li>
-								<li><a href="#tab5">å¾…è¯„ä»·</a></li>
+								<li class="am-active"><a href="#tab1">ËùÓÐ¶©µ¥</a></li>
+								<li><a href="#tab2">´ý¸¶¿î</a></li>
+								<li><a href="#tab3">´ý·¢»õ</a></li>
+								<li><a href="#tab4">´ýÊÕ»õ</a></li>
+								<li><a href="#tab5">´ýÆÀ¼Û</a></li>
 							</ul>
 
 							<div class="am-tabs-bd">
 								<div class="am-tab-panel am-fade am-in am-active" id="tab1">
 									<div class="order-top">
 										<div class="th th-item">
-											<td class="td-inner">å•†å“</td>
+											<td class="td-inner">ÉÌÆ·</td>
 										</div>
 										<div class="th th-price">
-											<td class="td-inner">å•ä»·</td>
+											<td class="td-inner">µ¥¼Û</td>
 										</div>
 										<div class="th th-number">
-											<td class="td-inner">æ•°é‡</td>
+											<td class="td-inner">ÊýÁ¿</td>
 										</div>
 										<div class="th th-operation">
-											<td class="td-inner">å•†å“æ“ä½œ</td>
+											<td class="td-inner">ÉÌÆ·²Ù×÷</td>
 										</div>
 										<div class="th th-amount">
-											<td class="td-inner">åˆè®¡</td>
+											<td class="td-inner">ºÏ¼Æ</td>
 										</div>
 										<div class="th th-status">
-											<td class="td-inner">äº¤æ˜“çŠ¶æ€</td>
+											<td class="td-inner">½»Ò××´Ì¬</td>
 										</div>
 										<div class="th th-change">
-											<td class="td-inner">äº¤æ˜“æ“ä½œ</td>
+											<td class="td-inner">½»Ò×²Ù×÷</td>
 										</div>
 									</div>
 
 									<div class="order-main">
 										<div class="order-list">
 											
-											<!--äº¤æ˜“æˆåŠŸ-->
+											<!--½»Ò×³É¹¦-->
 											<div class="order-status5">
 												<div class="order-title">
-													<div class="dd-num">è®¢å•ç¼–å·ï¼š<a href="javascript:;">1601430</a></div>
-													<span>æˆäº¤æ—¶é—´ï¼š2015-12-20</span>
-													<!--    <em>åº—é“ºï¼šå°æ¡”ç¯</em>-->
+													<div class="dd-num">¶©µ¥±àºÅ£º<a href="javascript:;">1601430</a></div>
+													<span>³É½»Ê±¼ä£º2015-12-20</span>
+													<!--    <em>µêÆÌ£ºÐ¡½ÛµÆ</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
@@ -158,9 +157,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -172,7 +171,7 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
@@ -192,9 +191,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¤¼ç›’è¢œå­å¥³ç§‹å†¬ çº¯æ£‰è¢œåŠ åŽš éŸ©å›½å¯çˆ± </p>
-																			<p class="info-little">é¢œè‰²åˆ†ç±»ï¼šæŽæ¸…ç…§
-																				<br/>å°ºç ï¼šå‡ç </p>
+																			<p>ÀñºÐÍà×ÓÅ®Çï¶¬ ´¿ÃÞÍà¼Óºñ º«¹ú¿É°® </p>
+																			<p class="info-little">ÑÕÉ«·ÖÀà£ºÀîÇåÕÕ
+																				<br/>³ßÂë£º¾ùÂë</p>
 																		</a>
 																	</div>
 																</div>
@@ -206,7 +205,7 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
@@ -226,9 +225,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -240,7 +239,7 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
@@ -253,21 +252,21 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																åˆè®¡ï¼š676.00
-																<p>å«è¿è´¹ï¼š<span>10.00</span></p>
+																ºÏ¼Æ£º676.00
+																<p>º¬ÔË·Ñ£º<span>10.00</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">äº¤æ˜“æˆåŠŸ</p>
-																	<p class="order-info"><a href="orderinfo.jsp">è®¢å•è¯¦æƒ…</a></p>
-																	<p class="order-info"><a href="logistics.jsp">æŸ¥çœ‹ç‰©æµ</a></p>
+																	<p class="Mystatus">½»Ò×³É¹¦</p>
+																	<p class="order-info"><a href="orderinfo.jsp">¶©µ¥ÏêÇé</a></p>
+																	<p class="order-info"><a href="logistics.jsp">²é¿´ÎïÁ÷</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<div class="am-btn am-btn-danger anniu">
-																	åˆ é™¤è®¢å•</div>
+																	É¾³ý¶©µ¥</div>
 															</li>
 														</div>
 													</div>
@@ -276,12 +275,12 @@
 											
 											
 											
-											<!--äº¤æ˜“å¤±è´¥-->
+											<!--½»Ò×Ê§°Ü-->
 											<div class="order-status0">
 												<div class="order-title">
-													<div class="dd-num">è®¢å•ç¼–å·ï¼š<a href="javascript:;">1601430</a></div>
-													<span>æˆäº¤æ—¶é—´ï¼š2015-12-20</span>
-													<!--    <em>åº—é“ºï¼šå°æ¡”ç¯</em>-->
+													<div class="dd-num">¶©µ¥±àºÅ£º<a href="javascript:;">1601430</a></div>
+													<span>³É½»Ê±¼ä£º2015-12-20</span>
+													<!--    <em>µêÆÌ£ºÐ¡½ÛµÆ</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
@@ -295,9 +294,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -309,7 +308,7 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
@@ -329,9 +328,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¤¼ç›’è¢œå­å¥³ç§‹å†¬ çº¯æ£‰è¢œåŠ åŽš éŸ©å›½å¯çˆ± </p>
-																			<p class="info-little">é¢œè‰²åˆ†ç±»ï¼šæŽæ¸…ç…§
-																				<br/>å°ºç ï¼šå‡ç </p>
+																			<p>ÀñºÐÍà×ÓÅ®Çï¶¬ ´¿ÃÞÍà¼Óºñ º«¹ú¿É°® </p>
+																			<p class="info-little">ÑÕÉ«·ÖÀà£ºÀîÇåÕÕ
+																				<br/>³ßÂë£º¾ùÂë</p>
 																		</a>
 																	</div>
 																</div>
@@ -343,7 +342,7 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
@@ -363,9 +362,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -377,7 +376,7 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
@@ -390,31 +389,31 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																åˆè®¡ï¼š676.00
-																<p>å«è¿è´¹ï¼š<span>10.00</span></p>
+																ºÏ¼Æ£º676.00
+																<p>º¬ÔË·Ñ£º<span>10.00</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">äº¤æ˜“å…³é—­</p>
+																	<p class="Mystatus">½»Ò×¹Ø±Õ</p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<div class="am-btn am-btn-danger anniu">
-																	åˆ é™¤è®¢å•</div>
+																	É¾³ý¶©µ¥</div>
 															</li>
 														</div>
 													</div>
 												</div>
 											</div>											
 											
-											<!--å¾…å‘è´§-->
+											<!--´ý·¢»õ-->
 											<div class="order-status2">
 												<div class="order-title">
-													<div class="dd-num">è®¢å•ç¼–å·ï¼š<a href="javascript:;">1601430</a></div>
-													<span>æˆäº¤æ—¶é—´ï¼š2015-12-20</span>
-													<!--    <em>åº—é“ºï¼šå°æ¡”ç¯</em>-->
+													<div class="dd-num">¶©µ¥±àºÅ£º<a href="javascript:;">1601430</a></div>
+													<span>³É½»Ê±¼ä£º2015-12-20</span>
+													<!--    <em>µêÆÌ£ºÐ¡½ÛµÆ</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
@@ -428,9 +427,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -442,12 +441,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾</a>
+																	<a href="refund.jsp">ÍË¿î</a>
 																</div>
 															</li>
 														</ul>
@@ -462,9 +461,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¤¼ç›’è¢œå­å¥³ç§‹å†¬ çº¯æ£‰è¢œåŠ åŽš éŸ©å›½å¯çˆ± </p>
-																			<p class="info-little">é¢œè‰²åˆ†ç±»ï¼šæŽæ¸…ç…§
-																				<br/>å°ºç ï¼šå‡ç </p>
+																			<p>ÀñºÐÍà×ÓÅ®Çï¶¬ ´¿ÃÞÍà¼Óºñ º«¹ú¿É°® </p>
+																			<p class="info-little">ÑÕÉ«·ÖÀà£ºÀîÇåÕÕ
+																				<br/>³ßÂë£º¾ùÂë</p>
 																		</a>
 																	</div>
 																</div>
@@ -476,12 +475,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾</a>
+																	<a href="refund.jsp">ÍË¿î</a>
 																</div>
 															</li>
 														</ul>
@@ -496,9 +495,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -510,12 +509,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾</a>
+																	<a href="refund.jsp">ÍË¿î</a>
 																</div>
 															</li>
 														</ul>
@@ -523,32 +522,32 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																åˆè®¡ï¼š676.00
-																<p>å«è¿è´¹ï¼š<span>10.00</span></p>
+																ºÏ¼Æ£º676.00
+																<p>º¬ÔË·Ñ£º<span>10.00</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">ä¹°å®¶å·²ä»˜æ¬¾</p>
-																	<p class="order-info"><a href="orderinfo.jsp">è®¢å•è¯¦æƒ…</a></p>
+																	<p class="Mystatus">Âò¼ÒÒÑ¸¶¿î</p>
+																	<p class="order-info"><a href="orderinfo.jsp">¶©µ¥ÏêÇé</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<div class="am-btn am-btn-danger anniu">
-																	æé†’å‘è´§</div>
+																	ÌáÐÑ·¢»õ</div>
 															</li>
 														</div>
 													</div>
 												</div>
 											</div>
 
-											<!--ä¸åŒçŠ¶æ€è®¢å•-->
+											<!--²»Í¬×´Ì¬¶©µ¥-->
 											<div class="order-status3">
 												<div class="order-title">
-													<div class="dd-num">è®¢å•ç¼–å·ï¼š<a href="javascript:;">1601430</a></div>
-													<span>æˆäº¤æ—¶é—´ï¼š2015-12-20</span>
-													<!--    <em>åº—é“ºï¼šå°æ¡”ç¯</em>-->
+													<div class="dd-num">¶©µ¥±àºÅ£º<a href="javascript:;">1601430</a></div>
+													<span>³É½»Ê±¼ä£º2015-12-20</span>
+													<!--    <em>µêÆÌ£ºÐ¡½ÛµÆ</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
@@ -562,9 +561,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -576,12 +575,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾/é€€è´§</a>
+																	<a href="refund.jsp">ÍË¿î/ÍË»õ</a>
 																</div>
 															</li>
 														</ul>
@@ -596,9 +595,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¤¼ç›’è¢œå­å¥³ç§‹å†¬ çº¯æ£‰è¢œåŠ åŽš éŸ©å›½å¯çˆ± </p>
-																			<p class="info-little">é¢œè‰²åˆ†ç±»ï¼šæŽæ¸…ç…§
-																				<br/>å°ºç ï¼šå‡ç </p>
+																			<p>ÀñºÐÍà×ÓÅ®Çï¶¬ ´¿ÃÞÍà¼Óºñ º«¹ú¿É°® </p>
+																			<p class="info-little">ÑÕÉ«·ÖÀà£ºÀîÇåÕÕ
+																				<br/>³ßÂë£º¾ùÂë</p>
 																		</a>
 																	</div>
 																</div>
@@ -610,12 +609,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾/é€€è´§</a>
+																	<a href="refund.jsp">ÍË¿î/ÍË»õ</a>
 																</div>
 															</li>
 														</ul>
@@ -624,22 +623,22 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																åˆè®¡ï¼š676.00
-																<p>å«è¿è´¹ï¼š<span>10.00</span></p>
+																ºÏ¼Æ£º676.00
+																<p>º¬ÔË·Ñ£º<span>10.00</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">å–å®¶å·²å‘è´§</p>
-																	<p class="order-info"><a href="orderinfo.jsp">è®¢å•è¯¦æƒ…</a></p>
-																	<p class="order-info"><a href="logistics.jsp">æŸ¥çœ‹ç‰©æµ</a></p>
-																	<p class="order-info"><a href="#">å»¶é•¿æ”¶è´§</a></p>
+																	<p class="Mystatus">Âô¼ÒÒÑ·¢»õ</p>
+																	<p class="order-info"><a href="orderinfo.jsp">¶©µ¥ÏêÇé</a></p>
+																	<p class="order-info"><a href="logistics.jsp">²é¿´ÎïÁ÷</a></p>
+																	<p class="order-info"><a href="#">ÑÓ³¤ÊÕ»õ</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<div class="am-btn am-btn-danger anniu">
-																	ç¡®è®¤æ”¶è´§</div>
+																	È·ÈÏÊÕ»õ</div>
 															</li>
 														</div>
 													</div>
@@ -656,25 +655,25 @@
 
 									<div class="order-top">
 										<div class="th th-item">
-											<td class="td-inner">å•†å“</td>
+											<td class="td-inner">ÉÌÆ·</td>
 										</div>
 										<div class="th th-price">
-											<td class="td-inner">å•ä»·</td>
+											<td class="td-inner">µ¥¼Û</td>
 										</div>
 										<div class="th th-number">
-											<td class="td-inner">æ•°é‡</td>
+											<td class="td-inner">ÊýÁ¿</td>
 										</div>
 										<div class="th th-operation">
-											<td class="td-inner">å•†å“æ“ä½œ</td>
+											<td class="td-inner">ÉÌÆ·²Ù×÷</td>
 										</div>
 										<div class="th th-amount">
-											<td class="td-inner">åˆè®¡</td>
+											<td class="td-inner">ºÏ¼Æ</td>
 										</div>
 										<div class="th th-status">
-											<td class="td-inner">äº¤æ˜“çŠ¶æ€</td>
+											<td class="td-inner">½»Ò××´Ì¬</td>
 										</div>
 										<div class="th th-change">
-											<td class="td-inner">äº¤æ˜“æ“ä½œ</td>
+											<td class="td-inner">½»Ò×²Ù×÷</td>
 										</div>
 									</div>
 
@@ -682,9 +681,9 @@
 										<div class="order-list">
 											<div class="order-status1">
 												<div class="order-title">
-													<div class="dd-num">è®¢å•ç¼–å·ï¼š<a href="javascript:;">1601430</a></div>
-													<span>æˆäº¤æ—¶é—´ï¼š2015-12-20</span>
-													<!--    <em>åº—é“ºï¼šå°æ¡”ç¯</em>-->
+													<div class="dd-num">¶©µ¥±àºÅ£º<a href="javascript:;">1601430</a></div>
+													<span>³É½»Ê±¼ä£º2015-12-20</span>
+													<!--    <em>µêÆÌ£ºÐ¡½ÛµÆ</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
@@ -698,9 +697,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -712,7 +711,7 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
@@ -732,9 +731,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¤¼ç›’è¢œå­å¥³ç§‹å†¬ çº¯æ£‰è¢œåŠ åŽš éŸ©å›½å¯çˆ± </p>
-																			<p class="info-little">é¢œè‰²åˆ†ç±»ï¼šæŽæ¸…ç…§
-																				<br/>å°ºç ï¼šå‡ç </p>
+																			<p>ÀñºÐÍà×ÓÅ®Çï¶¬ ´¿ÃÞÍà¼Óºñ º«¹ú¿É°® </p>
+																			<p class="info-little">ÑÕÉ«·ÖÀà£ºÀîÇåÕÕ
+																				<br/>³ßÂë£º¾ùÂë</p>
 																		</a>
 																	</div>
 																</div>
@@ -746,7 +745,7 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
@@ -766,9 +765,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -780,7 +779,7 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
@@ -793,22 +792,22 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																åˆè®¡ï¼š676.00
-																<p>å«è¿è´¹ï¼š<span>10.00</span></p>
+																ºÏ¼Æ£º676.00
+																<p>º¬ÔË·Ñ£º<span>10.00</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">ç­‰å¾…ä¹°å®¶ä»˜æ¬¾</p>
-																	<p class="order-info"><a href="#">å–æ¶ˆè®¢å•</a></p>
+																	<p class="Mystatus">µÈ´ýÂò¼Ò¸¶¿î</p>
+																	<p class="order-info"><a href="#">È¡Ïû¶©µ¥</a></p>
 
 																</div>
 															</li>
 															<li class="td td-change">
 																<a href="pay.jsp">
 																<div class="am-btn am-btn-danger anniu">
-																	ä¸€é”®æ”¯ä»˜</div></a>
+																	Ò»¼üÖ§¸¶</div></a>
 															</li>
 														</div>
 													</div>
@@ -822,25 +821,25 @@
 								<div class="am-tab-panel am-fade" id="tab3">
 									<div class="order-top">
 										<div class="th th-item">
-											<td class="td-inner">å•†å“</td>
+											<td class="td-inner">ÉÌÆ·</td>
 										</div>
 										<div class="th th-price">
-											<td class="td-inner">å•ä»·</td>
+											<td class="td-inner">µ¥¼Û</td>
 										</div>
 										<div class="th th-number">
-											<td class="td-inner">æ•°é‡</td>
+											<td class="td-inner">ÊýÁ¿</td>
 										</div>
 										<div class="th th-operation">
-											<td class="td-inner">å•†å“æ“ä½œ</td>
+											<td class="td-inner">ÉÌÆ·²Ù×÷</td>
 										</div>
 										<div class="th th-amount">
-											<td class="td-inner">åˆè®¡</td>
+											<td class="td-inner">ºÏ¼Æ</td>
 										</div>
 										<div class="th th-status">
-											<td class="td-inner">äº¤æ˜“çŠ¶æ€</td>
+											<td class="td-inner">½»Ò××´Ì¬</td>
 										</div>
 										<div class="th th-change">
-											<td class="td-inner">äº¤æ˜“æ“ä½œ</td>
+											<td class="td-inner">½»Ò×²Ù×÷</td>
 										</div>
 									</div>
 
@@ -848,9 +847,9 @@
 										<div class="order-list">
 											<div class="order-status2">
 												<div class="order-title">
-													<div class="dd-num">è®¢å•ç¼–å·ï¼š<a href="javascript:;">1601430</a></div>
-													<span>æˆäº¤æ—¶é—´ï¼š2015-12-20</span>
-													<!--    <em>åº—é“ºï¼šå°æ¡”ç¯</em>-->
+													<div class="dd-num">¶©µ¥±àºÅ£º<a href="javascript:;">1601430</a></div>
+													<span>³É½»Ê±¼ä£º2015-12-20</span>
+													<!--    <em>µêÆÌ£ºÐ¡½ÛµÆ</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
@@ -864,9 +863,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -878,12 +877,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾</a>
+																	<a href="refund.jsp">ÍË¿î</a>
 																</div>
 															</li>
 														</ul>
@@ -898,9 +897,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¤¼ç›’è¢œå­å¥³ç§‹å†¬ çº¯æ£‰è¢œåŠ åŽš éŸ©å›½å¯çˆ± </p>
-																			<p class="info-little">é¢œè‰²åˆ†ç±»ï¼šæŽæ¸…ç…§
-																				<br/>å°ºç ï¼šå‡ç </p>
+																			<p>ÀñºÐÍà×ÓÅ®Çï¶¬ ´¿ÃÞÍà¼Óºñ º«¹ú¿É°® </p>
+																			<p class="info-little">ÑÕÉ«·ÖÀà£ºÀîÇåÕÕ
+																				<br/>³ßÂë£º¾ùÂë</p>
 																		</a>
 																	</div>
 																</div>
@@ -912,12 +911,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾</a>
+																	<a href="refund.jsp">ÍË¿î</a>
 																</div>
 															</li>
 														</ul>
@@ -932,9 +931,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -946,12 +945,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾</a>
+																	<a href="refund.jsp">ÍË¿î</a>
 																</div>
 															</li>
 														</ul>
@@ -959,20 +958,20 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																åˆè®¡ï¼š676.00
-																<p>å«è¿è´¹ï¼š<span>10.00</span></p>
+																ºÏ¼Æ£º676.00
+																<p>º¬ÔË·Ñ£º<span>10.00</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">ä¹°å®¶å·²ä»˜æ¬¾</p>
-																	<p class="order-info"><a href="orderinfo.jsp">è®¢å•è¯¦æƒ…</a></p>
+																	<p class="Mystatus">Âò¼ÒÒÑ¸¶¿î</p>
+																	<p class="order-info"><a href="orderinfo.jsp">¶©µ¥ÏêÇé</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<div class="am-btn am-btn-danger anniu">
-																	æé†’å‘è´§</div>
+																	ÌáÐÑ·¢»õ</div>
 															</li>
 														</div>
 													</div>
@@ -984,25 +983,25 @@
 								<div class="am-tab-panel am-fade" id="tab4">
 									<div class="order-top">
 										<div class="th th-item">
-											<td class="td-inner">å•†å“</td>
+											<td class="td-inner">ÉÌÆ·</td>
 										</div>
 										<div class="th th-price">
-											<td class="td-inner">å•ä»·</td>
+											<td class="td-inner">µ¥¼Û</td>
 										</div>
 										<div class="th th-number">
-											<td class="td-inner">æ•°é‡</td>
+											<td class="td-inner">ÊýÁ¿</td>
 										</div>
 										<div class="th th-operation">
-											<td class="td-inner">å•†å“æ“ä½œ</td>
+											<td class="td-inner">ÉÌÆ·²Ù×÷</td>
 										</div>
 										<div class="th th-amount">
-											<td class="td-inner">åˆè®¡</td>
+											<td class="td-inner">ºÏ¼Æ</td>
 										</div>
 										<div class="th th-status">
-											<td class="td-inner">äº¤æ˜“çŠ¶æ€</td>
+											<td class="td-inner">½»Ò××´Ì¬</td>
 										</div>
 										<div class="th th-change">
-											<td class="td-inner">äº¤æ˜“æ“ä½œ</td>
+											<td class="td-inner">½»Ò×²Ù×÷</td>
 										</div>
 									</div>
 
@@ -1010,9 +1009,9 @@
 										<div class="order-list">
 											<div class="order-status3">
 												<div class="order-title">
-													<div class="dd-num">è®¢å•ç¼–å·ï¼š<a href="javascript:;">1601430</a></div>
-													<span>æˆäº¤æ—¶é—´ï¼š2015-12-20</span>
-													<!--    <em>åº—é“ºï¼šå°æ¡”ç¯</em>-->
+													<div class="dd-num">¶©µ¥±àºÅ£º<a href="javascript:;">1601430</a></div>
+													<span>³É½»Ê±¼ä£º2015-12-20</span>
+													<!--    <em>µêÆÌ£ºÐ¡½ÛµÆ</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
@@ -1026,9 +1025,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -1040,12 +1039,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾/é€€è´§</a>
+																	<a href="refund.jsp">ÍË¿î/ÍË»õ</a>
 																</div>
 															</li>
 														</ul>
@@ -1060,9 +1059,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¤¼ç›’è¢œå­å¥³ç§‹å†¬ çº¯æ£‰è¢œåŠ åŽš éŸ©å›½å¯çˆ± </p>
-																			<p class="info-little">é¢œè‰²åˆ†ç±»ï¼šæŽæ¸…ç…§
-																				<br/>å°ºç ï¼šå‡ç </p>
+																			<p>ÀñºÐÍà×ÓÅ®Çï¶¬ ´¿ÃÞÍà¼Óºñ º«¹ú¿É°® </p>
+																			<p class="info-little">ÑÕÉ«·ÖÀà£ºÀîÇåÕÕ
+																				<br/>³ßÂë£º¾ùÂë</p>
 																		</a>
 																	</div>
 																</div>
@@ -1074,12 +1073,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾/é€€è´§</a>
+																	<a href="refund.jsp">ÍË¿î/ÍË»õ</a>
 																</div>
 															</li>
 														</ul>
@@ -1088,22 +1087,22 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																åˆè®¡ï¼š676.00
-																<p>å«è¿è´¹ï¼š<span>10.00</span></p>
+																ºÏ¼Æ£º676.00
+																<p>º¬ÔË·Ñ£º<span>10.00</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">å–å®¶å·²å‘è´§</p>
-																	<p class="order-info"><a href="orderinfo.jsp">è®¢å•è¯¦æƒ…</a></p>
-																	<p class="order-info"><a href="logistics.jsp">æŸ¥çœ‹ç‰©æµ</a></p>
-																	<p class="order-info"><a href="#">å»¶é•¿æ”¶è´§</a></p>
+																	<p class="Mystatus">Âô¼ÒÒÑ·¢»õ</p>
+																	<p class="order-info"><a href="orderinfo.jsp">¶©µ¥ÏêÇé</a></p>
+																	<p class="order-info"><a href="logistics.jsp">²é¿´ÎïÁ÷</a></p>
+																	<p class="order-info"><a href="#">ÑÓ³¤ÊÕ»õ</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<div class="am-btn am-btn-danger anniu">
-																	ç¡®è®¤æ”¶è´§</div>
+																	È·ÈÏÊÕ»õ</div>
 															</li>
 														</div>
 													</div>
@@ -1116,35 +1115,35 @@
 								<div class="am-tab-panel am-fade" id="tab5">
 									<div class="order-top">
 										<div class="th th-item">
-											<td class="td-inner">å•†å“</td>
+											<td class="td-inner">ÉÌÆ·</td>
 										</div>
 										<div class="th th-price">
-											<td class="td-inner">å•ä»·</td>
+											<td class="td-inner">µ¥¼Û</td>
 										</div>
 										<div class="th th-number">
-											<td class="td-inner">æ•°é‡</td>
+											<td class="td-inner">ÊýÁ¿</td>
 										</div>
 										<div class="th th-operation">
-											<td class="td-inner">å•†å“æ“ä½œ</td>
+											<td class="td-inner">ÉÌÆ·²Ù×÷</td>
 										</div>
 										<div class="th th-amount">
-											<td class="td-inner">åˆè®¡</td>
+											<td class="td-inner">ºÏ¼Æ</td>
 										</div>
 										<div class="th th-status">
-											<td class="td-inner">äº¤æ˜“çŠ¶æ€</td>
+											<td class="td-inner">½»Ò××´Ì¬</td>
 										</div>
 										<div class="th th-change">
-											<td class="td-inner">äº¤æ˜“æ“ä½œ</td>
+											<td class="td-inner">½»Ò×²Ù×÷</td>
 										</div>
 									</div>
 
 									<div class="order-main">
 										<div class="order-list">
-											<!--ä¸åŒçŠ¶æ€çš„è®¢å•	-->
+											<!--²»Í¬×´Ì¬µÄ¶©µ¥	-->
 										<div class="order-status4">
 												<div class="order-title">
-													<div class="dd-num">è®¢å•ç¼–å·ï¼š<a href="javascript:;">1601430</a></div>
-													<span>æˆäº¤æ—¶é—´ï¼š2015-12-20</span>
+													<div class="dd-num">¶©µ¥±àºÅ£º<a href="javascript:;">1601430</a></div>
+													<span>³É½»Ê±¼ä£º2015-12-20</span>
 
 												</div>
 												<div class="order-content">
@@ -1159,9 +1158,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -1173,12 +1172,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾/é€€è´§</a>
+																	<a href="refund.jsp">ÍË¿î/ÍË»õ</a>
 																</div>
 															</li>
 														</ul>
@@ -1187,22 +1186,22 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																åˆè®¡ï¼š676.00
-																<p>å«è¿è´¹ï¼š<span>10.00</span></p>
+																ºÏ¼Æ£º676.00
+																<p>º¬ÔË·Ñ£º<span>10.00</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">äº¤æ˜“æˆåŠŸ</p>
-																	<p class="order-info"><a href="orderinfo.jsp">è®¢å•è¯¦æƒ…</a></p>
-																	<p class="order-info"><a href="logistics.jsp">æŸ¥çœ‹ç‰©æµ</a></p>
+																	<p class="Mystatus">½»Ò×³É¹¦</p>
+																	<p class="order-info"><a href="orderinfo.jsp">¶©µ¥ÏêÇé</a></p>
+																	<p class="order-info"><a href="logistics.jsp">²é¿´ÎïÁ÷</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<a href="commentlist.jsp">
 																	<div class="am-btn am-btn-danger anniu">
-																		è¯„ä»·å•†å“</div>
+																		ÆÀ¼ÛÉÌÆ·</div>
 																</a>
 															</li>
 														</div>
@@ -1213,9 +1212,9 @@
 											
 											<div class="order-status4">
 												<div class="order-title">
-													<div class="dd-num">è®¢å•ç¼–å·ï¼š<a href="javascript:;">1601430</a></div>
-													<span>æˆäº¤æ—¶é—´ï¼š2015-12-20</span>
-													<!--    <em>åº—é“ºï¼šå°æ¡”ç¯</em>-->
+													<div class="dd-num">¶©µ¥±àºÅ£º<a href="javascript:;">1601430</a></div>
+													<span>³É½»Ê±¼ä£º2015-12-20</span>
+													<!--    <em>µêÆÌ£ºÐ¡½ÛµÆ</em>-->
 												</div>
 												<div class="order-content">
 													<div class="order-left">
@@ -1229,9 +1228,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -1243,12 +1242,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾/é€€è´§</a>
+																	<a href="refund.jsp">ÍË¿î/ÍË»õ</a>
 																</div>
 															</li>
 														</ul>
@@ -1263,9 +1262,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¤¼ç›’è¢œå­å¥³ç§‹å†¬ çº¯æ£‰è¢œåŠ åŽš éŸ©å›½å¯çˆ± </p>
-																			<p class="info-little">é¢œè‰²åˆ†ç±»ï¼šæŽæ¸…ç…§
-																				<br/>å°ºç ï¼šå‡ç </p>
+																			<p>ÀñºÐÍà×ÓÅ®Çï¶¬ ´¿ÃÞÍà¼Óºñ º«¹ú¿É°® </p>
+																			<p class="info-little">ÑÕÉ«·ÖÀà£ºÀîÇåÕÕ
+																				<br/>³ßÂë£º¾ùÂë</p>
 																		</a>
 																	</div>
 																</div>
@@ -1277,12 +1276,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾/é€€è´§</a>
+																	<a href="refund.jsp">ÍË¿î/ÍË»õ</a>
 																</div>
 															</li>
 														</ul>
@@ -1297,9 +1296,9 @@
 																<div class="item-info">
 																	<div class="item-basic-info">
 																		<a href="#">
-																			<p>ç¾Žåº·ç²‰é»›é†‰ç¾Žå”‡è† æŒä¹…ä¿æ¹¿æ»‹æ¶¦é˜²æ°´ä¸æŽ‰è‰²</p>
-																			<p class="info-little">é¢œè‰²ï¼š12#å·å—çŽ›ç‘™
-																				<br/>åŒ…è£…ï¼šè£¸è£… </p>
+																			<p>ÃÀ¿µ·Û÷ì×íÃÀ´½¸à ³Ö¾Ã±£Êª×ÌÈó·ÀË®²»µôÉ«</p>
+																			<p class="info-little">ÑÕÉ«£º12#´¨ÄÏÂêè§
+																				<br/>°ü×°£ºÂã×° </p>
 																		</a>
 																	</div>
 																</div>
@@ -1311,12 +1310,12 @@
 															</li>
 															<li class="td td-number">
 																<div class="item-number">
-																	<span>Ã—</span>2
+																	<span>¡Á</span>2
 																</div>
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.jsp">é€€æ¬¾/é€€è´§</a>
+																	<a href="refund.jsp">ÍË¿î/ÍË»õ</a>
 																</div>
 															</li>
 														</ul>
@@ -1326,22 +1325,22 @@
 													<div class="order-right">
 														<li class="td td-amount">
 															<div class="item-amount">
-																åˆè®¡ï¼š676.00
-																<p>å«è¿è´¹ï¼š<span>10.00</span></p>
+																ºÏ¼Æ£º676.00
+																<p>º¬ÔË·Ñ£º<span>10.00</span></p>
 															</div>
 														</li>
 														<div class="move-right">
 															<li class="td td-status">
 																<div class="item-status">
-																	<p class="Mystatus">äº¤æ˜“æˆåŠŸ</p>
-																	<p class="order-info"><a href="orderinfo.jsp">è®¢å•è¯¦æƒ…</a></p>
-																	<p class="order-info"><a href="logistics.jsp">æŸ¥çœ‹ç‰©æµ</a></p>
+																	<p class="Mystatus">½»Ò×³É¹¦</p>
+																	<p class="order-info"><a href="orderinfo.jsp">¶©µ¥ÏêÇé</a></p>
+																	<p class="order-info"><a href="logistics.jsp">²é¿´ÎïÁ÷</a></p>
 																</div>
 															</li>
 															<li class="td td-change">
 																<a href="commentlist.jsp">
 																	<div class="am-btn am-btn-danger anniu">
-																		è¯„ä»·å•†å“</div>
+																		ÆÀ¼ÛÉÌÆ·</div>
 																</a>
 															</li>
 														</div>
@@ -1360,12 +1359,76 @@
 						</div>
 					</div>
 				</div>
-				<!--åº•éƒ¨-->
-				<%@ include file="footer.jsp" %>
-
+				<!--µ×²¿-->
+				<div id="footer">
+			<div id="links">
+				<a href=""> ¹ØÓÚÎÒÃÇ</a>|
+				<a href="">ÁªÏµÎÒÃÇ</a>|
+				<a href="">ÈË²ÅÕÐÆ¸</a>|
+				<a href="">ÉÌ¼ÒÈë×¤</a>|
+				<a href="">¹ã¸æ·þÎñ</a>|
+				<a href="">ÓÑÇéÁ´½Ó</a>|
+				<a href="">ÏúÊÛÁªÃË</a>|
+				<a href="">English Site</a>
 			</div>
+			<div style="color: #999;">
+				Copyright0„82004-2018&nbsp;&nbsp;&nbsp;°æÈ¨ËùÓÐ
+			</div>
+		</div>
+			</div>
+			<aside class="menu">
+				<ul>
+					<li class="person active">
+						<a href="index.jsp"><i class="am-icon-user"></i>¸öÈËÖÐÐÄ</a>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-newspaper-o"></i>¸öÈË×ÊÁÏ</p>
+						<ul>
+							<li> <a href="information.jsp">¸öÈËÐÅÏ¢</a></li>
+							<li> <a href="safety.jsp">°²È«ÉèÖÃ</a></li>
+							<li> <a href="address.jsp">µØÖ·¹ÜÀí</a></li>
+							<li> <a href="cardlist.jsp">¿ì½ÝÖ§¸¶</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-balance-scale"></i>ÎÒµÄ½»Ò×</p>
+						<ul>
+							<li><a href="order.jsp">¶©µ¥¹ÜÀí</a></li>
+							<li> <a href="change.jsp">ÍË¿îÊÛºó</a></li>
+							<li> <a href="comment.jsp">ÆÀ¼ÛÉÌÆ·</a></li>
+						</ul>
+					</li>
+					<li class="person">
+						<p><i class="am-icon-dollar"></i>ÎÒµÄ×Ê²ú</p>
+						<ul>
+							<li> <a href="points.jsp">ÎÒµÄ»ý·Ö</a></li>
+							<li> <a href="coupon.jsp">ÓÅ»ÝÈ¯ </a></li>
+							<li> <a href="bonus.jsp">ºì°ü</a></li>
+							<li> <a href="walletlist.jsp">ÕË»§Óà¶î</a></li>
+							<li> <a href="bill.jsp">ÕËµ¥Ã÷Ï¸</a></li>
+						</ul>
+					</li>
 
-			<%@ include file="menu.jsp" %>
+					<li class="person">
+						<p><i class="am-icon-tags"></i>ÎÒµÄÊÕ²Ø</p>
+						<ul>
+							<li> <a href="collection.jsp">ÊÕ²Ø</a></li>
+							<li> <a href="foot.jsp">×ã¼£</a></li>
+						</ul>
+					</li>
+
+					<li class="person">
+						<p><i class="am-icon-qq"></i>ÔÚÏß¿Í·þ</p>
+						<ul>
+							<li> <a href="consultation.jsp">ÉÌÆ·×ÉÑ¯</a></li>
+							<li> <a href="suggest.jsp">Òâ¼û·´À¡</a></li>							
+							
+							<li> <a href="news.jsp">ÎÒµÄÏûÏ¢</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</aside>
 		</div>
 
 	</body>
